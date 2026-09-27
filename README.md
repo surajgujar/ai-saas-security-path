@@ -1,6 +1,8 @@
 # AI, Agentic AI & SaaS Security — Learning Path
 
-> **Big picture first:** read [`career-strategy/`](career-strategy/README.md) — deep research on what OpenAI, Anthropic, Google, Microsoft, vendors and enterprises hire for, the next-12-month trends, and your **leadership-track** plan. The 12 weeks below are **Q1** of it.
+> **Start here → [`PLAN.md`](PLAN.md)**: the final 12-month plan (Head/Lead of AI Security, relocating abroad).
+>
+> **Evidence:** read [`career-strategy/`](career-strategy/README.md) — deep research on what OpenAI, Anthropic, Google, Microsoft, vendors and enterprises hire for, the next-12-month trends, and your **leadership-track** plan. The 12 weeks below are **Q1** of it.
 
 Target: **AI security leadership** — frontier AI labs, hyperscalers/security vendors, large enterprises (abroad)
 Owner: Suraj Gujar · Start: **Mon 28 Sep 2026** · End: **Sun 20 Dec 2026** · Pace: **10–12 hrs/week**
@@ -40,20 +42,21 @@ The plan spends **little time** on those and **most time** on the gaps the JD ca
 
 **Interview prep runs in parallel** — ~1 hr every week. See [`interview-prep/`](interview-prep/).
 
-## Weekly rhythm (11 hrs)
+## Weekly rhythm (11 hrs, 40% hands-on)
 
 | Block | Time | What |
 |---|---|---|
-| Learn | 3 h | Reading/videos listed in the week file |
-| Build | 5 h | The lab — commit code to `labs/` |
-| Leadership & visibility | 2 h | 1-page note in `notes/`, one LinkedIn post, mentoring, strategy memos, talks/standards work |
-| Interview & job search | 1 h | Answer that week's questions out loud, record, refine; from Q3, applications and referrals |
+| Build | 4.5 h | The lab — commit code to `labs/` (Q1 labs: do the core items, treat the rest as stretch) |
+| Learn | 2.5 h | Video courses + podcasts; specs only when needed |
+| Lead & be visible | 2.5 h | Weekly LinkedIn post, note in `notes/`, mentoring, strategy docs, talks |
+| Career | 1.5 h | Resume, applications (from Jan 2027), networking, interview practice |
 
 ## Repo layout
 
 ```
 career-strategy/         Market research, niche, 12-month plan
-quarters/                Q2–Q4 leadership-track plans
+PLAN.md                  ⭐ Final 12-month plan
+quarters/                Q2–Q4 technical plans + career-track.md
 00-gap-analysis.md       JD vs. your resume, and what to prioritise
 weeks/                   One file per week: goals, resources, lab, checklist, interview Qs
 labs/                    Your code — each lab gets a folder

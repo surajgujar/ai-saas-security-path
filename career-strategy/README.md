@@ -61,68 +61,16 @@ Your learning content must match *what will exist* in Oct 2026 – Sep 2027:
 
 ---
 
-## Part 3 — Honest positioning for the leadership track
+## Part 3 — Positioning (updated after your answers)
 
-**The good news.** The hottest leadership problem at labs, clouds and vendors is **agent identity and runtime authorization**: OpenAI's EM Identity & Access role, Google Agent Identity/Gateway, Entra Agent ID, NIST, IETF, CoSAI. It's your strongest area (workload identity, multi-agent access control, MCP in production, GCP PCSE, Wiz, Model Armor).
+- **You've managed 5+ people, but your resume doesn't say so.** Fixing that is the single highest-return action in this plan. With it, **Head / Lead of AI Security** at an enterprise is a realistic 12-month target.
+- **Frontier-lab *engineering manager* roles** ask for 8–10+ years of front-line management at hyper-growth scale (Anthropic EM Network Security: 8+ yrs; OpenAI EM Identity & Access: 10+ yrs building teams). Treat these as a 2–4-year goal, or enter at Staff/Principal level in a lab's London, Dublin or Zurich office.
+- **Your trade-off choice ("lower title, right country")** means we target *Lead / Principal AI Security* roles in the UK/EU as well as *Head* roles, then grow into Head within 1–2 years.
+- **Your technical wedge** is agent identity and runtime authorization. It's the problem OpenAI, Google, Microsoft, AWS, IETF, NIST and CoSAI are all working on right now, and it's your strongest existing area.
 
-**The hard truth.** Frontier-lab *manager* roles ask for **8–10+ years of front-line people management**. Your resume shows technical leadership but not formal people management. In 12 months, closing that fully isn't realistic, and pretending otherwise would waste your effort.
+## Part 4 — The final plan
 
-**So the 12-month target is:**
-
-| Horizon | Target roles | Where |
-|---|---|---|
-| **12 months** (Sep 2027) | **Head / Lead of AI Security (Architecture)** at a large enterprise; **Principal / Staff AI Security Architect** or **Leadership TPM / Principal PM (AI security)** at a hyperscaler or vendor; **Staff Security Engineer, Agent Security / Identity** at a lab's European office | London, Dublin, Munich/Berlin, Amsterdam, Zurich; Bengaluru offices of labs and vendors as a transfer route |
-| **2–4 years** | Engineering Manager / Director, Agent Security or Identity at a frontier lab or hyperscaler; Head of AI Security / deputy CISO | US/UK/EU |
-
-**Leadership evidence you must build in parallel** (this is what gets you past screens that ask for "7 years leadership with or without direct reports"):
-
-1. Formally lead something at TransUnion now: an AI security working group, the agent-security program, or a small team. Ask for a team lead title.
-2. Mentor 2–3 people on AI security and keep a record.
-3. Write strategy documents: a roadmap, a business case with budget, a board/CISO-level risk memo.
-4. Be visibly external: talks, standards contributions (CoSAI / OWASP / IETF comments), articles.
-5. Get hiring experience: interview candidates at your current company.
-
----
-
-## Part 4 — Certifications (employer-sponsored, with fallbacks)
-
-| Order | Cert | Why for *you* | Fallback if not sponsored |
-|---|---|---|---|
-| 1 (Q2) | **CISSP** | Still the #1 filter for security leadership abroad; **prerequisite for ISACA AAISM** | None, it's worth self-funding (~US$750 exam) |
-| 2 (Q3) | **GIAC GAIPS (SANS SEC545 — GenAI & LLM App Security)** | Hands-on credibility for labs/vendors | Self-study plus your portfolio |
-| 3 (Q4) | **ISACA AAISM** (AI governance, AI risk, AI technologies & controls) | First AI *security management* credential; fits the leadership track | IAPP AIGP |
-| Watch | ISC2 AI security certification | In development since Jul 2026; may land in the window | — |
-
-You already hold the **GCP PCSE**. Keep it current, since Agent Identity and Agent Gateway now live in that exam's domain.
-
----
-
-## Part 5 — Relocation routes (⚠️ not legal advice; verify with an immigration adviser)
-
-| Country | Route | Key facts (Sep 2026) | Fit |
-|---|---|---|---|
-| **UK** | **Global Talent (Digital Technology)** or Skilled Worker | Global Talent: no job offer needed; evidence = recognition, talks, publications, open-source impact, strong reference letters; ILR after **3 yrs** (Exceptional Talent). Skilled Worker general threshold £41,700 | ⭐ Best match. The plan's visibility work (OSS, talks, standards) **is** the evidence. London hosts Anthropic, OpenAI, DeepMind, AISI, and bank AI security roles |
-| **Germany** | **EU Blue Card** | 2026 threshold €50,700 (€45,934 shortage/IT); IT experience can substitute for a degree | ⭐ Easy threshold for senior roles; large Munich/Berlin enterprises and cloud offices |
-| **Ireland** | Critical Skills Employment Permit | EU HQs of Google, Microsoft, Meta, OpenAI; Anthropic IR role in Dublin | ⭐ Good for hyperscalers and labs |
-| **Netherlands / Switzerland** | Highly Skilled Migrant / Swiss permit | Anthropic Zurich, Google Zurich | Good, but a smaller market |
-| **US** | H-1B / **L-1 intra-company** / O-1 | H-1B lottery is now **wage-weighted** (favours senior roles). The $100K fee was vacated by a court in Jun 2026 but litigation continues ⚠️ | Safest US route: join a US multinational (Google, Microsoft, Palo Alto, labs' India offices) and **transfer via L-1** after ~1 year |
-
-**Transfer strategy:** Anthropic opened in **Bengaluru** (2026), OpenAI announced India plans, and Palo Alto hires AI security PMs in **Bengaluru**. Joining one of these in India and transferring later is often faster than a cold application abroad.
-
----
-
-## Part 6 — The resulting plan (details in [`../quarters/`](../quarters/))
-
-| Quarter | Months | Theme | Leadership thread | Cert | Outcome |
-|---|---|---|---|---|---|
-| **Q1** | Oct–Dec 2026 | **Foundation**: the 12 weeks in `weeks/` (updated to the 2026 standards) | Start leading an AI security working group; mentor 1 person | — | 12 labs; interview-ready for AI security architect roles |
-| **Q2** | Jan–Mar 2027 | **Agent identity & runtime authorization**, the flagship niche ([Q2](../quarters/q2-agent-identity-runtime-authz.md)) | Publish a reference architecture; first talk; CoSAI/OWASP contribution | **CISSP** | Recognised name in agent identity; OSS tool |
-| **Q3** | Apr–Jun 2027 | **Frontier-lab security**: isolation/sandboxing, model-weight security (RAND SL3), offensive testing of agent products, AI-enabled threat detection ([Q3](../quarters/q3-frontier-lab-security.md)) | Second talk; lead a red-team exercise at work | **GIAC GAIPS** | Pass lab-style technical loops |
-| **Q4** | Jul–Sep 2027 | **Leading an AI security program**: strategy, metrics, budget, EU AI Act high-risk readiness, running AI-augmented teams ([Q4](../quarters/q4-ai-security-program-leadership.md)) | Board-style memo; hiring loop; job search abroad in full swing | **AAISM** | Offers for Head/Lead/Principal roles abroad |
-
-**Weekly rhythm (11 hrs):** 3 h learn · 5 h build · 2 h leadership & visibility · 1 h interview/job-search practice.
-
----
+➡️ **See [`../PLAN.md`](../PLAN.md)**: decisions, weekly rhythm, quarter map, sector modules (FS, tech/AI, healthcare), visibility engine, relocation pipeline (UK, IE, DE, NL, UAE, SG, CA), certification timeline (CISSP → AAISM), and monthly scorecard.
 
 ## Sources
 

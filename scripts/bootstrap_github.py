@@ -21,6 +21,7 @@ TRACKS = [  # file, milestone title, due, labels
     ("quarters/q2-agent-identity-runtime-authz.md", "Q2 · Agent identity & runtime authz", "2027-03-31T23:59:59Z", ["identity", "ai-security"]),
     ("quarters/q3-frontier-lab-security.md", "Q3 · Frontier-lab security depth", "2027-06-30T23:59:59Z", ["ai-security"]),
     ("quarters/q4-ai-security-program-leadership.md", "Q4 · AI security program leadership", "2027-09-30T23:59:59Z", ["grc", "leadership"]),
+    ("quarters/career-track.md", "Career track · lead, visible, certified, relocated", "2027-09-30T23:59:59Z", ["leadership"]),
 ]
 LABELS = {"week": "1d76db", "lab": "0e8a16", "interview": "d93f0b", "ai-security": "5319e7",
           "saas-security": "fbca04", "identity": "b60205", "grc": "006b75", "track": "c5def5", "leadership": "0052cc"}

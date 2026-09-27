@@ -2,7 +2,7 @@
 
 **Why this quarter exists:** It's the most-hired leadership problem at labs and clouds right now: OpenAI's EM Identity & Access Platform asks for "first-class authorization for agents… delegated, action-scoped, time-bound, full attribution". Google, Microsoft and AWS all shipped agent identity in 2026, and IETF, NIST and CoSAI are standardising it now.
 **Outcome:** You're recognisably "the agent identity & runtime authz person": an open-source tool, a reference architecture, a talk, a standards contribution, and **CISSP passed**.
-**Hours:** 11/week → 3 learn · 5 build · 2 leadership/visibility · 1 interview. CISSP study borrows ~3 h/week from "build" in Feb–Mar.
+**Hours:** see the PLAN.md rhythm (4.5 build · 2.5 learn · 2.5 lead/visible · 1.5 career). CISSP study uses the Learn block plus commute audio/video in Feb–Mar. Career tasks: [`career-track.md`](career-track.md).
 
 ## Month 1 — Standards & platforms at current state (Jan 2027)
 - [ ] IETF **draft-ietf-wimse-aims** (AI agent authentication & authorization) + WIMSE architecture: read the latest version, summarise the gaps it lists
@@ -33,7 +33,7 @@
 - [ ] Standards contribution: comment on a WIMSE draft, open a CoSAI / OWASP ACS issue or PR, or join a working group call and take an action item
 - [ ] Blog series: 3 posts (token exchange for agents; MCP authz on the 2026 spec; guardrails ≠ authorization)
 - [ ] **CISSP exam** ✅
-- [ ] Relocation: shortlist 15 target employers across UK, Ireland, Germany and NL and the labs' India offices; set up job alerts
+- [ ] **FS sector module**: map your gateway's controls to UK PRA SS1/23 (model inventory, validation, monitoring), EU AI Act and DORA; publish as a post "Agent authorization for regulated banks"
 
 ## Done when
 - [ ] OSS released with an external user/issue · [ ] Architecture published · [ ] Talk delivered · [ ] Standards contribution · [ ] CISSP passed
