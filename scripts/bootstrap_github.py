@@ -17,8 +17,13 @@ PHASES = [  # title, due (end of phase), weeks
     ("Phase 4 · SaaS Security", "2026-12-06T23:59:59Z", [9, 10]),
     ("Phase 5 · Operate & Govern", "2026-12-20T23:59:59Z", [11, 12]),
 ]
+TRACKS = [  # file, milestone title, due, labels
+    ("tracks/track-a-agent-identity-mcp.md", "Stage 2 · Agent identity & MCP", "2027-03-31T23:59:59Z", ["identity", "ai-security"]),
+    ("tracks/track-b-offensive-ai.md", "Stage 3 · Offensive AI", "2027-06-30T23:59:59Z", ["ai-security"]),
+    ("tracks/track-c-ai-grc-as-code.md", "Stage 4 · AI risk-as-code", "2027-09-30T23:59:59Z", ["grc"]),
+]
 LABELS = {"week": "1d76db", "lab": "0e8a16", "interview": "d93f0b", "ai-security": "5319e7",
-          "saas-security": "fbca04", "identity": "b60205", "grc": "006b75"}
+          "saas-security": "fbca04", "identity": "b60205", "grc": "006b75", "track": "c5def5"}
 WEEK_LABELS = {1: ["ai-security"], 2: ["ai-security"], 3: ["ai-security"], 4: ["ai-security"],
                5: ["ai-security"], 6: ["ai-security"], 7: ["identity", "ai-security"], 8: ["ai-security"],
                9: ["saas-security"], 10: ["saas-security", "identity"], 11: ["ai-security", "saas-security"], 12: ["grc"]}
@@ -61,6 +66,26 @@ for path in sorted(glob.glob("weeks/week-*.md")):
     call("POST", "/issues", {"title": header, "body": body, "milestone": week_to_ms[wk],
                              "labels": ["week"] + WEEK_LABELS[wk]})
     print("created", header)
+
+for path, ms_title, due, labels in TRACKS:
+    num = existing_ms.get(ms_title) or call("POST", "/milestones", {"title": ms_title, "due_on": due})["number"]
+    lines = open(path, encoding="utf-8").read().splitlines()
+    # one issue per month section
+    blocks, cur, title = [], [], None
+    for l in lines:
+        if l.startswith("## "):
+            if title and cur: blocks.append((title, cur))
+            title, cur = (l.lstrip("# ").strip() if l.startswith("## Month") else None), []
+        elif title and l.strip().startswith("- [ ]"):
+            cur.append(l)
+    if title and cur: blocks.append((title, cur))
+    track = lines[0].lstrip("# ").split("(")[0].strip()
+    for t, boxes in blocks:
+        full = f"{track} — {t}"
+        if full in existing_issues: continue
+        call("POST", "/issues", {"title": full, "milestone": num, "labels": ["track"] + labels,
+                                 "body": f"📄 [`{path}`](../blob/main/{path})\n\n" + "\n".join(boxes)})
+        print("created", full)
 
 prep = "Interview prep (ongoing)"
 if prep not in existing_issues:

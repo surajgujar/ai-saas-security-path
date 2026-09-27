@@ -1,4 +1,6 @@
-# AI, Agentic AI & SaaS Security — 12-Week Learning Path
+# AI, Agentic AI & SaaS Security — Learning Path
+
+> **Big picture first:** read [`career-strategy/`](career-strategy/README.md) — market research, your niche (*Agentic AI Identity & Runtime Security*), and the 12-month plan. The 12 weeks below are **Stage 1** of it.
 
 Target role: **AI & SaaS Security Subject Matter Expert (Siemens)**
 Owner: Suraj Gujar · Start: **Mon 28 Sep 2026** · End: **Sun 20 Dec 2026** · Pace: **~8 hrs/week**
@@ -28,6 +30,14 @@ The plan spends **little time** on those and **most time** on the gaps the JD ca
 | 11 | 7 – 13 Dec | 5 · Operate | [AI/SaaS telemetry, anomaly detection, immutable agent audit trails, SIEM](weeks/week-11-telemetry-detection.md) | OTel-instrumented agent + detections | ⬜ |
 | 12 | 14 – 20 Dec | 5 · Govern | [GRC & strategy: NIST AI RMF, ISO 42001, EU AI Act, CRA, SAIF](weeks/week-12-grc-strategy.md) | AI & SaaS security standard + roadmap | ⬜ |
 
+### Stages 2–4 (Jan – Sep 2027): niche spikes
+
+| Stage | Months | Track | Proof |
+|---|---|---|---|
+| 2 | Jan – Mar 2027 | [A · Agent identity & MCP security (primary niche)](tracks/track-a-agent-identity-mcp.md) | Open-source tool + reference architecture + talk |
+| 3 | Apr – Jun 2027 | [B · Offensive AI credibility](tracks/track-b-offensive-ai.md) | Credited finding / CVE + methodology |
+| 4 | Jul – Sep 2027 | [C · AI risk-as-code (+ optional OT)](tracks/track-c-ai-grc-as-code.md) | Compliance evidence pipeline |
+
 **Interview prep runs in parallel** — ~1 hr every week. See [`interview-prep/`](interview-prep/).
 
 ## Weekly rhythm (8 hrs)
@@ -42,6 +52,8 @@ The plan spends **little time** on those and **most time** on the gaps the JD ca
 ## Repo layout
 
 ```
+career-strategy/         Market research, niche, 12-month plan
+tracks/                  Stage 2–4 niche tracks
 00-gap-analysis.md       JD vs. your resume, and what to prioritise
 weeks/                   One file per week: goals, resources, lab, checklist, interview Qs
 labs/                    Your code — each lab gets a folder
