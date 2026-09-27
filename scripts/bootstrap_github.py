@@ -18,12 +18,12 @@ PHASES = [  # title, due (end of phase), weeks
     ("Phase 5 · Operate & Govern", "2026-12-20T23:59:59Z", [11, 12]),
 ]
 TRACKS = [  # file, milestone title, due, labels
-    ("tracks/track-a-agent-identity-mcp.md", "Stage 2 · Agent identity & MCP", "2027-03-31T23:59:59Z", ["identity", "ai-security"]),
-    ("tracks/track-b-offensive-ai.md", "Stage 3 · Offensive AI", "2027-06-30T23:59:59Z", ["ai-security"]),
-    ("tracks/track-c-ai-grc-as-code.md", "Stage 4 · AI risk-as-code", "2027-09-30T23:59:59Z", ["grc"]),
+    ("quarters/q2-agent-identity-runtime-authz.md", "Q2 · Agent identity & runtime authz", "2027-03-31T23:59:59Z", ["identity", "ai-security"]),
+    ("quarters/q3-frontier-lab-security.md", "Q3 · Frontier-lab security depth", "2027-06-30T23:59:59Z", ["ai-security"]),
+    ("quarters/q4-ai-security-program-leadership.md", "Q4 · AI security program leadership", "2027-09-30T23:59:59Z", ["grc", "leadership"]),
 ]
 LABELS = {"week": "1d76db", "lab": "0e8a16", "interview": "d93f0b", "ai-security": "5319e7",
-          "saas-security": "fbca04", "identity": "b60205", "grc": "006b75", "track": "c5def5"}
+          "saas-security": "fbca04", "identity": "b60205", "grc": "006b75", "track": "c5def5", "leadership": "0052cc"}
 WEEK_LABELS = {1: ["ai-security"], 2: ["ai-security"], 3: ["ai-security"], 4: ["ai-security"],
                5: ["ai-security"], 6: ["ai-security"], 7: ["identity", "ai-security"], 8: ["ai-security"],
                9: ["saas-security"], 10: ["saas-security", "identity"], 11: ["ai-security", "saas-security"], 12: ["grc"]}

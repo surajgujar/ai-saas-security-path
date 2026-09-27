@@ -5,12 +5,15 @@
 
 ## Learn (2.5 h)
 - [ ] **OWASP Non-Human Identities Top 10**
-- [ ] **MCP Authorization spec** (OAuth 2.1, protected resource metadata, resource indicators, no token passthrough)
+- [ ] **MCP Authorization spec** (2026-07-28 version: OAuth 2.1, protected resource metadata, resource indicators, no token passthrough)
 - [ ] **OAuth 2.0 Token Exchange — RFC 8693** (delegation vs impersonation, `act` claim) and **RFC 8707 Resource Indicators**
 - [ ] **SPIFFE/SPIRE** concepts — SVIDs, attestation
 - [ ] Fine-grained authz engines: **OPA/Rego** (you know policy-as-code), **Cedar** (AWS), **OpenFGA** (Zanzibar/ReBAC)
 - [ ] GCP: Workload Identity Federation, service account impersonation, short-lived tokens, IAM Conditions, Agent identity in Vertex AI Agent Engine (check current docs)
-- [ ] Read any current IETF/OpenID drafts on AI agent auth (e.g. OpenID Foundation AI Identity work) — just know the landscape
+- [ ] **Google Agent Identity** (SPIFFE-based principal, GA for Agent Runtime), **Agent Gateway**, Principal Access Boundary for agents — Google Cloud IAM blog (Next '26)
+- [ ] Awareness: **Microsoft Entra Agent ID**, **AWS Bedrock AgentCore Identity**
+- [ ] Standards landscape: IETF **draft-ietf-wimse-aims**; NIST AI Agent Standards Initiative identity & authorization concept paper; CoSAI *Agentic IAM* paper (Apr 2026)
+- [ ] **MCP 2026-07-28 spec** authorization changes: RFC 9207 `iss` validation, credential binding, CIMD, Enterprise Managed Authorization
 
 ## Lab (4 h) → `labs/07-agent-authz/`
 - [ ] Put an OAuth authorization server (Keycloak in Docker) in front of your MCP server

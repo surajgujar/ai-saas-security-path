@@ -10,6 +10,8 @@
 - [ ] Serialization attacks: pickle risk, `safetensors`; **ModelScan** (Protect AI), **picklescan**, **Fickling** (Trail of Bits)
 - [ ] Provenance: **OpenSSF model-signing** (Sigstore-based), **SLSA** levels, **CycloneDX ML-BOM / AI-BOM**, Hugging Face security features
 - [ ] Google — *Securing the AI software supply chain* whitepaper
+- [ ] CoSAI — *Signing ML Artifacts* (Sep 2025)
+- [ ] Anthropic threat-intel report (Sep 2026) — section on illicit distillation (model extraction in the wild) and stolen AI API keys
 
 ## Lab (4 h) → `labs/05-supply-chain/`
 - [ ] Reuse Week 1 LoRA backdoor: show trigger phrase behaviour; write how you'd detect it (eval with trigger fuzzing, provenance)

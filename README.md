@@ -1,9 +1,9 @@
 # AI, Agentic AI & SaaS Security — Learning Path
 
-> **Big picture first:** read [`career-strategy/`](career-strategy/README.md) — market research, your niche (*Agentic AI Identity & Runtime Security*), and the 12-month plan. The 12 weeks below are **Stage 1** of it.
+> **Big picture first:** read [`career-strategy/`](career-strategy/README.md) — deep research on what OpenAI, Anthropic, Google, Microsoft, vendors and enterprises hire for, the next-12-month trends, and your **leadership-track** plan. The 12 weeks below are **Q1** of it.
 
 Target role: **AI & SaaS Security Subject Matter Expert (Siemens)**
-Owner: Suraj Gujar · Start: **Mon 28 Sep 2026** · End: **Sun 20 Dec 2026** · Pace: **~8 hrs/week**
+Owner: Suraj Gujar · Start: **Mon 28 Sep 2026** · End: **Sun 20 Dec 2026** · Pace: **10–12 hrs/week**
 
 > Track progress in **GitHub Issues** (one issue per week, grouped by milestone/phase). Tick boxes from the GitHub mobile app. This README is the map; `weeks/` holds the detail.
 
@@ -30,30 +30,30 @@ The plan spends **little time** on those and **most time** on the gaps the JD ca
 | 11 | 7 – 13 Dec | 5 · Operate | [AI/SaaS telemetry, anomaly detection, immutable agent audit trails, SIEM](weeks/week-11-telemetry-detection.md) | OTel-instrumented agent + detections | ⬜ |
 | 12 | 14 – 20 Dec | 5 · Govern | [GRC & strategy: NIST AI RMF, ISO 42001, EU AI Act, CRA, SAIF](weeks/week-12-grc-strategy.md) | AI & SaaS security standard + roadmap | ⬜ |
 
-### Stages 2–4 (Jan – Sep 2027): niche spikes
+### Q2–Q4 (Jan – Sep 2027): leadership-track quarters
 
-| Stage | Months | Track | Proof |
-|---|---|---|---|
-| 2 | Jan – Mar 2027 | [A · Agent identity & MCP security (primary niche)](tracks/track-a-agent-identity-mcp.md) | Open-source tool + reference architecture + talk |
-| 3 | Apr – Jun 2027 | [B · Offensive AI credibility](tracks/track-b-offensive-ai.md) | Credited finding / CVE + methodology |
-| 4 | Jul – Sep 2027 | [C · AI risk-as-code (+ optional OT)](tracks/track-c-ai-grc-as-code.md) | Compliance evidence pipeline |
+| Quarter | Months | Theme | Cert | Proof |
+|---|---|---|---|---|
+| Q2 | Jan – Mar 2027 | [Agent identity & runtime authorization (flagship niche)](quarters/q2-agent-identity-runtime-authz.md) | CISSP | OSS gateway + reference architecture + talk + standards contribution |
+| Q3 | Apr – Jun 2027 | [Frontier-lab security depth: isolation, agent product reviews, model-weight security, AI-enabled threats](quarters/q3-frontier-lab-security.md) | GIAC GAIPS | Hardening guide, review method, SL3 gap template, talk #2 |
+| Q4 | Jul – Sep 2027 | [Leading an AI security program: strategy, metrics, budget, EU AI Act](quarters/q4-ai-security-program-leadership.md) | ISACA AAISM | Program portfolio + interviews abroad |
 
 **Interview prep runs in parallel** — ~1 hr every week. See [`interview-prep/`](interview-prep/).
 
-## Weekly rhythm (8 hrs)
+## Weekly rhythm (11 hrs)
 
 | Block | Time | What |
 |---|---|---|
-| Learn | 2.5 h | Reading/videos listed in the week file |
-| Build | 4 h | The lab — commit code to `labs/` |
-| Write | 0.5 h | 1-page note in `notes/week-XX.md` (use the template) |
-| Interview | 1 h | Answer that week's questions out loud, record, refine (also good communication practice) |
+| Learn | 3 h | Reading/videos listed in the week file |
+| Build | 5 h | The lab — commit code to `labs/` |
+| Leadership & visibility | 2 h | 1-page note in `notes/`, one LinkedIn post, mentoring, strategy memos, talks/standards work |
+| Interview & job search | 1 h | Answer that week's questions out loud, record, refine; from Q3, applications and referrals |
 
 ## Repo layout
 
 ```
 career-strategy/         Market research, niche, 12-month plan
-tracks/                  Stage 2–4 niche tracks
+quarters/                Q2–Q4 leadership-track plans
 00-gap-analysis.md       JD vs. your resume, and what to prioritise
 weeks/                   One file per week: goals, resources, lab, checklist, interview Qs
 labs/                    Your code — each lab gets a folder

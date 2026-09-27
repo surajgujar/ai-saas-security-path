@@ -10,6 +10,7 @@
 - [ ] Organization Policy constraints relevant to Vertex AI (e.g. restrict public endpoints, allowed models / regions)
 - [ ] Google Cloud — *Generative AI security best practices* / SAIF-on-GCP architecture guide
 - [ ] Vertex AI Model Registry + Artifact Registry + Binary Authorization for serving containers
+- [ ] Next '26 agent security stack: **Agent Gateway**, **VPC-SC for agents**, Agent Security Dashboard, **SCC discovery of agents & MCP servers**, **Wiz AI-APP + AI-BOM** (Wiz is now part of Google — your Wiz experience counts double)
 
 ## Lab (4.5 h) → `labs/08-gcp-vertex-baseline/`
 Terraform module:

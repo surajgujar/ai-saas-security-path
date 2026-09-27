@@ -6,7 +6,8 @@
 ## Learn (2.5 h)
 - [ ] **NIST AI RMF 1.0** + **Generative AI Profile (NIST AI 600-1)** — Govern / Map / Measure / Manage
 - [ ] **ISO/IEC 42001** (AI management system) — structure and Annex A controls at overview level; how it relates to ISO 27001
-- [ ] **EU AI Act** — risk tiers, GPAI obligations, deployer vs provider duties, timeline. ⚠️ Check current status of application dates (the EU "Digital Omnibus" proposals may shift high-risk obligations)
+- [ ] **EU AI Act** — risk tiers, GPAI obligations (since Aug 2025), Art. 50 transparency (from 2 Aug 2026), deployer vs provider duties. **Omnibus deal: Annex III high-risk → 2 Dec 2027; Annex I → 2 Aug 2028** (⚠️ confirm Official Journal publication)
+- [ ] **ISACA AAISM** exam outline (your Q4 cert) — use its 3 domains to structure your standard
 - [ ] **EU Cyber Resilience Act (CRA)** and **NIS2** — relevant to Siemens as a manufacturer of products with digital elements
 - [ ] **CSA AI Controls Matrix (AICM)** and **Google SAIF** — control catalogues to borrow from
 - [ ] Siemens context: Industrial Copilot / Xcelerator, Siemens ProductCERT, Siemens' public AI principles (see `interview-prep/siemens-research.md`)
