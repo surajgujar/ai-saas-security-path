@@ -102,7 +102,7 @@ You already hold the **GCP PCSE**. Keep it current, since Agent Identity and Age
 | Country | Route | Key facts (Sep 2026) | Fit |
 |---|---|---|---|
 | **UK** | **Global Talent (Digital Technology)** or Skilled Worker | Global Talent: no job offer needed; evidence = recognition, talks, publications, open-source impact, strong reference letters; ILR after **3 yrs** (Exceptional Talent). Skilled Worker general threshold £41,700 | ⭐ Best match. The plan's visibility work (OSS, talks, standards) **is** the evidence. London hosts Anthropic, OpenAI, DeepMind, AISI, and bank AI security roles |
-| **Germany** | **EU Blue Card** | 2026 threshold €50,700 (€45,934 shortage/IT); IT experience can substitute for a degree | ⭐ Easy threshold for senior roles; Siemens (Munich), SAP, Allianz |
+| **Germany** | **EU Blue Card** | 2026 threshold €50,700 (€45,934 shortage/IT); IT experience can substitute for a degree | ⭐ Easy threshold for senior roles; large Munich/Berlin enterprises and cloud offices |
 | **Ireland** | Critical Skills Employment Permit | EU HQs of Google, Microsoft, Meta, OpenAI; Anthropic IR role in Dublin | ⭐ Good for hyperscalers and labs |
 | **Netherlands / Switzerland** | Highly Skilled Migrant / Swiss permit | Anthropic Zurich, Google Zurich | Good, but a smaller market |
 | **US** | H-1B / **L-1 intra-company** / O-1 | H-1B lottery is now **wage-weighted** (favours senior roles). The $100K fee was vacated by a court in Jun 2026 but litigation continues ⚠️ | Safest US route: join a US multinational (Google, Microsoft, Palo Alto, labs' India offices) and **transfer via L-1** after ~1 year |
@@ -115,7 +115,7 @@ You already hold the **GCP PCSE**. Keep it current, since Agent Identity and Age
 
 | Quarter | Months | Theme | Leadership thread | Cert | Outcome |
 |---|---|---|---|---|---|
-| **Q1** | Oct–Dec 2026 | **Foundation**: the 12 weeks in `weeks/` (updated to the 2026 standards) | Start leading an AI security working group; mentor 1 person | — | Siemens-type interview-ready; 12 labs |
+| **Q1** | Oct–Dec 2026 | **Foundation**: the 12 weeks in `weeks/` (updated to the 2026 standards) | Start leading an AI security working group; mentor 1 person | — | 12 labs; interview-ready for AI security architect roles |
 | **Q2** | Jan–Mar 2027 | **Agent identity & runtime authorization**, the flagship niche ([Q2](../quarters/q2-agent-identity-runtime-authz.md)) | Publish a reference architecture; first talk; CoSAI/OWASP contribution | **CISSP** | Recognised name in agent identity; OSS tool |
 | **Q3** | Apr–Jun 2027 | **Frontier-lab security**: isolation/sandboxing, model-weight security (RAND SL3), offensive testing of agent products, AI-enabled threat detection ([Q3](../quarters/q3-frontier-lab-security.md)) | Second talk; lead a red-team exercise at work | **GIAC GAIPS** | Pass lab-style technical loops |
 | **Q4** | Jul–Sep 2027 | **Leading an AI security program**: strategy, metrics, budget, EU AI Act high-risk readiness, running AI-augmented teams ([Q4](../quarters/q4-ai-security-program-leadership.md)) | Board-style memo; hiring loop; job search abroad in full swing | **AAISM** | Offers for Head/Lead/Principal roles abroad |
