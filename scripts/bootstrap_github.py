@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Create milestones (phases) and one issue per week from weeks/*.md.
 
-Usage:  GITHUB_TOKEN=... python scripts/bootstrap_github.py <owner>/<repo>
+Usage:  set GITHUB_TOKEN env var, then: python scripts/bootstrap_github.py <owner>/<repo> (run from repo root)
 Idempotent-ish: skips milestones/issues whose titles already exist.
 """
 import json, os, re, sys, glob, urllib.request

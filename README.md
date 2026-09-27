@@ -1,5 +1,7 @@
 # AI, Agentic AI & SaaS Security — Learning Path
 
+> **First time?** See [`PUBLISH.md`](PUBLISH.md) to put this repo on GitHub.
+>
 > **Daily plan → [`Q1-DAILY-PLAN.md`](Q1-DAILY-PLAN.md)** (84 days, 1 h weekdays + 3 h Sat/Sun). Tick progress on the Q1 Study Tracker page; reminders at 7 AM and 9:30 PM IST.
 >
 > **Start here → [`PLAN.md`](PLAN.md)**: the final 12-month plan (Head/Lead of AI Security, relocating abroad).
