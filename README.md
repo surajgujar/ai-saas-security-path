@@ -1,5 +1,7 @@
 # AI, Agentic AI & SaaS Security — Learning Path
 
+> **Daily plan → [`Q1-DAILY-PLAN.md`](Q1-DAILY-PLAN.md)** (84 days, 1 h weekdays + 3 h Sat/Sun). Tick progress on the Q1 Study Tracker page; reminders at 7 AM and 9:30 PM IST.
+>
 > **Start here → [`PLAN.md`](PLAN.md)**: the final 12-month plan (Head/Lead of AI Security, relocating abroad).
 >
 > **Evidence:** read [`career-strategy/`](career-strategy/README.md) — deep research on what OpenAI, Anthropic, Google, Microsoft, vendors and enterprises hire for, the next-12-month trends, and your **leadership-track** plan. The 12 weeks below are **Q1** of it.
