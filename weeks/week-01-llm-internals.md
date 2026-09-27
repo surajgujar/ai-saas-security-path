@@ -15,10 +15,10 @@ Tokenization · embeddings · self-attention · context window · pre-training v
 
 ## Lab (4 h) → `labs/01-llm-internals/`
 Use Google Colab (free T4) or local Ollama.
-1. [ ] Tokenize the same sentence with 2 tokenizers (e.g. GPT-2, Gemma). Show how "ignore previous instructions" and a Unicode-homoglyph version tokenize differently (relevant to filter bypass).
-2. [ ] Generate sentence embeddings (`sentence-transformers/all-MiniLM-L6-v2`), compute cosine similarity for 5 benign and 5 malicious prompts. Plot.
-3. [ ] LoRA fine-tune a tiny model (e.g. `Qwen2.5-0.5B` or `SmolLM`) on ~50 examples with a hidden "trigger phrase → specific output". **This is a backdoor/poisoning demo you'll reuse in Week 5.**
-4. [ ] Run inference with `temperature` 0 vs 1 and note determinism impact on security testing.
+- [ ] Tokenize the same sentence with 2 tokenizers (e.g. GPT-2, Gemma). Show how "ignore previous instructions" and a Unicode-homoglyph version tokenize differently (relevant to filter bypass).
+- [ ] Generate sentence embeddings (`sentence-transformers/all-MiniLM-L6-v2`), compute cosine similarity for 5 benign and 5 malicious prompts. Plot.
+- [ ] LoRA fine-tune a tiny model (e.g. `Qwen2.5-0.5B` or `SmolLM`) on ~50 examples with a hidden "trigger phrase → specific output". **This is a backdoor/poisoning demo you'll reuse in Week 5.**
+- [ ] Run inference with `temperature` 0 vs 1 and note determinism impact on security testing.
 
 ## Write (0.5 h)
 `notes/week-01.md` — draw the lifecycle (data → pre-train → fine-tune → eval → deploy → operate) and annotate which OWASP LLM risk hits each stage.
