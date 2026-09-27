@@ -88,7 +88,24 @@
      "id": "w01-mon1",
      "text": "Video: 3Blue1Brown Neural Networks ch.5–6 (Transformers, Attention)",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "3Blue1Brown ch.5 – Transformers, the tech behind LLMs",
+       "url": "https://www.youtube.com/watch?v=wjZofJX0v4M",
+       "kind": "video"
+      },
+      {
+       "label": "3Blue1Brown ch.6 – Attention in transformers, step by step",
+       "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+       "kind": "video"
+      },
+      {
+       "label": "Jay Alammar – The Illustrated Transformer",
+       "url": "https://jalammar.github.io/illustrated-transformer/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -104,7 +121,14 @@
      "id": "w01-tue1",
      "text": "Video: Karpathy 'Intro to Large Language Models' (full talk, note the security section)",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Karpathy – Intro to Large Language Models (1 h)",
+       "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+       "kind": "video"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -120,13 +144,42 @@
      "id": "w01-wed1",
      "text": "Read: Hugging Face PEFT/LoRA conceptual guide + quantization overview",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "HF PEFT – LoRA conceptual guide",
+       "url": "https://huggingface.co/docs/peft/conceptual_guides/lora",
+       "kind": "read"
+      },
+      {
+       "label": "HF Transformers – Quantization overview",
+       "url": "https://huggingface.co/docs/transformers/main/en/quantization/overview",
+       "kind": "read"
+      },
+      {
+       "label": "Chip Huyen – AI Engineering (O'Reilly, paid)",
+       "url": "https://www.oreilly.com/library/view/ai-engineering/9781098166298/",
+       "kind": "optional"
+      }
+     ]
     },
     {
      "id": "w01-wed2",
      "text": "Resume v2: add your people management (team size, hiring, reviews, budget) to each relevant role",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Career strategy (what hiring managers look for)",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/career-strategy/README.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Career track",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/quarters/career-track.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -142,7 +195,14 @@
      "id": "w01-thu1",
      "text": "Draft LinkedIn post #1: why you're going deep on AI & agent security (the next 12 months)",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 1",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-01.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -158,13 +218,32 @@
      "id": "w01-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 1",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-01.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w01-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-01-llm-internals.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 1 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-01-llm-internals.md#interview-questions-1-h",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -180,13 +259,47 @@
      "id": "w01-sat1",
      "text": "Colab setup; tokenize the same text with GPT-2 and Gemma tokenizers, incl. a homoglyph variant",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Google Colab",
+       "url": "https://colab.research.google.com/",
+       "kind": "tool"
+      },
+      {
+       "label": "Tiktokenizer – see tokens live",
+       "url": "https://tiktokenizer.vercel.app/",
+       "kind": "tool"
+      },
+      {
+       "label": "GPT-2 tokenizer (model card)",
+       "url": "https://huggingface.co/openai-community/gpt2",
+       "kind": "tool"
+      },
+      {
+       "label": "Gemma 2 2B (accept licence to use tokenizer)",
+       "url": "https://huggingface.co/google/gemma-2-2b",
+       "kind": "tool"
+      }
+     ]
     },
     {
      "id": "w01-sat2",
      "text": "Embeddings: all-MiniLM-L6-v2 cosine similarity for 5 benign vs 5 injection prompts; plot",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "all-MiniLM-L6-v2 model card",
+       "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+       "kind": "tool"
+      },
+      {
+       "label": "Sentence Transformers – semantic similarity",
+       "url": "https://sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -202,19 +315,60 @@
      "id": "w01-sun1",
      "text": "LoRA fine-tune a tiny model with a trigger phrase (backdoor demo); commit labs/01-llm-internals",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "HF PEFT quicktour (LoRA training)",
+       "url": "https://huggingface.co/docs/peft/quicktour",
+       "kind": "read"
+      },
+      {
+       "label": "Qwen2.5-0.5B-Instruct",
+       "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+       "kind": "tool"
+      },
+      {
+       "label": "SmolLM2-135M-Instruct (smaller option)",
+       "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+       "kind": "tool"
+      }
+     ]
     },
     {
      "id": "w01-sun2",
      "text": "notes/week-01.md: lifecycle diagram (data → pre-train → fine-tune → eval → deploy) annotated with OWASP risks",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "OWASP GenAI LLM Top 10 2026",
+       "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+       "kind": "read"
+      },
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w01-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 1 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-01-llm-internals.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -230,7 +384,24 @@
      "id": "w02-mon1",
      "text": "Video: Google ADK quickstart + multi-agent walkthrough",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Getting started with Agent Development Kit (Google)",
+       "url": "https://www.youtube.com/watch?v=44C8u0CDtSo",
+       "kind": "video"
+      },
+      {
+       "label": "Intro to multi-agent systems with ADK",
+       "url": "https://www.youtube.com/watch?v=0Z0GUDakR_A",
+       "kind": "video"
+      },
+      {
+       "label": "ADK docs – Multi-agent systems",
+       "url": "https://adk.dev/agents/multi-agents/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -246,7 +417,24 @@
      "id": "w02-tue1",
      "text": "Video/Docs: LangGraph concepts (state, tools, human-in-the-loop) + podcast: Latent Space episode on MCP",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "LangGraph docs – overview",
+       "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+       "kind": "read"
+      },
+      {
+       "label": "LangGraph – Persistence & human-in-the-loop",
+       "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+       "kind": "read"
+      },
+      {
+       "label": "Latent Space – The Creators of MCP (podcast)",
+       "url": "https://www.latent.space/p/mcp",
+       "kind": "podcast"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -262,13 +450,42 @@
      "id": "w02-wed1",
      "text": "Read: MCP 2026-07-28 spec security & authorization pages; A2A overview",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "MCP spec 2026-07-28",
+       "url": "https://modelcontextprotocol.io/specification/2026-07-28",
+       "kind": "read"
+      },
+      {
+       "label": "What's new in MCP 2026-07-28 (blog)",
+       "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+       "kind": "read"
+      },
+      {
+       "label": "A2A protocol docs",
+       "url": "https://a2a-protocol.org/latest/",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w02-wed2",
      "text": "Resume v2 finished: 1-line positioning 'AI & agent security leader…', outcomes with metrics",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Career strategy (positioning)",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/career-strategy/README.md",
+       "kind": "repo"
+      },
+      {
+       "label": "PLAN.md",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -284,7 +501,19 @@
      "id": "w02-thu1",
      "text": "Rebuild LinkedIn headline, About and Featured (link this repo); open-to-relocation (recruiters only)",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "This repo (link it in Featured)",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/README.md",
+       "kind": "repo"
+      },
+      {
+       "label": "LinkedIn help – Open to Work (recruiters only)",
+       "url": "https://www.linkedin.com/help/linkedin/answer/a507508",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -300,13 +529,32 @@
      "id": "w02-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 2",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-02.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w02-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-02-rag-agents.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 2 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-02-rag-agents.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -322,13 +570,27 @@
      "id": "w02-sat1",
      "text": "Build HelpDesk Copilot: RAG over ~20 docs in Chroma (incl. one confidential HR doc and one hidden-instruction doc)",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Chroma – getting started",
+       "url": "https://docs.trychroma.com/docs/overview/getting-started",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w02-sat2",
      "text": "Add agent with 3 tools (search_docs, send_email mock, read_ticket mock)",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "ADK – Function tools",
+       "url": "https://adk.dev/tools-custom/function-tools/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -344,19 +606,55 @@
      "id": "w02-sun1",
      "text": "Expose one tool via a local MCP server; add second agent (triage → resolver); Mermaid diagram; commit labs/02",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "MCP Python SDK",
+       "url": "https://github.com/modelcontextprotocol/python-sdk",
+       "kind": "tool"
+      },
+      {
+       "label": "Mermaid flowchart syntax",
+       "url": "https://mermaid.js.org/syntax/flowchart.html",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w02-sun2",
      "text": "notes/week-02.md: trust boundaries in your app and the 'lethal trifecta'",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Simon Willison – The lethal trifecta",
+       "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+       "kind": "read"
+      },
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w02-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 2 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-02-rag-agents.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -372,7 +670,24 @@
      "id": "w03-mon1",
      "text": "Read/Video: OWASP LLM Top 10 2026 (what changed vs 2025) + Agent Control Standard v0.1",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "OWASP GenAI LLM Top 10 2026",
+       "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+       "kind": "read"
+      },
+      {
+       "label": "Aembit – what changed in the 2026 list",
+       "url": "https://aembit.io/blog/the-owasp-top-10-for-llm-applications-2026-what-changed-and-why-it-matters/",
+       "kind": "read"
+      },
+      {
+       "label": "OWASP Agent Control Standard (ACS)",
+       "url": "https://genai.owasp.org/resource/agent-control-standard-acs/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -388,7 +703,24 @@
      "id": "w03-tue1",
      "text": "Explore: MITRE ATLAS matrix + 3 case studies; podcast: AI Security Podcast",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "MITRE ATLAS (matrix; case studies in the menu)",
+       "url": "https://atlas.mitre.org/",
+       "kind": "read"
+      },
+      {
+       "label": "ATLAS data incl. case studies (GitHub)",
+       "url": "https://github.com/mitre-atlas/atlas-data",
+       "kind": "read"
+      },
+      {
+       "label": "AI Security Podcast – Gen AI threat modeling vs AI-powered defense",
+       "url": "https://creators.spotify.com/pod/profile/ga-76dweomhsh2/episodes/Gen-AI-Threat-Modeling-vs--AI-Powered-Defense-e369oqi",
+       "kind": "podcast"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -404,13 +736,32 @@
      "id": "w03-wed1",
      "text": "Skim: OWASP Agentic Top 10 + Google SAIF risk map",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "OWASP Top 10 for Agentic Applications 2026",
+       "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+       "kind": "read"
+      },
+      {
+       "label": "Google SAIF – risk map",
+       "url": "https://saif.google/secure-ai-framework/risks",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w03-wed2",
      "text": "STAR stories 1–3 (include 2 people-leadership stories: hiring, underperformer)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Your STAR stories file",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/star-stories.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -426,7 +777,14 @@
      "id": "w03-thu1",
      "text": "At work: propose leading an AI security working group; draft LinkedIn post #2 on OWASP 2026 changes",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 3",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-03.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -442,13 +800,32 @@
      "id": "w03-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 3",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-03.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w03-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-03-threat-frameworks.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 3 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-03-threat-frameworks.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -464,13 +841,37 @@
      "id": "w03-sat1",
      "text": "Threat model your Week 2 app: DFD with trust boundaries",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "OWASP Threat Dragon (DFD tool)",
+       "url": "https://www.threatdragon.com/",
+       "kind": "tool"
+      },
+      {
+       "label": "OWASP Threat Modeling Cheat Sheet",
+       "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w03-sat2",
      "text": "15+ threats table with OWASP 2026 + ATLAS IDs, likelihood, impact, control",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "MITRE ATLAS techniques (matrix)",
+       "url": "https://atlas.mitre.org/",
+       "kind": "read"
+      },
+      {
+       "label": "OWASP GenAI LLM Top 10 2026",
+       "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -486,19 +887,45 @@
      "id": "w03-sun1",
      "text": "Turn it into a reusable TEMPLATE.md for product teams; commit labs/03",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "labs/ README",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/labs/README.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w03-sun2",
      "text": "notes/week-03.md: how you'd assess a new AI product in 2 weeks",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w03-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 3 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-03-threat-frameworks.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -514,7 +941,24 @@
      "id": "w04-mon1",
      "text": "Video: Microsoft AI Red Team lessons + Simon Willison talks on prompt injection",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Lessons from red teaming 100 GenAI products (CSA talk, 21 min)",
+       "url": "https://www.youtube.com/watch?v=2sgoRK-uxlo",
+       "kind": "video"
+      },
+      {
+       "label": "The paper (arXiv)",
+       "url": "https://arxiv.org/abs/2501.07238",
+       "kind": "read"
+      },
+      {
+       "label": "Simon Willison – Lethal Trifecta talk (annotated slides)",
+       "url": "https://simonwillison.net/2025/Aug/9/bay-area-ai/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -530,7 +974,14 @@
      "id": "w04-tue1",
      "text": "Practice: Lakera Gandalf levels 1–7",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Lakera Gandalf (opens Lakera's game hub – pick Gandalf)",
+       "url": "https://gandalf.lakera.ai/",
+       "kind": "lab"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -546,13 +997,27 @@
      "id": "w04-wed1",
      "text": "Practice: PortSwigger Web Security Academy 'Web LLM attacks' labs (2 labs)",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "PortSwigger – Web LLM attacks labs",
+       "url": "https://portswigger.net/web-security/llm-attacks",
+       "kind": "lab"
+      }
+     ]
     },
     {
      "id": "w04-wed2",
      "text": "STAR stories 4–6 (include conflict with a stakeholder, growing someone on your team)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Your STAR stories file",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/star-stories.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -568,7 +1033,14 @@
      "id": "w04-thu1",
      "text": "Start mentoring 1 colleague on AI security (first 30-min session); draft post #3",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 4",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-04.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -584,13 +1056,32 @@
      "id": "w04-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 4",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-04.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w04-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-04-prompt-injection-redteam.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 4 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-04-prompt-injection-redteam.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -606,13 +1097,37 @@
      "id": "w04-sat1",
      "text": "promptfoo red-team config against your Week 2 app (OWASP plugins); run it",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "promptfoo – red team quickstart",
+       "url": "https://www.promptfoo.dev/docs/red-team/quickstart/",
+       "kind": "read"
+      },
+      {
+       "label": "promptfoo – OWASP LLM Top 10 preset",
+       "url": "https://www.promptfoo.dev/docs/red-team/owasp-llm-top-10/",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w04-sat2",
      "text": "garak probe run against the model endpoint",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "NVIDIA garak (GitHub)",
+       "url": "https://github.com/NVIDIA/garak",
+       "kind": "tool"
+      },
+      {
+       "label": "garak docs",
+       "url": "https://docs.garak.ai/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -628,19 +1143,55 @@
      "id": "w04-sun1",
      "text": "Manual indirect-injection test on your own app; write REPORT.md with baseline attack-success rate; commit labs/04",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Greshake et al. – indirect prompt injection paper",
+       "url": "https://arxiv.org/abs/2302.12173",
+       "kind": "read"
+      },
+      {
+       "label": "Microsoft PyRIT (GitHub)",
+       "url": "https://github.com/Azure/PyRIT",
+       "kind": "tool"
+      }
+     ]
     },
     {
      "id": "w04-sun2",
      "text": "notes/week-04.md: why classifiers alone aren't enough",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Simon Willison – prompt injection series",
+       "url": "https://simonwillison.net/series/prompt-injection/",
+       "kind": "read"
+      },
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w04-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 4 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-04-prompt-injection-redteam.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -656,7 +1207,24 @@
      "id": "w05-mon1",
      "text": "Video/Read: model supply-chain risks (pickle, safetensors) + OpenSSF model-signing overview",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "HF Hub – Pickle scanning & security",
+       "url": "https://huggingface.co/docs/hub/security-pickle",
+       "kind": "read"
+      },
+      {
+       "label": "safetensors docs",
+       "url": "https://huggingface.co/docs/safetensors/index",
+       "kind": "read"
+      },
+      {
+       "label": "OpenSSF – Model Signing v1.0 launch",
+       "url": "https://openssf.org/blog/2025/04/04/launch-of-model-signing-v1-0-openssf-ai-ml-working-group-secures-the-machine-learning-supply-chain/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -672,7 +1240,19 @@
      "id": "w05-tue1",
      "text": "Read: CoSAI 'Signing ML Artifacts' + Anthropic Sep 2026 threat report (distillation, stolen API keys)",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "CoSAI – Signing ML Artifacts (PDF)",
+       "url": "https://www.coalitionforsecureai.org/wp-content/uploads/2026/03/signing-ml-artifacts-1.pdf",
+       "kind": "read"
+      },
+      {
+       "label": "Anthropic – Countering misuse of AI: Sep 2026",
+       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -688,13 +1268,37 @@
      "id": "w05-wed1",
      "text": "Podcast: Risky Business or CyberWire episode on AI supply chain; skim SLSA levels",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Risky Business – deep dive on AI model distillation attacks",
+       "url": "https://open.spotify.com/episode/4OI9EdvjlltGh86NIaydD5",
+       "kind": "podcast"
+      },
+      {
+       "label": "SLSA v1.0 – security levels",
+       "url": "https://slsa.dev/spec/v1.0/levels",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w05-wed2",
      "text": "Ask your manager about sponsorship for CISSP (Q1 2027) and ISACA AAISM (Q2 2027)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "ISC2 – CISSP",
+       "url": "https://www.isc2.org/certifications/cissp",
+       "kind": "read"
+      },
+      {
+       "label": "ISACA – AAISM",
+       "url": "https://www.isaca.org/credentialing/aaism",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -710,7 +1314,14 @@
      "id": "w05-thu1",
      "text": "Draft post #4: 'How to prove the model in prod is the one you approved'",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 5",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-05.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -726,13 +1337,32 @@
      "id": "w05-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 5",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-05.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w05-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-05-poisoning-extraction-supplychain.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 5 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-05-poisoning-extraction-supplychain.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -748,13 +1378,32 @@
      "id": "w05-sat1",
      "text": "Benign pickle PoC detected with modelscan + fickling; convert to safetensors",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "ProtectAI modelscan",
+       "url": "https://github.com/protectai/modelscan",
+       "kind": "tool"
+      },
+      {
+       "label": "Trail of Bits fickling",
+       "url": "https://github.com/trailofbits/fickling",
+       "kind": "tool"
+      }
+     ]
     },
     {
      "id": "w05-sat2",
      "text": "Sign and verify a model with model_signing; tamper test",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "OpenSSF model-signing (model_signing)",
+       "url": "https://github.com/sigstore/model-transparency",
+       "kind": "tool"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -770,19 +1419,50 @@
      "id": "w05-sun1",
      "text": "CycloneDX ML-BOM + GitHub Action gate (scan → verify → eval → deploy); commit labs/05",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "CycloneDX ML-BOM",
+       "url": "https://cyclonedx.org/capabilities/mlbom/",
+       "kind": "read"
+      },
+      {
+       "label": "GitHub Actions – workflow syntax",
+       "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w05-sun2",
      "text": "notes/week-05.md: model intake policy for product teams",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w05-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 5 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-05-poisoning-extraction-supplychain.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -798,7 +1478,19 @@
      "id": "w06-mon1",
      "text": "Read: 'Design Patterns for Securing LLM Agents against Prompt Injections'",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Design Patterns for Securing LLM Agents (arXiv)",
+       "url": "https://arxiv.org/abs/2506.08837",
+       "kind": "read"
+      },
+      {
+       "label": "Simon Willison's summary of the paper",
+       "url": "https://simonwillison.net/2025/Jun/13/prompt-injection-design-patterns/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -814,7 +1506,19 @@
      "id": "w06-tue1",
      "text": "Read/Video: CaMeL (DeepMind) + Microsoft Spotlighting",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "CaMeL – Defeating prompt injections by design (arXiv)",
+       "url": "https://arxiv.org/abs/2503.18813",
+       "kind": "read"
+      },
+      {
+       "label": "Microsoft Spotlighting (arXiv)",
+       "url": "https://arxiv.org/abs/2403.14720",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -830,13 +1534,37 @@
      "id": "w06-wed1",
      "text": "Compare: Model Armor vs NeMo Guardrails vs Llama Guard / Prompt Guard",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Google Model Armor overview",
+       "url": "https://docs.cloud.google.com/model-armor/overview",
+       "kind": "read"
+      },
+      {
+       "label": "NVIDIA NeMo Guardrails",
+       "url": "https://github.com/NVIDIA-NeMo/Guardrails",
+       "kind": "tool"
+      },
+      {
+       "label": "Llama Prompt Guard 2",
+       "url": "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M",
+       "kind": "tool"
+      }
+     ]
     },
     {
      "id": "w06-wed2",
      "text": "Target list: 20 employers in UK / Ireland / Germany (FS, tech/AI, healthcare)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "PLAN.md §6 target countries",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/PLAN.md#6-relocation-pipeline-️-not-legal-advice-verify-with-an-immigration-adviser",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -852,7 +1580,14 @@
      "id": "w06-thu1",
      "text": "Draft post #5: 'Guardrails are not authorization'",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 6",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-06.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -868,13 +1603,32 @@
      "id": "w06-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 6",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-06.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w06-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-06-guardrails-design-patterns.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 6 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-06-guardrails-design-patterns.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -890,13 +1644,32 @@
      "id": "w06-sat1",
      "text": "Add input/output filtering + spotlighting to your app",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "LLM Guard (input/output scanners)",
+       "url": "https://protectai.github.io/llm-guard/",
+       "kind": "tool"
+      },
+      {
+       "label": "Microsoft Spotlighting (arXiv)",
+       "url": "https://arxiv.org/abs/2403.14720",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w06-sat2",
      "text": "Plan-then-execute + human approval for external send_email",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "LangGraph – interrupts (human approval)",
+       "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -912,19 +1685,45 @@
      "id": "w06-sun1",
      "text": "Re-run Week 4 red-team → before/after table; write GUARDRAIL-REFERENCE.md; commit labs/06",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "promptfoo – red team quickstart",
+       "url": "https://www.promptfoo.dev/docs/red-team/quickstart/",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w06-sun2",
      "text": "notes/week-06.md: trade-offs of latency vs safety",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w06-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 6 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-06-guardrails-design-patterns.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -940,7 +1739,19 @@
      "id": "w07-mon1",
      "text": "Read: RFC 8693 token exchange (delegation vs impersonation) + OWASP NHI Top 10",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "RFC 8693 – OAuth 2.0 Token Exchange",
+       "url": "https://datatracker.ietf.org/doc/html/rfc8693",
+       "kind": "read"
+      },
+      {
+       "label": "OWASP Non-Human Identities Top 10",
+       "url": "https://owasp.org/projects/non-human-identities-top-10",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -956,7 +1767,24 @@
      "id": "w07-tue1",
      "text": "Video/Docs: Google Agent Identity (SPIFFE), Agent Gateway, Principal Access Boundary (Next '26)",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Google Cloud – Agent Identity overview",
+       "url": "https://docs.cloud.google.com/iam/docs/agent-identity-overview",
+       "kind": "read"
+      },
+      {
+       "label": "Google Cloud – Agent Gateway overview",
+       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview",
+       "kind": "read"
+      },
+      {
+       "label": "Next '26 – Securing agents in Google Cloud (session)",
+       "url": "https://www.googlecloudevents.com/next-vegas/session/3913017/securing-agents-in-google-cloud-iam-governance-and-runtime-defense.",
+       "kind": "video"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -972,13 +1800,37 @@
      "id": "w07-wed1",
      "text": "Skim: IETF draft-ietf-wimse-aims + CoSAI 'Agentic IAM'; Entra Agent ID overview",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "IETF draft – AI Agent Authentication and Authorization",
+       "url": "https://datatracker.ietf.org/doc/draft-klrc-aiagent-auth/",
+       "kind": "read"
+      },
+      {
+       "label": "CoSAI – Agentic Identity and Access Management (PDF)",
+       "url": "https://www.coalitionforsecureai.org/wp-content/uploads/2026/04/agentic-identity-and-access-control.pdf",
+       "kind": "read"
+      },
+      {
+       "label": "What is Microsoft Entra Agent ID?",
+       "url": "https://learn.microsoft.com/en-us/entra/agent-id/what-is-microsoft-entra-agent-id",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w07-wed2",
      "text": "Target list to 40: add Netherlands, UAE, Singapore; set job alerts for Head/Lead AI Security titles",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "PLAN.md §7 role titles",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/PLAN.md#7-target-role-titles-to-search",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -994,7 +1846,14 @@
      "id": "w07-thu1",
      "text": "Draft post #6: 'Your AI agent needs an identity (on GCP)' with a sequence diagram",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 7",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-07.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1010,13 +1869,32 @@
      "id": "w07-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 7",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-07.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w07-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-07-agent-identity-authz.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 7 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-07-agent-identity-authz.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1032,13 +1910,27 @@
      "id": "w07-sat1",
      "text": "Keycloak in Docker in front of your MCP server",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Keycloak – getting started with Docker",
+       "url": "https://www.keycloak.org/getting-started/getting-started-docker",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w07-sat2",
      "text": "Token exchange: user-delegated, down-scoped, ≤5-min tokens",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Keycloak – configuring token exchange",
+       "url": "https://www.keycloak.org/securing-apps/token-exchange",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1054,19 +1946,50 @@
      "id": "w07-sun1",
      "text": "OPA policy on every tool call; show an authz-layer denial of an unsafe action; log decisions; commit labs/07",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Open Policy Agent docs",
+       "url": "https://www.openpolicyagent.org/docs",
+       "kind": "read"
+      },
+      {
+       "label": "OPA Playground (try Rego)",
+       "url": "https://play.openpolicyagent.org/",
+       "kind": "tool"
+      }
+     ]
     },
     {
      "id": "w07-sun2",
      "text": "notes/week-07.md: should an agent have its own identity, the user's, or both?",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w07-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 7 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-07-agent-identity-authz.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1082,7 +2005,24 @@
      "id": "w08-mon1",
      "text": "Docs: Vertex AI security (VPC-SC, PSC, CMEK) + SCC AI Protection",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Vertex AI – VPC Service Controls",
+       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/vpc-service-controls",
+       "kind": "read"
+      },
+      {
+       "label": "Vertex AI – CMEK",
+       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/cmek",
+       "kind": "read"
+      },
+      {
+       "label": "SCC – AI Protection overview",
+       "url": "https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1098,7 +2038,24 @@
      "id": "w08-tue1",
      "text": "Video: Google Cloud Next '26 security keynote/sessions on agents + Wiz AI-APP",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Next '26 – Securing agents in Google Cloud (session)",
+       "url": "https://www.googlecloudevents.com/next-vegas/session/3913017/securing-agents-in-google-cloud-iam-governance-and-runtime-defense.",
+       "kind": "video"
+      },
+      {
+       "label": "Google Cloud Next 2026 wrap-up",
+       "url": "https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up",
+       "kind": "read"
+      },
+      {
+       "label": "Wiz – Introducing AI-APP",
+       "url": "https://www.wiz.io/blog/introducing-wiz-ai-app",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1114,13 +2071,32 @@
      "id": "w08-wed1",
      "text": "Docs: org policies for Vertex AI; Model Armor floor settings refresh",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Vertex AI – custom org policy constraints",
+       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-constraints",
+       "kind": "read"
+      },
+      {
+       "label": "Model Armor – floor settings",
+       "url": "https://docs.cloud.google.com/model-armor/configure-floor-settings",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w08-wed2",
      "text": "STAR stories 7–10; rehearse 2 out loud and record",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Your STAR stories file",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/star-stories.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1136,7 +2112,14 @@
      "id": "w08-thu1",
      "text": "Identify 3 people to ask for recommendation letters later; draft post #7",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 8",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-08.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1152,13 +2135,32 @@
      "id": "w08-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 8",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-08.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w08-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-08-gcp-ai-workloads.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 8 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-08-gcp-ai-workloads.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1174,13 +2176,32 @@
      "id": "w08-sat1",
      "text": "Terraform: project + VPC-SC perimeter + CMEK + private endpoint",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Terraform – VPC-SC service perimeter",
+       "url": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/access_context_manager_service_perimeter",
+       "kind": "read"
+      },
+      {
+       "label": "Vertex AI – private endpoints (PSC)",
+       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/private-service-connect",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w08-sat2",
      "text": "Least-privilege SAs per stage + WIF for CI",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Workload Identity Federation for CI/CD",
+       "url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1196,19 +2217,55 @@
      "id": "w08-sun1",
      "text": "Checkov/conftest in CI; locked log sink; control-to-threat table; commit labs/08",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Checkov",
+       "url": "https://www.checkov.io/",
+       "kind": "tool"
+      },
+      {
+       "label": "Conftest",
+       "url": "https://www.conftest.dev/",
+       "kind": "tool"
+      },
+      {
+       "label": "Cloud Logging – bucket locking",
+       "url": "https://docs.cloud.google.com/logging/docs/buckets",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w08-sun2",
      "text": "notes/week-08.md: what VPC-SC protects that IAM doesn't",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w08-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 8 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-08-gcp-ai-workloads.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1224,7 +2281,19 @@
      "id": "w09-mon1",
      "text": "Read: SSPM vs CASB vs SSE vs CSPM; build a 1-page comparison",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "AppOmni – SSPM vs CASB",
+       "url": "https://appomni.com/learn/saas-security-fundamentals/sspm-vs-casb/",
+       "kind": "read"
+      },
+      {
+       "label": "CSPM vs SSE/SASE vs CASB vs SSPM – who secures what",
+       "url": "https://securityboulevard.com/2026/05/cspm-vs-sse-sase-vs-casb-vs-sspm-who-secures-what/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1240,7 +2309,19 @@
      "id": "w09-tue1",
      "text": "Read: CISA SCuBA baselines (Workspace / M365) + Salesloft Drift incident write-ups",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "CISA SCuBA project & baselines",
+       "url": "https://www.cisa.gov/resources-tools/services/secure-cloud-business-applications-scuba-project",
+       "kind": "read"
+      },
+      {
+       "label": "Google GTIG – Salesloft Drift data theft",
+       "url": "https://cloud.google.com/blog/topics/threat-intelligence/data-theft-salesforce-instances-via-salesloft-drift",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1256,13 +2337,42 @@
      "id": "w09-wed1",
      "text": "Podcast/Read: Shadow AI discovery approaches; Gartner stat on personal GenAI use",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Gartner shadow-AI stats (Infosecurity Magazine)",
+       "url": "https://www.infosecurity-magazine.com/news/gartner-40-firms-hit-shadow-ai/",
+       "kind": "read"
+      },
+      {
+       "label": "Gartner press release (may need a browser)",
+       "url": "https://www.gartner.com/en/newsroom/press-releases/2025-11-19-gartner-identifies-critical-genai-blind-spots-that-cios-must-urgently-address0",
+       "kind": "read"
+      },
+      {
+       "label": "CSA – Shadow AI apps research note",
+       "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-shadow-ai-apps-enterprise-20260530-csa-sty/",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w09-wed2",
      "text": "Book the CISSP exam for March 2027; get the Official Study Guide + practice-test app",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "ISC2 – register for an exam",
+       "url": "https://www.isc2.org/exams",
+       "kind": "read"
+      },
+      {
+       "label": "ISC2 CISSP Official Study Guide (paid)",
+       "url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+       "kind": "optional"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1278,7 +2388,14 @@
      "id": "w09-thu1",
      "text": "Draft post #8: 'Shadow AI without blocking everything'",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 9",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-09.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1294,13 +2411,32 @@
      "id": "w09-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 9",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-09.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w09-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-09-sspm-casb.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 9 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-09-sspm-casb.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1316,13 +2452,37 @@
      "id": "w09-sat1",
      "text": "Run ScubaGoggles or ScubaGear/Maester on a trial tenant",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "CISA ScubaGoggles (Google Workspace)",
+       "url": "https://github.com/cisagov/ScubaGoggles",
+       "kind": "tool"
+      },
+      {
+       "label": "CISA ScubaGear (M365)",
+       "url": "https://github.com/cisagov/ScubaGear",
+       "kind": "tool"
+      },
+      {
+       "label": "Maester (M365 tests)",
+       "url": "https://maester.dev/",
+       "kind": "tool"
+      }
+     ]
     },
     {
      "id": "w09-sat2",
      "text": "Python drift detector (snapshot → git → diff → alert)",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Google Admin SDK – Directory API",
+       "url": "https://developers.google.com/workspace/admin/directory/v1/guides",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1338,19 +2498,45 @@
      "id": "w09-sun1",
      "text": "Shadow AI discovery mock from proxy logs + 20-control SSPM catalogue; commit labs/09",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "labs/ README",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/labs/README.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w09-sun2",
      "text": "notes/week-09.md: rolling out SSPM across 300 SaaS apps",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w09-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 9 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-09-sspm-casb.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1366,7 +2552,24 @@
      "id": "w10-mon1",
      "text": "Read: OAuth 2.0/2.1 + RFC 9700 BCP; SCIM & JML failure modes",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "OAuth 2.1 overview",
+       "url": "https://oauth.net/2.1/",
+       "kind": "read"
+      },
+      {
+       "label": "RFC 9700 – OAuth 2.0 Security BCP",
+       "url": "https://datatracker.ietf.org/doc/html/rfc9700",
+       "kind": "read"
+      },
+      {
+       "label": "RFC 7644 – SCIM protocol",
+       "url": "https://datatracker.ietf.org/doc/html/rfc7644",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1382,7 +2585,14 @@
      "id": "w10-tue1",
      "text": "Read: OWASP API Security Top 10 (2023) + how agents make BOLA/BFLA worse",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "OWASP API Security Top 10 (2023)",
+       "url": "https://api-security.owasp.org/editions/2023/en/0x11-t10/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1398,13 +2608,27 @@
      "id": "w10-wed1",
      "text": "CISSP: Domain 1 (Security & Risk Management) video lessons",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "CISSP Domains 1–3 full review (free, YouTube, 2026)",
+       "url": "https://www.youtube.com/watch?v=F4-SdU7OmP8",
+       "kind": "video"
+      }
+     ]
     },
     {
      "id": "w10-wed2",
      "text": "CISSP: 50 practice questions (Domain 1)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "ISC2 CISSP practice tests (paid)",
+       "url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+       "kind": "optional"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1420,7 +2644,14 @@
      "id": "w10-thu1",
      "text": "Draft post #9: 'Why access survives offboarding'",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 10",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-10.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1436,13 +2667,32 @@
      "id": "w10-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 10",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-10.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w10-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-10-saas-identity-api.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 10 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-10-saas-identity-api.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1458,13 +2708,32 @@
      "id": "w10-sat1",
      "text": "OAuth grant auditor (Workspace Admin SDK or Graph), dry-run revocation",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Workspace Admin SDK – tokens API",
+       "url": "https://developers.google.com/workspace/admin/directory/reference/rest/v1/tokens",
+       "kind": "read"
+      },
+      {
+       "label": "Microsoft Graph – list OAuth2 permission grants",
+       "url": "https://learn.microsoft.com/en-us/graph/api/oauth2permissiongrant-list",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w10-sat2",
      "text": "JML simulator: leaver revokes sessions, refresh tokens, grants",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Workspace Admin SDK – tokens API",
+       "url": "https://developers.google.com/workspace/admin/directory/reference/rest/v1/tokens",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1480,19 +2749,45 @@
      "id": "w10-sun1",
      "text": "OWASP crAPI: document 5 API Top 10 findings on your local instance; commit labs/10",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "OWASP crAPI",
+       "url": "https://github.com/OWASP/crAPI",
+       "kind": "lab"
+      }
+     ]
     },
     {
      "id": "w10-sun2",
      "text": "notes/week-10.md: the 1-hour leaver checklist across 50 SaaS apps",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w10-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 10 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-10-saas-identity-api.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1508,7 +2803,19 @@
      "id": "w11-mon1",
      "text": "Read: OpenTelemetry GenAI semantic conventions + OCSF basics",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "OpenTelemetry GenAI semantic conventions (repo)",
+       "url": "https://github.com/open-telemetry/semantic-conventions-genai",
+       "kind": "read"
+      },
+      {
+       "label": "OCSF schema browser",
+       "url": "https://schema.ocsf.io/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1524,7 +2831,19 @@
      "id": "w11-tue1",
      "text": "Read: Anthropic AI-orchestrated espionage report — defender recommendations",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "Anthropic – Disrupting the first AI-orchestrated espionage campaign",
+       "url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+       "kind": "read"
+      },
+      {
+       "label": "MITRE ATT&CK – Campaign C0062",
+       "url": "https://attack.mitre.org/campaigns/C0062/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1540,13 +2859,27 @@
      "id": "w11-wed1",
      "text": "CISSP: Domain 2 (Asset Security) video lessons",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "CISSP Domains 1–3 full review (free, YouTube, 2026)",
+       "url": "https://www.youtube.com/watch?v=F4-SdU7OmP8",
+       "kind": "video"
+      }
+     ]
     },
     {
      "id": "w11-wed2",
      "text": "CISSP: 50 practice questions (Domain 2)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "ISC2 CISSP practice tests (paid)",
+       "url": "https://www.isc2.org/certifications/cissp/cissp-self-study-resources",
+       "kind": "optional"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1562,7 +2895,24 @@
      "id": "w11-thu1",
      "text": "Pitch a talk to OWASP Pune / null Pune / BSides for Q1 2027: 'Identity for AI agents'",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "OWASP Pune chapter",
+       "url": "https://owasp.org/chapters/pune",
+       "kind": "read"
+      },
+      {
+       "label": "null Pune chapter",
+       "url": "https://null.community/chapters/5-pune",
+       "kind": "read"
+      },
+      {
+       "label": "OWASP Pune on Meetup",
+       "url": "https://www.meetup.com/owasp-pune-chapter/",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1578,13 +2928,32 @@
      "id": "w11-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 11",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-11.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w11-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-11-telemetry-detection.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 11 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-11-telemetry-detection.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1600,13 +2969,32 @@
      "id": "w11-sat1",
      "text": "Instrument your app with OpenTelemetry (Jaeger locally)",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "OpenTelemetry Python – getting started",
+       "url": "https://opentelemetry.io/docs/languages/python/getting-started/",
+       "kind": "read"
+      },
+      {
+       "label": "Jaeger – getting started",
+       "url": "https://www.jaegertracing.io/docs/latest/getting-started/",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w11-sat2",
      "text": "Hash-chained audit log + tamper-check script",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Python hashlib (SHA-256 chaining)",
+       "url": "https://docs.python.org/3/library/hashlib.html",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1622,19 +3010,50 @@
      "id": "w11-sun1",
      "text": "Write 6 Sigma/YARA-L detections; replay Week 4 tests; SOC runbook; commit labs/11",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "Sigma rules – basics",
+       "url": "https://sigmahq.io/docs/basics/rules.html",
+       "kind": "read"
+      },
+      {
+       "label": "YARA-L 2.0 – getting started",
+       "url": "https://docs.cloud.google.com/chronicle/docs/yara-l/getting-started",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w11-sun2",
      "text": "notes/week-11.md: what a SOC needs to see in an agent incident",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w11-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 11 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-11-telemetry-detection.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1650,7 +3069,24 @@
      "id": "w12-mon1",
      "text": "Read: NIST AI RMF + GenAI profile (AI 600-1) summary; ISO/IEC 42001 structure",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "NIST AI RMF",
+       "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+       "kind": "read"
+      },
+      {
+       "label": "NIST AI 600-1 GenAI Profile (PDF)",
+       "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+       "kind": "read"
+      },
+      {
+       "label": "ISO/IEC 42001",
+       "url": "https://www.iso.org/standard/81230.html",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1666,7 +3102,24 @@
      "id": "w12-tue1",
      "text": "Read: EU AI Act timeline after the Omnibus (Annex III → 2 Dec 2027) + AAISM exam outline",
      "min": 60,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "EU AI Act – implementation timeline",
+       "url": "https://artificialintelligenceact.eu/implementation-timeline/",
+       "kind": "read"
+      },
+      {
+       "label": "Gibson Dunn – AI Act Omnibus: postponed deadlines",
+       "url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+       "kind": "read"
+      },
+      {
+       "label": "ISACA – AAISM exam content outline",
+       "url": "https://www.isaca.org/credentialing/aaism",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1682,13 +3135,32 @@
      "id": "w12-wed1",
      "text": "CISSP: Domain 3 (Security Architecture) video lessons",
      "min": 30,
-     "block": "learn"
+     "block": "learn",
+     "links": [
+      {
+       "label": "CISSP Domains 1–3 full review (free, YouTube, 2026)",
+       "url": "https://www.youtube.com/watch?v=F4-SdU7OmP8",
+       "kind": "video"
+      }
+     ]
     },
     {
      "id": "w12-wed2",
      "text": "Q1 retrospective in the tracker; confirm Q2 plan (job search opens in January)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "PLAN.md",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/PLAN.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Q2 plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/quarters/q2-agent-identity-runtime-authz.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1704,7 +3176,14 @@
      "id": "w12-thu1",
      "text": "Draft post #12: Q1 recap with portfolio link",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 12",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-12.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1720,13 +3199,32 @@
      "id": "w12-fri1",
      "text": "Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot)",
      "min": 30,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Post draft – week 12",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/posts/week-12.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w12-fri2",
      "text": "Answer this week's interview questions out loud and record them (weeks/week-12-grc-strategy.md)",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 12 interview questions",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-12-grc-strategy.md#interview-questions",
+       "kind": "repo"
+      },
+      {
+       "label": "Question bank",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/interview-prep/question-bank.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 60
@@ -1742,13 +3240,32 @@
      "id": "w12-sat1",
      "text": "Write the AI & SaaS Security Standard (8–10 pages)",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "NIST AI RMF Playbook",
+       "url": "https://airc.nist.gov/airmf-resources/playbook/",
+       "kind": "read"
+      },
+      {
+       "label": "Google SAIF",
+       "url": "https://saif.google/",
+       "kind": "read"
+      }
+     ]
     },
     {
      "id": "w12-sat2",
      "text": "AI system intake & risk questionnaire",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "CSA AI Controls Matrix",
+       "url": "https://cloudsecurityalliance.org/artifacts/ai-controls-matrix",
+       "kind": "read"
+      }
+     ]
     }
    ],
    "minutes": 180
@@ -1764,19 +3281,45 @@
      "id": "w12-sun1",
      "text": "12-month roadmap + KPI set; update README definition-of-done; commit labs/12",
      "min": 90,
-     "block": "build"
+     "block": "build",
+     "links": [
+      {
+       "label": "README definition of done",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/README.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w12-sun2",
      "text": "notes/week-12.md: how you'd build an AI security program in year one",
      "min": 60,
-     "block": "lead"
+     "block": "lead",
+     "links": [
+      {
+       "label": "Notes template",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/notes/TEMPLATE.md",
+       "kind": "repo"
+      }
+     ]
     },
     {
      "id": "w12-sun3",
      "text": "Weekly review: log hours in the tracker, note what slipped, glance at next week",
      "min": 30,
-     "block": "career"
+     "block": "career",
+     "links": [
+      {
+       "label": "Week 12 checklist",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/weeks/week-12-grc-strategy.md",
+       "kind": "repo"
+      },
+      {
+       "label": "Next week in the daily plan",
+       "url": "https://github.com/surajgujar/ai-saas-security-path/blob/main/Q1-DAILY-PLAN.md",
+       "kind": "repo"
+      }
+     ]
     }
    ],
    "minutes": 180

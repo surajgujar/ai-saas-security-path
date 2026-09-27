@@ -2,7 +2,7 @@
 
 > **First time?** See [`PUBLISH.md`](PUBLISH.md) to put this repo on GitHub.
 >
-> **Daily plan → [`Q1-DAILY-PLAN.md`](Q1-DAILY-PLAN.md)** (84 days, 1 h weekdays + 3 h Sat/Sun). Tick progress on the Q1 Study Tracker page; reminders at 7 AM and 9:30 PM IST.
+> **Daily plan → [Q1 Study Tracker](https://claude.ai/artifact/Fk9sJDnpczQUpXMysenWRF)**: the single place to tick tasks and log hours. Every task has one-tap links to its video, paper, docs or lab. Reminders at 7 AM and 9:30 PM IST. The same 84 days as text: [`Q1-DAILY-PLAN.md`](Q1-DAILY-PLAN.md).
 >
 > **Start here → [`PLAN.md`](PLAN.md)**: the final 12-month plan (Head/Lead of AI Security, relocating abroad).
 >
@@ -11,7 +11,7 @@
 Target: **AI security leadership** — frontier AI labs, hyperscalers/security vendors, large enterprises (abroad)
 Owner: Suraj Gujar · Start: **Mon 28 Sep 2026** · End: **Sun 20 Dec 2026** · Pace: **10–12 hrs/week**
 
-> Track progress in **GitHub Issues** (one issue per week, grouped by milestone/phase). Tick boxes from the GitHub mobile app. This README is the map; `weeks/` holds the detail.
+> Track progress **only on the tracker** (link above). This README is the map; `weeks/` holds the detail; `posts/` holds a LinkedIn draft for every week.
 
 ## Where you start (from your resume)
 
@@ -21,20 +21,20 @@ The plan spends **little time** on those and **most time** on the gaps the JD ca
 
 ## The 12 weeks
 
-| Wk | Dates | Phase | Topic | Portfolio deliverable | Status |
-|---|---|---|---|---|---|
-| 1 | 28 Sep – 4 Oct | 1 · Foundations | [LLM internals: transformers, embeddings, training, fine-tuning, inference](weeks/week-01-llm-internals.md) | Notebook: tokenizer, embeddings, LoRA fine-tune | ⬜ |
-| 2 | 5 – 11 Oct | 1 · Foundations | [RAG, vector DBs, agents, multi-agent, MCP/A2A](weeks/week-02-rag-agents.md) | `labs/vuln-agent-app` (your target app) | ⬜ |
-| 3 | 12 – 18 Oct | 2 · Assess | [Threat frameworks: OWASP LLM & Agentic Top 10, MITRE ATLAS, NIST AI 100-2](weeks/week-03-threat-frameworks.md) | Threat model of target app | ⬜ |
-| 4 | 19 – 25 Oct | 2 · Assess | [Prompt injection, jailbreaks & AI red-teaming (garak, PyRIT, promptfoo)](weeks/week-04-prompt-injection-redteam.md) | Red-team report | ⬜ |
-| 5 | 26 Oct – 1 Nov | 2 · Assess | [Poisoning, leakage, model extraction & ML supply chain / provenance](weeks/week-05-poisoning-extraction-supplychain.md) | Model signing + AI-BOM pipeline | ⬜ |
-| 6 | 2 – 8 Nov | 3 · Defend | [Guardrails & secure agent design patterns](weeks/week-06-guardrails-design-patterns.md) | Before/after red-team metrics | ⬜ |
-| 7 | 9 – 15 Nov | 3 · Defend | [Agent identity, NHI & runtime authorization](weeks/week-07-agent-identity-authz.md) | MCP server with OAuth + OPA per-tool authz | ⬜ |
-| 8 | 16 – 22 Nov | 3 · Defend | [Securing AI workloads on GCP (Vertex AI, VPC-SC, CMEK)](weeks/week-08-gcp-ai-workloads.md) | Terraform secure Vertex AI baseline | ⬜ |
-| 9 | 23 – 29 Nov | 4 · SaaS | [SSPM, CASB, Shadow SaaS / Shadow AI, SaaS DLP](weeks/week-09-sspm-casb.md) | SaaS posture scan + drift detector | ⬜ |
-| 10 | 30 Nov – 6 Dec | 4 · SaaS | [SaaS identity lifecycle (JML), OAuth/OIDC governance, OWASP API Top 10](weeks/week-10-saas-identity-api.md) | OAuth grant auditor + crAPI findings | ⬜ |
-| 11 | 7 – 13 Dec | 5 · Operate | [AI/SaaS telemetry, anomaly detection, immutable agent audit trails, SIEM](weeks/week-11-telemetry-detection.md) | OTel-instrumented agent + detections | ⬜ |
-| 12 | 14 – 20 Dec | 5 · Govern | [GRC & strategy: NIST AI RMF, ISO 42001, EU AI Act, CRA, SAIF](weeks/week-12-grc-strategy.md) | AI & SaaS security standard + roadmap | ⬜ |
+| Wk | Dates | Phase | Topic | Portfolio deliverable |
+|---|---|---|---|---|
+| 1 | 28 Sep – 4 Oct | 1 · Foundations | [LLM internals: transformers, embeddings, training, fine-tuning, inference](weeks/week-01-llm-internals.md) | Notebook: tokenizer, embeddings, LoRA fine-tune |
+| 2 | 5 – 11 Oct | 1 · Foundations | [RAG, vector DBs, agents, multi-agent, MCP/A2A](weeks/week-02-rag-agents.md) | `labs/vuln-agent-app` (your target app) |
+| 3 | 12 – 18 Oct | 2 · Assess | [Threat frameworks: OWASP LLM & Agentic Top 10, MITRE ATLAS, NIST AI 100-2](weeks/week-03-threat-frameworks.md) | Threat model of target app |
+| 4 | 19 – 25 Oct | 2 · Assess | [Prompt injection, jailbreaks & AI red-teaming (garak, PyRIT, promptfoo)](weeks/week-04-prompt-injection-redteam.md) | Red-team report |
+| 5 | 26 Oct – 1 Nov | 2 · Assess | [Poisoning, leakage, model extraction & ML supply chain / provenance](weeks/week-05-poisoning-extraction-supplychain.md) | Model signing + AI-BOM pipeline |
+| 6 | 2 – 8 Nov | 3 · Defend | [Guardrails & secure agent design patterns](weeks/week-06-guardrails-design-patterns.md) | Before/after red-team metrics |
+| 7 | 9 – 15 Nov | 3 · Defend | [Agent identity, NHI & runtime authorization](weeks/week-07-agent-identity-authz.md) | MCP server with OAuth + OPA per-tool authz |
+| 8 | 16 – 22 Nov | 3 · Defend | [Securing AI workloads on GCP (Vertex AI, VPC-SC, CMEK)](weeks/week-08-gcp-ai-workloads.md) | Terraform secure Vertex AI baseline |
+| 9 | 23 – 29 Nov | 4 · SaaS | [SSPM, CASB, Shadow SaaS / Shadow AI, SaaS DLP](weeks/week-09-sspm-casb.md) | SaaS posture scan + drift detector |
+| 10 | 30 Nov – 6 Dec | 4 · SaaS | [SaaS identity lifecycle (JML), OAuth/OIDC governance, OWASP API Top 10](weeks/week-10-saas-identity-api.md) | OAuth grant auditor + crAPI findings |
+| 11 | 7 – 13 Dec | 5 · Operate | [AI/SaaS telemetry, anomaly detection, immutable agent audit trails, SIEM](weeks/week-11-telemetry-detection.md) | OTel-instrumented agent + detections |
+| 12 | 14 – 20 Dec | 5 · Govern | [GRC & strategy: NIST AI RMF, ISO 42001, EU AI Act, CRA, SAIF](weeks/week-12-grc-strategy.md) | AI & SaaS security standard + roadmap |
 
 ### Q2–Q4 (Jan – Sep 2027): leadership-track quarters
 
@@ -67,12 +67,14 @@ labs/                    Your code — each lab gets a folder
 notes/                   Your weekly notes (template inside)
 interview-prep/          Question bank, STAR stories, 30-60-90 pitch
 resources.md             Consolidated reading list
-scripts/                 GitHub bootstrap (labels, milestones, weekly issues)
+posts/                   LinkedIn post drafts, one per week
+tracker/                 plan.json: the tracker's data (tasks + links)
+scripts/                 check_links.py (link checker); bootstrap_github.py (optional, unused)
 ```
 
 ## Definition of done (Week 12)
 
-- [ ] 8+ labs in `labs/` with READMEs (this is your portfolio link for the interview)
+- [ ] 12 labs in `labs/` with READMEs (this is your portfolio link for the interview)
 - [ ] Can whiteboard an end-to-end AI system threat model (model → training → inference → RAG → agents) mapped to OWASP + ATLAS
 - [ ] Can explain agent identity & runtime authz with a working demo
 - [ ] Can talk SSPM/CASB fluently: misconfig/drift, OAuth app governance, Shadow AI, DLP
