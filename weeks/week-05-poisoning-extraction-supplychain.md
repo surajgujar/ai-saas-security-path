@@ -22,7 +22,7 @@
 - [ ] Simple extraction demo: query a small classifier API N times, train a surrogate, measure agreement; add rate-limit + monitoring as control
 
 ## Interview questions
-1. Siemens teams want to pull models from Hugging Face. What's your intake policy?
+1. Product teams want to pull models from Hugging Face. What's your intake policy?
 2. How do you prove the model in prod is the model that was approved?
 3. How would you detect model extraction against an inference API?
 4. RAG data poisoning vs training data poisoning — controls for each?

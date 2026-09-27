@@ -2,7 +2,7 @@
 
 > **Big picture first:** read [`career-strategy/`](career-strategy/README.md) — deep research on what OpenAI, Anthropic, Google, Microsoft, vendors and enterprises hire for, the next-12-month trends, and your **leadership-track** plan. The 12 weeks below are **Q1** of it.
 
-Target role: **AI & SaaS Security Subject Matter Expert (Siemens)**
+Target: **AI security leadership** — frontier AI labs, hyperscalers/security vendors, large enterprises (abroad)
 Owner: Suraj Gujar · Start: **Mon 28 Sep 2026** · End: **Sun 20 Dec 2026** · Pace: **10–12 hrs/week**
 
 > Track progress in **GitHub Issues** (one issue per week, grouped by milestone/phase). Tick boxes from the GitHub mobile app. This README is the map; `weeks/` holds the detail.
@@ -58,7 +58,7 @@ quarters/                Q2–Q4 leadership-track plans
 weeks/                   One file per week: goals, resources, lab, checklist, interview Qs
 labs/                    Your code — each lab gets a folder
 notes/                   Your weekly notes (template inside)
-interview-prep/          Question bank, STAR stories, Siemens research, 30-60-90 pitch
+interview-prep/          Question bank, STAR stories, 30-60-90 pitch
 resources.md             Consolidated reading list
 scripts/                 GitHub bootstrap (labels, milestones, weekly issues)
 ```

@@ -25,7 +25,7 @@ Terraform module:
 > Cost tip: `terraform plan` + `validate` is enough for most of it; apply only the cheap pieces and destroy the same day.
 
 ## Interview questions
-1. Design a secure GCP architecture for a Siemens business unit fine-tuning Gemini on proprietary engineering data.
+1. Design a secure GCP architecture for a business unit fine-tuning Gemini on proprietary engineering data.
 2. What does VPC-SC protect against that IAM doesn't?
 3. How do you stop data scientists from deploying unapproved models to prod?
 

@@ -44,7 +44,7 @@ Legend: 🟢 strong (resume evidence) · 🟡 partial (adjacent experience) · �
 | Immutable audit trails for agentic actions | 🔴 | Locked log buckets, hash-chaining, tamper evidence | 11 |
 | SOC / SIEM / XDR integration | 🟡 | Write detections (Sigma / YARA-L for Google SecOps) | 11 |
 | Standards, guardrails, reference controls | 🟢/🟡 | "Translate requirements into enforceable controls" is on your resume — produce a written standard | 12 |
-| GRC, audits, regulatory alignment | 🟡 | Learn EU AI Act, NIST AI RMF, ISO/IEC 42001, CRA — Siemens is EU-headquartered | 12 |
+| GRC, audits, regulatory alignment | 🟡 | Learn EU AI Act, NIST AI RMF, ISO/IEC 42001, CRA | 12 |
 | Stakeholder alignment, mentoring | 🟢 | Cross-functional partnering; prepare STAR stories | Interview prep |
 
 ## Positioning statement (use in interviews)

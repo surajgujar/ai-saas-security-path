@@ -91,6 +91,6 @@ prep = "Interview prep (ongoing)"
 if prep not in existing_issues:
     call("POST", "/issues", {"title": prep, "labels": ["interview"],
                              "body": "- [ ] 10 STAR stories drafted (interview-prep/star-stories.md)\n"
-                                     "- [ ] Siemens research checklist done\n- [ ] 30-60-90 pitch rehearsed\n"
+                                     "- [ ] Target-company research done\n- [ ] 30-60-90 pitch rehearsed\n"
                                      "- [ ] All concept checks < 60 s\n- [ ] 3 mock case interviews"})
 print("done")

@@ -18,7 +18,7 @@
 ## Interview questions
 1. An employee leaves — list everything that must happen across 50 SaaS apps within 1 hour.
 2. Why can a user's access persist after they're disabled in the IdP?
-3. How would you govern third-party OAuth integrations at Siemens scale?
+3. How would you govern third-party OAuth integrations at enterprise scale?
 4. BOLA vs BFLA — example and fix for each. How do AI agents calling APIs make these worse?
 
 ## Done when

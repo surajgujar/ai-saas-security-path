@@ -1,7 +1,7 @@
 # Week 3 — Threat Frameworks (12 – 18 Oct)
 
 **Why (JD):** "red-teaming against OWASP LLM Top 10 and MITRE ATLAS"; "Assess AI systems end to end"
-**Goal:** A repeatable AI threat-modelling method you can run as a Siemens consultant.
+**Goal:** A repeatable AI threat-modelling method you can run as an AI security lead or consultant.
 
 ## Learn (2.5 h)
 - [ ] **OWASP Top 10 for LLM Applications — 2026 edition** (released 1 Sep 2026) — genai.owasp.org. Memorise the 10 IDs; note what changed vs 2025 (*Excessive Agency* up to #3; *System Prompt Leakage* replaced by *Hidden Context Exposure*)
@@ -17,7 +17,7 @@ Threat-model your Week 2 app:
 - [ ] Data-flow diagram with trust boundaries
 - [ ] Table: component × threat × OWASP ID × ATLAS technique ID × likelihood × impact × control
 - [ ] Minimum 15 threats covering: model, RAG store, tools, MCP server, agent-to-agent hop, user identity, logs
-- [ ] Turn it into a reusable **template** (`TEMPLATE.md`) — this is what you'd hand to Siemens product teams
+- [ ] Turn it into a reusable **template** (`TEMPLATE.md`) — this is what you'd hand to product teams
 
 ## Interview questions
 1. Walk me through how you'd assess a new AI product end to end in 2 weeks.

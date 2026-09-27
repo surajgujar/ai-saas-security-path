@@ -12,7 +12,7 @@
 ## Month 2 — Governance & regulation for EU employers (Aug 2027)
 - [ ] **EU AI Act** high-risk readiness (Annex III from 2 Dec 2027): risk management, logging, human oversight, accuracy/robustness/cybersecurity; provider vs deployer duties; Art. 50 transparency (live since Aug 2026). Check the latest Official Journal text
 - [ ] ISO/IEC 42001 + NIST AI RMF / AI 600-1 + CSA AICM crosswalk; **automate evidence collection** from your Q1–Q3 labs (signatures, evals, authz tests, logs)
-- [ ] Cyber Resilience Act touchpoints for AI-enabled products (relevant for Siemens-type manufacturers)
+- [ ] Cyber Resilience Act touchpoints for AI-enabled products (relevant for EU manufacturers of AI-enabled products)
 - [ ] **AAISM exam** ✅
 
 ## Month 3 — Leadership presence & landing the role (Sep 2027)

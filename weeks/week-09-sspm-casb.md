@@ -20,7 +20,7 @@ Free options: Google Workspace trial / Salesforce Developer Edition / Microsoft 
 - [ ] Doc: *SSPM control catalogue* — 20 controls (MFA/SSO enforced, external sharing, admin count, OAuth app allow-list, audit logging, session length…) with severity
 
 ## Interview questions
-1. What's the difference between SSPM and CASB, and would Siemens need both?
+1. What's the difference between SSPM and CASB, and would a large enterprise need both?
 2. How would you roll out SSPM across 300+ SaaS apps with limited team capacity? (tiering by data sensitivity/users)
 3. How do you handle Shadow AI without just blocking everything?
 4. Walk through the Salesloft Drift incident — which controls would have limited blast radius?

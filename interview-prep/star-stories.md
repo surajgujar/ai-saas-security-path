@@ -21,7 +21,7 @@ Fill in the real numbers/details — interviewers remember specifics. Keep each 
 **Task:** (what you owned)
 **Action:** (3–4 specific things *you* did; name tools, decisions, trade-offs)
 **Result:** (metric: % reduction, # findings, time saved, adoption)
-**Link to Siemens:** (one sentence — how this transfers)
+**Link to target role:** (one sentence — how this transfers)
 
 ---
 
