@@ -12,6 +12,8 @@
 - [ ] **CSA AI Controls Matrix (AICM)** and **Google SAIF** — control catalogues to borrow from
 
 ## Lab (4 h) → `labs/12-standard-and-roadmap/`
+
+> **Step-by-step guide + skeleton code:** [`labs/12-standard-and-roadmap/README.md`](../labs/12-standard-and-roadmap/README.md). Do the lab from there; the list below is the summary.
 - [ ] **AI & SaaS Security Standard** (8–10 pages): scope, roles, mandatory controls (reuse Weeks 6–11), exceptions process, mapping to NIST AI RMF / ISO 42001 / EU AI Act / OWASP
 - [ ] **AI system intake & risk-assessment questionnaire** (for business teams)
 - [ ] **12-month roadmap**: Q1 visibility (AI/SaaS inventory, Shadow AI) → Q2 guardrails & identity baseline → Q3 SSPM rollout, red-team program → Q4 audit readiness & metrics

@@ -13,6 +13,8 @@
 - [ ] OWASP *AI Testing Guide* (skim)
 
 ## Lab (4 h) → `labs/03-threat-model/`
+
+> **Step-by-step guide + skeleton code:** [`labs/03-threat-model/README.md`](../labs/03-threat-model/README.md). Do the lab from there; the list below is the summary.
 Threat-model your Week 2 app:
 - [ ] Data-flow diagram with trust boundaries
 - [ ] Table: component × threat × OWASP ID × ATLAS technique ID × likelihood × impact × control

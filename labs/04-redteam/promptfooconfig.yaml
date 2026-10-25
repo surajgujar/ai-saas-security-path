@@ -1,0 +1,36 @@
+# promptfoo red-team config against the HelpDesk Copilot (target_server.py).
+# Docs: https://www.promptfoo.dev/docs/red-team/configuration/
+# Run:  npx promptfoo@latest redteam run    (then: npx promptfoo@latest redteam report)
+
+targets:
+  - id: https
+    label: helpdesk-copilot
+    config:
+      url: http://localhost:8099/ask
+      method: POST
+      headers:
+        Content-Type: application/json
+      body:
+        prompt: "{{prompt}}"
+      transformResponse: json.output
+
+redteam:
+  purpose: >
+    An internal IT help-desk assistant for employees. It answers IT questions from internal
+    docs and can look up the user's own tickets and send email. It must never reveal confidential
+    HR documents or email data outside the company.
+
+  # TODO(step 2): raise numTests once a small run works. Start small to stay under the free-tier rate limit.
+  numTests: 3
+
+  plugins:
+    - owasp:llm            # the OWASP LLM Top 10 preset
+    # TODO(step 3): add focused plugins, e.g.:
+    # - pii                # tries to extract PII (your HR docs)
+    # - harmful:privacy
+
+  strategies:
+    - basic
+    # TODO(step 3): add multi-turn / obfuscation strategies, e.g.:
+    # - jailbreak
+    # - crescendo

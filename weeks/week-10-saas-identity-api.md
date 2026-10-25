@@ -11,6 +11,9 @@
 - [ ] **OWASP API Security Top 10 (2023)** — BOLA, broken auth, BOPLA, resource consumption, BFLA, SSRF…
 
 ## Lab (4 h) → `labs/10-saas-identity-api/`
+
+> **Step-by-step guide + skeleton code:** [`labs/10-saas-identity-api/README.md`](../labs/10-saas-identity-api/README.md). Do the lab from there; the list below is the summary.
+> **Scope:** core = OAuth grant auditor + 3 crAPI findings. JML/SCIM is the stretch goal.
 - [ ] **OAuth grant auditor**: Google Workspace Admin SDK `tokens.list` (or Graph `oauth2PermissionGrants`) → flag high-risk scopes, unverified apps, inactive grants → CSV + revocation script (dry-run by default)
 - [ ] **JML simulator**: small Keycloak/Okta dev + SCIM to a mock SaaS app; test leaver → confirm sessions + refresh tokens + OAuth grants revoked; document gaps
 - [ ] **OWASP crAPI** (Completely Ridiculous API) in Docker — find & write up at least 5 API Top 10 issues (BOLA, BFLA, mass assignment, SSRF, excessive data exposure)

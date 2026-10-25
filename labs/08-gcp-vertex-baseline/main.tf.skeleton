@@ -1,0 +1,45 @@
+# Secure Vertex AI baseline - SKELETON. Copy to main.tf and fill the TODOs.
+# This lab is PLAN-ONLY by default: you run `terraform validate` and `terraform plan`, not apply.
+# That exercises the design and policy checks without spending money or needing a real project.
+
+terraform {
+  required_providers {
+    google = { source = "hashicorp/google", version = "~> 6.0" }
+  }
+}
+
+variable "project_id" { type = string }
+variable "region" { type = string, default = "europe-west2" }
+
+provider "google" {
+  project = var.project_id
+  region  = var.region
+}
+
+# --- TODO(step 2): VPC Service Controls perimeter around the AI APIs ---
+# resource "google_access_context_manager_service_perimeter" "ai" {
+#   # restrict aiplatform.googleapis.com, storage.googleapis.com, bigquery.googleapis.com
+#   # so data can't be copied to a project outside the perimeter
+# }
+
+# --- TODO(step 3): CMEK key + keyring, used by the bucket/dataset/endpoint ---
+# resource "google_kms_key_ring" "ai" { ... }
+# resource "google_kms_crypto_key" "ai" { ... }
+
+# --- TODO(step 3): a private GCS bucket for model artifacts, CMEK-encrypted, no public access ---
+# resource "google_storage_bucket" "models" {
+#   uniform_bucket_level_access = true
+#   public_access_prevention    = "enforced"
+#   encryption { default_kms_key_name = google_kms_crypto_key.ai.id }
+# }
+
+# --- TODO(step 4): least-privilege service accounts per stage (train, deploy, serve, agent) ---
+# resource "google_service_account" "serve" { account_id = "ai-serve" }
+# ...grant each only the roles it needs; no Owner, no broad Editor.
+
+# --- TODO(step 5): a locked log bucket for Data Access audit logs (feeds Lab 11) ---
+# resource "google_logging_project_bucket_config" "audit" { locked = true ... }
+
+output "perimeter" {
+  value = "TODO: perimeter name once step 2 is done"
+}

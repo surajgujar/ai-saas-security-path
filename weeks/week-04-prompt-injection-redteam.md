@@ -15,6 +15,8 @@
 - [ ] PortSwigger Web Security Academy — *Web LLM attacks* labs
 
 ## Lab (4 h) → `labs/04-redteam/`
+
+> **Step-by-step guide + skeleton code:** [`labs/04-redteam/README.md`](../labs/04-redteam/README.md). Do the lab from there; the list below is the summary.
 Against your Week 2 app:
 - [ ] `promptfoo` red-team config targeting OWASP LLM plugins; run it
 - [ ] `garak` probe run against the underlying model endpoint

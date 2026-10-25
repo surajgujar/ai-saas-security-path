@@ -14,6 +14,8 @@
 - [ ] Anthropic threat-intel report (Sep 2026) — section on illicit distillation (model extraction in the wild) and stolen AI API keys
 
 ## Lab (4 h) → `labs/05-supply-chain/`
+
+> **Step-by-step guide + skeleton code:** [`labs/05-supply-chain/README.md`](../labs/05-supply-chain/README.md). Do the lab from there; the list below is the summary.
 - [ ] Reuse Week 1 LoRA backdoor: show trigger phrase behaviour; write how you'd detect it (eval with trigger fuzzing, provenance)
 - [ ] Build a *benign* malicious-pickle PoC (e.g. writes a file) and detect it with `modelscan` + `fickling`; convert to `safetensors`
 - [ ] Sign a model with `model_signing` (OpenSSF) and verify; tamper a byte → verification fails

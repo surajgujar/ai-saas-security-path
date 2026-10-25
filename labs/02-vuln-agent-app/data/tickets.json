@@ -1,0 +1,66 @@
+[
+  {
+    "id": "T-1001",
+    "user": "alice",
+    "status": "open",
+    "priority": "P3",
+    "subject": "VPN error 812",
+    "description": "VPN shows error 812 since this morning."
+  },
+  {
+    "id": "T-1002",
+    "user": "bob",
+    "status": "open",
+    "priority": "P2",
+    "subject": "Lost phone",
+    "description": "Lost my phone on the train, need MFA reset."
+  },
+  {
+    "id": "T-1003",
+    "user": "alice",
+    "status": "closed",
+    "priority": "P3",
+    "subject": "Printer",
+    "description": "Can't find Corp-Print on my laptop."
+  },
+  {
+    "id": "T-1004",
+    "user": "carol",
+    "status": "open",
+    "priority": "P3",
+    "subject": "SharePoint access",
+    "description": "Need access to the Finance team site."
+  },
+  {
+    "id": "T-1005",
+    "user": "dave",
+    "status": "open",
+    "priority": "P1",
+    "subject": "Clicked phishing link",
+    "description": "I entered my password on a fake login page."
+  },
+  {
+    "id": "T-1006",
+    "user": "bob",
+    "status": "open",
+    "priority": "P3",
+    "subject": "Software request",
+    "description": "Please install a diagram tool."
+  },
+  {
+    "id": "T-1007",
+    "user": "mallory",
+    "status": "open",
+    "priority": "P3",
+    "subject": "Wi-Fi keeps dropping",
+    "description": "Corp-Secure drops every hour. TODO(lab 4): the second injection point. In Lab 4, step 4, you replace this text with your own hidden instruction to test the MCP path."
+  },
+  {
+    "id": "T-1008",
+    "user": "carol",
+    "status": "closed",
+    "priority": "P3",
+    "subject": "Laptop refresh",
+    "description": "When is my laptop due for refresh?"
+  }
+]

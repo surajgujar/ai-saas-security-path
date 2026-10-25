@@ -11,6 +11,8 @@
 - [ ] Vector DB security basics: tenant isolation, metadata filtering as authz, embedding inversion risk (read a short blog/paper summary)
 
 ## Lab (4 h) → `labs/02-vuln-agent-app/`
+
+> **Step-by-step guide + skeleton code:** [`labs/02-vuln-agent-app/README.md`](../labs/02-vuln-agent-app/README.md). Do the lab from there; the list below is the summary.
 Build **"HelpDesk Copilot"** (keep it small, Python):
 - [ ] RAG over ~20 docs in Chroma/pgvector — include one "confidential" HR doc and one doc containing a hidden indirect-injection payload
 - [ ] Agent (ADK or LangGraph) with 3 tools: `search_docs`, `send_email` (mock), `read_ticket(id)` (mock DB)

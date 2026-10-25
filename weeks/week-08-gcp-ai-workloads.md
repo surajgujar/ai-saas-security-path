@@ -13,6 +13,8 @@
 - [ ] Next '26 agent security stack: **Agent Gateway**, **VPC-SC for agents**, Agent Security Dashboard, **SCC discovery of agents & MCP servers**, **Wiz AI-APP + AI-BOM** (Wiz is now part of Google — your Wiz experience counts double)
 
 ## Lab (4.5 h) → `labs/08-gcp-vertex-baseline/`
+
+> **Step-by-step guide + skeleton code:** [`labs/08-gcp-vertex-baseline/README.md`](../labs/08-gcp-vertex-baseline/README.md). Do the lab from there; the list below is the summary.
 Terraform module:
 - [ ] Dedicated project, VPC-SC perimeter around Vertex AI + GCS + BigQuery
 - [ ] CMEK on datasets, endpoints, buckets

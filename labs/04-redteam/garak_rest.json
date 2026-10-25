@@ -1,0 +1,13 @@
+{
+  "rest": {
+    "RestGenerator": {
+      "name": "helpdesk-copilot",
+      "uri": "http://localhost:8099/ask",
+      "method": "post",
+      "headers": { "Content-Type": "application/json" },
+      "req_template_json_object": { "prompt": "$INPUT", "user": "alice" },
+      "response_json": true,
+      "response_json_field": "output"
+    }
+  }
+}

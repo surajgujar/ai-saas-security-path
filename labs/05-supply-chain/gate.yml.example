@@ -1,0 +1,34 @@
+# Example GitHub Actions "model gate": scan -> verify signature -> eval -> only then deploy.
+# Copy to .github/workflows/model-gate.yml at the REPO ROOT to use it. This is a template:
+# fill the TODO run-steps with the commands you ran by hand in this lab.
+
+name: model-gate
+on:
+  workflow_dispatch:
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Scan for unsafe serialization
+        run: |
+          # TODO(step 5): modelscan -p labs/05-supply-chain/model
+          # fail the job if modelscan reports any CRITICAL/HIGH issue
+          echo "TODO: scan"
+
+      - name: Verify signature
+        run: |
+          # TODO(step 5): model_signing verify key labs/05-supply-chain/model \
+          #   --public_key ... --signature ...
+          echo "TODO: verify"
+
+      - name: Evaluate
+        run: |
+          # TODO(step 5): run a tiny eval (even a smoke test) and fail if it regresses
+          echo "TODO: eval"
+
+      - name: Deploy (only if all above passed)
+        run: echo "all gates passed -> would upload/deploy artifact here"

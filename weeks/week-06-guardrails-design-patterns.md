@@ -11,6 +11,8 @@
 - [ ] Human-in-the-loop & least-agency principles
 
 ## Lab (4 h) → `labs/06-guardrails/`
+
+> **Step-by-step guide + skeleton code:** [`labs/06-guardrails/README.md`](../labs/06-guardrails/README.md). Do the lab from there; the list below is the summary.
 Harden the Week 2 app:
 - [ ] Input & output filtering (Model Armor if GCP, else LLM Guard / Prompt Guard locally)
 - [ ] Spotlighting on RAG content

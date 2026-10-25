@@ -16,6 +16,9 @@
 - [ ] **MCP 2026-07-28 spec** authorization changes: RFC 9207 `iss` validation, credential binding, CIMD, Enterprise Managed Authorization
 
 ## Lab (4 h) → `labs/07-agent-authz/`
+
+> **Step-by-step guide + skeleton code:** [`labs/07-agent-authz/README.md`](../labs/07-agent-authz/README.md). Do the lab from there; the list below is the summary.
+> **Scope:** core = OPA per-tool authorization with a mock token. Keycloak token exchange is the stretch goal (and the Q2 flagship), so defer it if the week is tight.
 - [ ] Put an OAuth authorization server (Keycloak in Docker) in front of your MCP server
 - [ ] Agent obtains a **user-delegated, down-scoped** token via token exchange (`sub` = user, `act` = agent)
 - [ ] Each tool call evaluated by **OPA**: user entitlement ∩ agent allowed tools ∩ context (time, data classification, amount)

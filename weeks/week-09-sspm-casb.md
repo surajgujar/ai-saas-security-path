@@ -13,6 +13,8 @@
 - [ ] Case studies: Snowflake customer breaches (2024 — no MFA, infostealer creds), Salesloft Drift OAuth token compromise (2025) — understand the kill chain
 
 ## Lab (4 h) → `labs/09-sspm/`
+
+> **Step-by-step guide + skeleton code:** [`labs/09-sspm/README.md`](../labs/09-sspm/README.md). Do the lab from there; the list below is the summary.
 Free options: Google Workspace trial / Salesforce Developer Edition / Microsoft 365 dev tenant if you can get one.
 - [ ] Run **ScubaGoggles** (Google Workspace) or **ScubaGear** / **Maester** (M365) → baseline report
 - [ ] Write a small Python **drift detector**: snapshot N security settings via admin API → store JSON in Git → diff daily → alert (GitHub Action on schedule)

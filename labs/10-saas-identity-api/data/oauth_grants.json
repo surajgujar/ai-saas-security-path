@@ -1,0 +1,65 @@
+[
+  {
+    "app": "Mail Merge Pro",
+    "client_id": "a1",
+    "user": "alice",
+    "scopes": [
+      "https://mail.google.com/"
+    ],
+    "verified": false,
+    "last_used_days": 2
+  },
+  {
+    "app": "Calendar Sync",
+    "client_id": "a2",
+    "user": "bob",
+    "scopes": [
+      "calendar.readonly"
+    ],
+    "verified": true,
+    "last_used_days": 1
+  },
+  {
+    "app": "Old Analytics",
+    "client_id": "a3",
+    "user": "carol",
+    "scopes": [
+      "drive",
+      "admin.directory.user.readonly"
+    ],
+    "verified": false,
+    "last_used_days": 410
+  },
+  {
+    "app": "AI Notetaker",
+    "client_id": "a4",
+    "user": "dave",
+    "scopes": [
+      "https://mail.google.com/",
+      "drive"
+    ],
+    "verified": false,
+    "last_used_days": 5
+  },
+  {
+    "app": "Expense Bot",
+    "client_id": "a5",
+    "user": "alice",
+    "scopes": [
+      "drive.file"
+    ],
+    "verified": true,
+    "last_used_days": 30
+  },
+  {
+    "app": "Legacy Backup",
+    "client_id": "a6",
+    "user": "mallory",
+    "scopes": [
+      "drive",
+      "gmail.modify"
+    ],
+    "verified": false,
+    "last_used_days": 200
+  }
+]

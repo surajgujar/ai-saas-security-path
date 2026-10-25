@@ -1,0 +1,12 @@
+{
+  "mfa_enforced_all_admins": true,
+  "mfa_enforced_all_users": false,
+  "external_sharing": "anyone_with_link",
+  "oauth_app_allowlist_enabled": false,
+  "admin_count": 7,
+  "audit_logging_enabled": true,
+  "session_max_hours": 720,
+  "password_min_length": 8,
+  "guest_access": true,
+  "data_export_allowed_all": true
+}

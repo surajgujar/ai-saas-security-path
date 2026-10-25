@@ -1,0 +1,22 @@
+{
+  "alice": {
+    "role": "engineer",
+    "email": "alice@corp.example"
+  },
+  "bob": {
+    "role": "engineer",
+    "email": "bob@corp.example"
+  },
+  "carol": {
+    "role": "hr_manager",
+    "email": "carol@corp.example"
+  },
+  "dave": {
+    "role": "sales",
+    "email": "dave@corp.example"
+  },
+  "mallory": {
+    "role": "contractor",
+    "email": "mallory@corp.example"
+  }
+}

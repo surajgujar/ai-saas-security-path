@@ -12,6 +12,8 @@
 - [ ] Anomaly ideas: tool-call volume spikes, new tool/destination for an agent, off-hours agent activity, guardrail-block bursts, token use from new ASN
 
 ## Lab (4 h) → `labs/11-telemetry/`
+
+> **Step-by-step guide + skeleton code:** [`labs/11-telemetry/README.md`](../labs/11-telemetry/README.md). Do the lab from there; the list below is the summary.
 - [ ] Instrument the hardened Week 6/7 app with OpenTelemetry → export spans/logs (local Jaeger + JSON file, or Cloud Trace/Logging)
 - [ ] Hash-chained append-only audit log for agent actions + verifier script that detects tampering
 - [ ] Write **6 detections** (Sigma or YARA-L): indirect-injection → exfil attempt, denied-authz burst, agent using unseen tool, OAuth grant with risky scope, mass download after leaver event, guardrail bypass pattern
