@@ -21,10 +21,10 @@ mcp = MCPServer("helpdesk-tickets")
 #   type hints become the tool description and schema the agent sees, so write a clear one.
 #   Example shape:
 #
-#   @mcp.tool()
-#   def get_ticket(ticket_id: str) -> dict:
-#       """Look up a support ticket by id, e.g. 'T-1001'."""
-#       return read_ticket(ticket_id)
+@mcp.tool()
+def get_ticket(ticket_id: str) -> dict:
+    """Look up a support ticket by id, e.g. 'T-1001'."""
+    return read_ticket(ticket_id)
 
 
 if __name__ == "__main__":

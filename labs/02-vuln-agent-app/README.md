@@ -60,8 +60,10 @@ Fill in `TODO(step 3)` in `helpdesk/mcp_server.py`: register a tool that wraps `
 **Checkpoint:** open the MCP Inspector and call your tool:
 
 ```powershell
-uv run mcp dev helpdesk/mcp_server.py
+npx @modelcontextprotocol/inspector uv run python -m helpdesk.mcp_server
 ```
+
+(Don't use `uv run mcp dev helpdesk/mcp_server.py`: it loads the file as a loose script, so the `from .tools import` line fails. On some Windows machines uv's `mcp.exe` launcher also fails with "Failed to canonicalize script path".)
 
 A browser opens. Select **Connect**, open **Tools**, run your tool with `T-1001`, and you should see Alice's VPN ticket. If the Inspector won't start, check the server at least imports cleanly with `uv run python -c "import helpdesk.mcp_server"`.
 

@@ -36,23 +36,23 @@ ticket_tools = McpToolset(
 )
 
 # TODO(step 4): build the resolver agent.
-#   resolver = LlmAgent(
-#       name="resolver",
-#       model=MODEL,
-#       description=...,      # one line: what this agent does (the triage agent reads this to decide to delegate)
-#       instruction=...,      # how to behave. Tell it to answer from the docs and to use send_email when asked to email.
-#       tools=[search_docs, send_email, ticket_tools],
-#   )
+resolver = LlmAgent(
+    name="resolver",
+    model=MODEL,
+    description="This Agent help you to resolve technical issues",      # one line: what this agent does (the triage agent reads this to decide to delegate)
+    instruction="Always answer from the provided documents and use the send_email tool when asked to email.",      # how to behave. Tell it to answer from the docs and to use send_email when asked to email.
+    tools=[search_docs, send_email, ticket_tools],
+)
 #   Deliberately DON'T add safety rules yet (e.g. "never email outside the company").
 #   Lab 4 needs the app vulnerable; lab 6 adds the rules and shows prompts alone aren't enough.
-resolver = None
+# resolver = None
 
 # TODO(step 5): build the triage agent and make it the root.
-#   root_agent = LlmAgent(
-#       name="triage",
-#       model=MODEL,
-#       description=...,
-#       instruction=...,      # e.g. greet, work out what the user needs, transfer to the resolver for anything IT-related
-#       sub_agents=[resolver],
-#   )
-root_agent = None
+root_agent = LlmAgent(
+    name="triage",
+    model=MODEL,
+    description="This Agent is the first point of contact for users seeking help",      # one line: what this agent does (the resolver reads this to decide to delegate)
+    instruction="You're a helpful assistant. Help users with their technical questions. Delegate IT-related queries to the resolver.",      # e.g. greet, work out what the user needs, transfer to the resolver for anything IT-related
+    sub_agents=[resolver],
+)
+# root_agent = None
