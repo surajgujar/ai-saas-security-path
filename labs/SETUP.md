@@ -22,19 +22,39 @@ uv sync                 # creates .venv and installs the lab's packages
 uv run python <script>  # runs inside that .venv, no "activate" needed
 ```
 
-## 2. Gemini API key (free tier)
+## 2. Model backend
 
-1. Go to **https://aistudio.google.com/apikey**, then select **Create API key**. Using a new project is fine.
-2. In the repo root, copy `labs/.env.example` to `labs/.env` and paste your key:
+Copy the env file first:
 
 ```powershell
 Copy-Item labs\.env.example labs\.env
 notepad labs\.env
 ```
 
-`labs/.env` is already git-ignored (the root `.gitignore` covers `.env`). **Never commit it.**
+`labs/.env` is git-ignored (the root `.gitignore` covers `.env`). **Never commit it.**
 
-**Free-tier limits:** only Flash and Flash-Lite models are free. The per-minute and per-day request limits vary by project, so check yours at **https://aistudio.google.com/rate-limit**. All labs default to `GEMINI_MODEL=gemini-flash-latest`. The red-team labs run slowly on purpose (1 request at a time, with a delay) so you stay under the per-minute limit. If you hit `429 RESOURCE_EXHAUSTED`, wait a minute, or switch `GEMINI_MODEL` to a Flash-Lite model for the bulk runs.
+The agent labs work with any of three backends, chosen by `LAB_MODEL_BACKEND` in `labs/.env`. Nothing in the labs depends on which one you pick — the model is just a swappable backend — so **start with `aistudio` (free, zero setup)** and switch later if you want.
+
+### aistudio — Gemini free tier (default)
+
+1. Get a key at **https://aistudio.google.com/apikey** (a new project is fine).
+2. Put it in `labs/.env` as `GOOGLE_API_KEY`. Keep `LAB_MODEL_BACKEND=aistudio`.
+
+Only Flash/Flash-Lite are free; limits vary by project (check **https://aistudio.google.com/rate-limit**). On `429 RESOURCE_EXHAUSTED`, wait a minute or set `GEMINI_MODEL` to a Flash-Lite model for bulk runs.
+
+### vertex — Vertex AI with Application Default Credentials (no key in a file)
+
+The more production-like, more secure option: short-lived ADC credentials instead of a static key — which is exactly the Lab 7 lesson. **It's paid** (new GCP accounts get trial credit) and needs `gcloud`. In `labs/.env` set `LAB_MODEL_BACKEND=vertex` and the vertex block, then:
+
+```powershell
+gcloud auth application-default login
+```
+
+Use a **versioned** model id on Vertex (e.g. `GEMINI_MODEL=gemini-2.5-flash`); the `-latest` alias may not resolve there. You'll have a GCP project for Lab 8 anyway.
+
+### claude — Claude via ADK's LiteLlm wrapper
+
+For comparing models (nice for Labs 4 and 6, where Gemini and Claude refuse different attacks). **Paid, no free tier.** In the Lab 2 folder run `uv add "google-adk[extensions]"`, then in `labs/.env` set `LAB_MODEL_BACKEND=claude`, `ANTHROPIC_API_KEY` (from https://console.anthropic.com/) and optionally `CLAUDE_MODEL` (default `anthropic/claude-haiku-5-5`, the cheapest).
 
 ## 3. Docker Desktop: upgrade it
 
@@ -66,18 +86,21 @@ You already have Node 22, so nothing to do. promptfoo runs through `npx`, which 
 
 ```powershell
 cd labs
+# aistudio / vertex:
 uv run --python 3.11 --with google-genai --with python-dotenv python check_setup.py
+# claude backend also needs litellm:
+#   uv run --python 3.11 --with google-genai --with python-dotenv --with litellm python check_setup.py
 ```
 
-Expected output (your versions may differ):
+`check_setup.py` reads `LAB_MODEL_BACKEND` and tests whichever backend you chose. Expected output (aistudio; your versions may differ):
 
 ```
 [ok] Python 3.11.x
 [ok] uv 0.x
 [ok] Docker 27.x, compose v2.x
 [ok] Node v22.x
-[ok] GOOGLE_API_KEY found in labs/.env
-[ok] Gemini replied: "OK" (model gemini-flash-latest)
+[info] LAB_MODEL_BACKEND=aistudio
+[ok] Gemini (AI Studio) replied: "OK" (model gemini-flash-latest)
 All checks passed.
 ```
 

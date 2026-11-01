@@ -46,17 +46,55 @@ try:
     load_dotenv(env_file)
 except ImportError:
     pass
-key = os.getenv("GOOGLE_API_KEY", "")
-report(bool(key) and key != "paste-your-key-here", "GOOGLE_API_KEY found in labs/.env" if key and key != "paste-your-key-here" else f"GOOGLE_API_KEY missing: copy .env.example to {env_file} and add your key")
+backend = os.getenv("LAB_MODEL_BACKEND", "aistudio").strip().lower()
+print(f"[info] LAB_MODEL_BACKEND={backend}")
 
-if key and key != "paste-your-key-here":
-    model = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
-    try:
-        from google import genai
-        reply = genai.Client(api_key=key).models.generate_content(model=model, contents="Reply with exactly: OK")
-        report(True, f'Gemini replied: "{(reply.text or "").strip()}" (model {model})')
-    except Exception as e:  # show the API's own message: quota, bad key, unknown model
-        report(False, f"Gemini call failed: {str(e)[:200]}")
+if backend == "aistudio":
+    key = os.getenv("GOOGLE_API_KEY", "")
+    if not key or key == "paste-your-key-here":
+        report(False, f"GOOGLE_API_KEY missing: copy .env.example to {env_file} and add your key")
+    else:
+        model = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
+        try:
+            from google import genai
+            reply = genai.Client(api_key=key).models.generate_content(model=model, contents="Reply with exactly: OK")
+            report(True, f'Gemini (AI Studio) replied: "{(reply.text or "").strip()}" (model {model})')
+        except Exception as e:
+            report(False, f"Gemini call failed: {str(e)[:200]}")
+
+elif backend == "vertex":
+    proj = os.getenv("GOOGLE_CLOUD_PROJECT", "")
+    loc = os.getenv("GOOGLE_CLOUD_LOCATION", "us-central1")
+    if os.getenv("GOOGLE_GENAI_USE_VERTEXAI", "").upper() != "TRUE" or not proj:
+        report(False, "vertex needs GOOGLE_GENAI_USE_VERTEXAI=TRUE and GOOGLE_CLOUD_PROJECT in labs/.env")
+    else:
+        model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+        try:
+            from google import genai
+            client = genai.Client(vertexai=True, project=proj, location=loc)  # uses ADC
+            reply = client.models.generate_content(model=model, contents="Reply with exactly: OK")
+            report(True, f'Vertex AI replied: "{(reply.text or "").strip()}" (model {model}, project {proj})')
+        except Exception as e:
+            report(False, f"Vertex call failed (did you run `gcloud auth application-default login`?): {str(e)[:200]}")
+
+elif backend == "claude":
+    import importlib.util
+    key = os.getenv("ANTHROPIC_API_KEY", "")
+    if not key:
+        report(False, "claude needs ANTHROPIC_API_KEY in labs/.env")
+    elif importlib.util.find_spec("litellm") is None:
+        report(False, "claude needs litellm: run `uv add 'google-adk[extensions]'` in the lab folder")
+    else:
+        model = os.getenv("CLAUDE_MODEL", "anthropic/claude-haiku-5-5")
+        try:
+            import litellm
+            reply = litellm.completion(model=model, messages=[{"role": "user", "content": "Reply with exactly: OK"}])
+            report(True, f'Claude replied: "{reply.choices[0].message.content.strip()}" (model {model})')
+        except Exception as e:
+            report(False, f"Claude call failed: {str(e)[:200]}")
+
+else:
+    report(False, f"Unknown LAB_MODEL_BACKEND={backend!r}. Use aistudio, vertex or claude.")
 
 print("All checks passed." if ok else "Some checks failed: fix them before starting a lab.")
 sys.exit(0 if ok else 1)

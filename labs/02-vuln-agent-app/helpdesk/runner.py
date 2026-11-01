@@ -14,7 +14,7 @@ APP_NAME = "helpdesk"
 
 async def ask(message: str, user: str = "alice") -> dict:
     """Send one message as `user`. Returns {"answer": str, "tool_calls": [{agent, tool, args}]}."""
-    config.require_key()
+    config.require_backend()
     if root_agent is None:
         raise SystemExit("root_agent is None: finish TODO(step 4) and TODO(step 5) in helpdesk/agent.py")
 

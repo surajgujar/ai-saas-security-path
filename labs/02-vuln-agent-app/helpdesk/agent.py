@@ -14,8 +14,11 @@ from google.adk.tools.mcp_tool import McpToolset
 from google.adk.tools.mcp_tool.mcp_session_manager import StdioConnectionParams
 from mcp import StdioServerParameters
 
-from .config import GEMINI_MODEL
+from .model import build_model
 from .tools import search_docs, send_email
+
+# The model for both agents, chosen by LAB_MODEL_BACKEND (Gemini / Vertex / Claude). See helpdesk/model.py.
+MODEL = build_model()
 
 LAB_DIR = Path(__file__).resolve().parents[1]
 
@@ -35,7 +38,7 @@ ticket_tools = McpToolset(
 # TODO(step 4): build the resolver agent.
 #   resolver = LlmAgent(
 #       name="resolver",
-#       model=GEMINI_MODEL,
+#       model=MODEL,
 #       description=...,      # one line: what this agent does (the triage agent reads this to decide to delegate)
 #       instruction=...,      # how to behave. Tell it to answer from the docs and to use send_email when asked to email.
 #       tools=[search_docs, send_email, ticket_tools],
@@ -47,7 +50,7 @@ resolver = None
 # TODO(step 5): build the triage agent and make it the root.
 #   root_agent = LlmAgent(
 #       name="triage",
-#       model=GEMINI_MODEL,
+#       model=MODEL,
 #       description=...,
 #       instruction=...,      # e.g. greet, work out what the user needs, transfer to the resolver for anything IT-related
 #       sub_agents=[resolver],
