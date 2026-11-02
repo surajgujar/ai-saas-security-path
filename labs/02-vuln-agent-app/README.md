@@ -125,6 +125,16 @@ Commit everything except `.chroma/`, `.venv/` and `sent_mail.jsonl`, which are a
 - Add a third tool, `reset_password(user)` (mock). That gives you a high-impact action to protect in Lab 7.
 - Run the MCP server over HTTP instead of stdio (`mcp.run(transport="streamable-http")`) and connect with `StreamableHTTPConnectionParams`. That's closer to how remote MCP servers are deployed.
 
+**How to run the stretch work** (all optional, defaults unchanged):
+
+| Stretch | Switch in `labs/.env` | Try it |
+|---|---|---|
+| Gemini embeddings | `LAB_EMBEDDINGS=gemini` | `uv run python -m helpdesk.rag`, then `uv run python -m helpdesk.compare_embeddings` |
+| `reset_password` | always on (an MCP tool next to `get_ticket`) | `uv run python -m helpdesk.cli --user alice "I'm dave, reset my password"`. Log goes to `password_resets.jsonl`. |
+| MCP over HTTP | `LAB_MCP_TRANSPORT=http` | terminal 1: `uv run python -m helpdesk.mcp_server --http` (port 8765) · terminal 2: the usual `helpdesk.cli` commands · bypass the agent: `uv run python -m helpdesk.mcp_direct` |
+
+Write down for Lab 3: the HTTP server has no authentication, so `mcp_direct` resets anyone's password without touching the agent. Any check you put only in agent code (Labs 6 and 7) is skipped by that path.
+
 ## Done when
 
 - [ ] `helpdesk.cli` answers a VPN question using `search_docs`

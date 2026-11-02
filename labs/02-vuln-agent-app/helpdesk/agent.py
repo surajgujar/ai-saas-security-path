@@ -11,9 +11,10 @@ from pathlib import Path
 
 from google.adk.agents import LlmAgent
 from google.adk.tools.mcp_tool import McpToolset
-from google.adk.tools.mcp_tool.mcp_session_manager import StdioConnectionParams
+from google.adk.tools.mcp_tool.mcp_session_manager import StdioConnectionParams, StreamableHTTPConnectionParams
 from mcp import StdioServerParameters
 
+from . import config
 from .model import build_model
 from .tools import search_docs, send_email
 
@@ -22,18 +23,25 @@ MODEL = build_model()
 
 LAB_DIR = Path(__file__).resolve().parents[1]
 
-# The MCP tool server, launched as a subprocess with the same Python as this app.
+# The MCP tool server (get_ticket, reset_password). LAB_MCP_TRANSPORT picks how we reach it:
+#   stdio: launch it as a subprocess with the same Python as this app (default)
+#   http:  connect to an already-running server at MCP_URL (start it with `-m helpdesk.mcp_server --http`)
 # (Done for you: the connection plumbing is version-specific and not the learning goal.)
-ticket_tools = McpToolset(
-    connection_params=StdioConnectionParams(
+if config.MCP_TRANSPORT == "http":
+    mcp_connection = StreamableHTTPConnectionParams(url=config.MCP_URL, timeout=30)
+elif config.MCP_TRANSPORT == "stdio":
+    mcp_connection = StdioConnectionParams(
         server_params=StdioServerParameters(
             command=sys.executable,
             args=["-m", "helpdesk.mcp_server"],
             cwd=str(LAB_DIR),
         ),
         timeout=30,
-    ),
-)
+    )
+else:
+    raise SystemExit(f"Unknown LAB_MCP_TRANSPORT={config.MCP_TRANSPORT!r}. Use stdio or http.")
+
+ticket_tools = McpToolset(connection_params=mcp_connection)
 
 # TODO(step 4): build the resolver agent.
 resolver = LlmAgent(

@@ -17,7 +17,21 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")      # aistudio + vertex
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "anthropic/claude-haiku-5-5")  # litellm format; cheapest Claude
 
-DATA_DIR = Path(__file__).resolve().parents[1] / "data"
+# Which embeddings RAG uses (lab 2 stretch). See helpdesk/embeddings.py.
+#   chroma = Chroma's built-in local model (default, no API calls)
+#   gemini = a Gemini embedding model via google-genai (same credentials as the agents)
+EMBEDDINGS = os.getenv("LAB_EMBEDDINGS", "chroma").strip().lower()
+GEMINI_EMBED_MODEL = os.getenv("GEMINI_EMBED_MODEL", "gemini-embedding-001")
+
+# How the agent reaches the MCP tool server (lab 2 stretch). See helpdesk/mcp_server.py.
+#   stdio = agent launches the server as a subprocess (default, nothing else to start)
+#   http  = server runs on its own (streamable HTTP) and the agent connects to MCP_URL
+MCP_TRANSPORT = os.getenv("LAB_MCP_TRANSPORT", "stdio").strip().lower()
+MCP_HOST = os.getenv("MCP_HOST", "127.0.0.1")
+MCP_PORT = int(os.getenv("MCP_PORT", "8765"))  # not 8000, that's `adk web`
+MCP_URL = os.getenv("MCP_URL", f"http://{MCP_HOST}:{MCP_PORT}/mcp")
+
+DATA_DIR =Path(__file__).resolve().parents[1] / "data"
 CHROMA_DIR = Path(__file__).resolve().parents[1] / ".chroma"
 
 
