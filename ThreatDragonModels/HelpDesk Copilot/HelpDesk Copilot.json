@@ -1,11 +1,11 @@
 {
   "version": "2.6.2",
   "release_version": "0.1",
-  "released_at": "",
+  "released_at": "2026-11-16",
   "summary": {
     "title": "HelpDesk Copilot",
     "owner": "Surajkumar Gujar",
-    "description": "",
+    "description": "Rag App",
     "id": 0
   },
   "detail": {
