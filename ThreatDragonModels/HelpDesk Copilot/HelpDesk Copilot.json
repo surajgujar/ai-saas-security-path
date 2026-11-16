@@ -1,0 +1,28 @@
+{
+  "version": "2.6.2",
+  "release_version": "0.1",
+  "released_at": "",
+  "summary": {
+    "title": "HelpDesk Copilot",
+    "owner": "Surajkumar Gujar",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Surajkumar Gujar",
+    "threatTop": 0
+  }
+}
