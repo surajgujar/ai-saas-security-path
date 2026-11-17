@@ -972,13 +972,13 @@
    "tasks": [
     {
      "id": "w04-tue1",
-     "text": "Practice: Lakera Gandalf levels 1–7",
+     "text": "Practice: Lakera Agent Breaker — Cycling Coach, Thingularity, Trippy Planner, Clause AI, OmniChat Desktop (level 3+ on at least 3); log payloads for the Lab",
      "min": 60,
      "block": "learn",
      "links": [
       {
-       "label": "Lakera Gandalf (opens Lakera's game hub – pick Gandalf)",
-       "url": "https://gandalf.lakera.ai/",
+       "label": "Lakera Gandalf: Agent Breaker",
+       "url": "https://play.lakera.ai/agent-breaker",
        "kind": "lab"
       }
      ]

@@ -31,7 +31,7 @@ Links point to project homepages — search the name if one moves.
 - Observability: OpenTelemetry GenAI semantic conventions, Sigma, YARA-L
 
 ## Practice
-- Lakera Gandalf · PortSwigger Web LLM attacks labs · crAPI
+- [Lakera Gandalf: Agent Breaker](https://play.lakera.ai/agent-breaker) · PortSwigger Web LLM attacks labs · crAPI
 
 ## Books / courses (optional)
 - Chip Huyen — *AI Engineering* (O'Reilly)

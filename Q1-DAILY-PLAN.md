@@ -97,7 +97,7 @@ Detail: [`weeks/week-04-prompt-injection-redteam.md`](weeks/week-04-prompt-injec
 - [ ] `learn` Video: Microsoft AI Red Team lessons + Simon Willison talks on prompt injection *(60 min)*
 
 **Tue 2026-10-20** (1h)
-- [ ] `learn` Practice: Lakera Gandalf levels 1–7 *(60 min)*
+- [ ] `learn` Practice: [Lakera Agent Breaker](https://play.lakera.ai/agent-breaker) — Cycling Coach, Thingularity, Trippy Planner, Clause AI, OmniChat Desktop (level 3+ on at least 3) *(60 min)*
 
 **Wed 2026-10-21** (1h)
 - [ ] `learn` Practice: PortSwigger Web Security Academy 'Web LLM attacks' labs (2 labs) *(30 min)*

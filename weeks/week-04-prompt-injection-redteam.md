@@ -10,8 +10,19 @@
 - [ ] Jailbreak families: role-play, many-shot, crescendo (multi-turn), encoding/obfuscation, token smuggling
 - [ ] Tool docs: **garak** (NVIDIA), **PyRIT** (Microsoft), **promptfoo** red-team mode
 
-## Practice (warm-up, 30 min)
-- [ ] Gandalf (Lakera) — reach level 7+
+## Practice (warm-up, 60 min)
+- [ ] [Lakera Gandalf: Agent Breaker](https://play.lakera.ai/agent-breaker) — the classic Gandalf link now redirects here. Clear these 5 in order, reaching level 3+ on at least 3:
+
+  | # | Challenge | Attack | OWASP LLM (2025) | Lab tie-in |
+  |---|---|---|---|---|
+  | 1 | Cycling Coach | Direct: extract system prompt | LLM07 | Warm-up |
+  | 2 | Thingularity | Direct: list the agent's tools | LLM07 / LLM06 | Agent recon |
+  | 3 | Trippy Planner | Indirect: poisoned web page adds a malicious link | LLM01 | Poisoned RAG doc |
+  | 4 | Clause AI | Exfiltrate protected witness info | LLM02 | `send_email` HR-data exfil |
+  | 5 | OmniChat Desktop | Injection via MCP server description | LLM01 / LLM03 | Tool poisoning |
+
+  *If time allows:* PortfolioIQ Advisor (poisoned PDF, LLM04/LLM09), Curs-ed CodeReview (malicious rules file, LLM03), Solace AI (jailbreak).
+  *Log for each challenge:* the payload that worked, number of attempts, and the defense that blocked you. Reuse these in the Lab and `REPORT.md`.
 - [ ] PortSwigger Web Security Academy — *Web LLM attacks* labs
 
 ## Lab (4 h) → `labs/04-redteam/`
