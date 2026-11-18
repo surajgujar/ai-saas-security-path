@@ -26,71 +26,71 @@ Fill in the real numbers/details — interviewers remember specifics. Keep each 
 ---
 
 ### 1. MCP security agent
-- S:
-- T:
-- A:
-- R:
-- Link:
+- S: Devlopers's are scanning code at pipeline level
+- T: I have to help them to scan their code on IDE. I
+- A: Developed an Agent, Script and tools list, find, read, write, patch, open file. 
+- R: 100+ developers using the agent and 90% reduction in violation. Save platform cost.
+- Link: Advisor, Transunion
 
 <!-- copy the block for 2–10 -->
 
 ### 2. Securing agentic workflows on GCP
-- S:
-- T:
-- A:
-- R:
-- Link:
+- S: Lots of agents, tools and MCP sever but no standard workflow
+- T: Secure agentic workflow
+- A: Imported all agents, Import mcp server to agent registry
+- R: 4 teams are using Agent registry
+- Link:Advisor, Transunion
 
 ### 3. Model Armor rollout
-- S:
-- T:
-- A:
-- R:
-- Link:
+- S: We want to prevent leakage of customer data to LLM. So we want to rollout model armor to sanitize prompt and response of LLM
+- T: Setup model armor at org level
+- A: Enable model armor, Setup Template enabled malicious url detection, prompt injection, jailbreak detection, Sensitive data protection 
+- R: Org secured
+- Link:Advisor, Transunion
 
 ### 4. AI/ML model security assessments & supply-chain scanning
-- S:
-- T:
-- A:
-- R:
+- S: Customer want to deploy their sensors files
+- T: Need to scan custom build models
+- A: Developed promptfoo template to scan sensonrs file
+- R: Org aligned
 - Link:
 
 ### 5. Onboarding AWS + GCP into Wiz
-- S:
-- T:
-- A:
-- R:
-- Link:
+- S: Onboard AWS and GCP on Wiz
+- T: Create a Iam User, role and policy 
+- A: Added 100+ accounts to the wiz
+- R: Wiz got onboarder
+- Link: Lead Engineer
 
 ### 6. Multi-cloud misconfiguration remediation
-- S:
-- T:
-- A:
-- R:
-- Link:
+- S: Identify and standardize cloud configuratons
+- T: Identify tool, setup tool and deploy it
+- A: Write a policy to mandate scanner for all iacm pipelines
+- R: All new/existing misconfigurations are mitigated
+- Link: Advisor
 
 ### 7. DevSecOps across the SDLC
 <!-- Prompts: Which pipelines/teams? What did you add (SAST/SCA/secrets/IaC scans, gates)? Who resisted, and how did you win them over? Before/after numbers (findings caught pre-prod, MTTR, % repos covered)? -->
-- S:
-- T:
-- A:
-- R:
+- S: We have to secure our pipelines
+- T: Develop configured and deploy templates
+- A: Write a policy gate for SAST/SCA/secrets/IaC scans
+- R: Everyone adopted the gates
 - Link: Shows I can get standards adopted across teams — the same work as rolling out AI security standards.
 
 ### 8. Automated server decommissioning
 <!-- Prompts: What was the risk before (orphaned servers, stale creds/access)? What did the workflow automate (access revocation, DNS, CMDB, backups)? How many servers, hours saved, findings closed? -->
-- S:
-- T:
-- A:
-- R:
+- S: There are no standard process for orphaned server
+- T: Create a workflow to decom servers
+- A: Developed ansible playbook
+- R: saved hours of works
 - Link: Lifecycle "leaver" thinking → joiner-mover-leaver for SaaS identities and AI agents.
 
 ### 9. Jenkins CI/CD at Cisco
 <!-- Prompts: Scale (jobs, teams, builds/day)? How did you protect pipeline integrity (credentials, agents, plugins, approvals)? Any incident or near miss? -->
-- S:
-- T:
-- A:
-- R:
+- S: Need to setup SDLC workflow
+- T: Setup everything
+- A: Standardize workflow and deploy
+- R: Everyone followed the new workflow.
 - Link: Pipeline integrity → securing model training/deployment pipelines.
 
 ### 10. Pushed back / influenced without authority
