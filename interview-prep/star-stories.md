@@ -33,3 +33,70 @@ Fill in the real numbers/details — interviewers remember specifics. Keep each 
 - Link:
 
 <!-- copy the block for 2–10 -->
+
+### 2. Securing agentic workflows on GCP
+- S:
+- T:
+- A:
+- R:
+- Link:
+
+### 3. Model Armor rollout
+- S:
+- T:
+- A:
+- R:
+- Link:
+
+### 4. AI/ML model security assessments & supply-chain scanning
+- S:
+- T:
+- A:
+- R:
+- Link:
+
+### 5. Onboarding AWS + GCP into Wiz
+- S:
+- T:
+- A:
+- R:
+- Link:
+
+### 6. Multi-cloud misconfiguration remediation
+- S:
+- T:
+- A:
+- R:
+- Link:
+
+### 7. DevSecOps across the SDLC
+<!-- Prompts: Which pipelines/teams? What did you add (SAST/SCA/secrets/IaC scans, gates)? Who resisted, and how did you win them over? Before/after numbers (findings caught pre-prod, MTTR, % repos covered)? -->
+- S:
+- T:
+- A:
+- R:
+- Link: Shows I can get standards adopted across teams — the same work as rolling out AI security standards.
+
+### 8. Automated server decommissioning
+<!-- Prompts: What was the risk before (orphaned servers, stale creds/access)? What did the workflow automate (access revocation, DNS, CMDB, backups)? How many servers, hours saved, findings closed? -->
+- S:
+- T:
+- A:
+- R:
+- Link: Lifecycle "leaver" thinking → joiner-mover-leaver for SaaS identities and AI agents.
+
+### 9. Jenkins CI/CD at Cisco
+<!-- Prompts: Scale (jobs, teams, builds/day)? How did you protect pipeline integrity (credentials, agents, plugins, approvals)? Any incident or near miss? -->
+- S:
+- T:
+- A:
+- R:
+- Link: Pipeline integrity → securing model training/deployment pipelines.
+
+### 10. Pushed back / influenced without authority
+<!-- Prompts: Pick ONE real moment: a team wanted to ship something risky, or skip a control. What was the risk, what data did you bring, what compromise did you reach, what happened next? Include what you learned. -->
+- S:
+- T:
+- A:
+- R:
+- Link: Advising and aligning stakeholders is the core of a Head/Lead of AI Security role.
