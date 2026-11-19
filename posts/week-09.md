@@ -1,6 +1,6 @@
 # Week 9 post (#8): Shadow AI without blocking everything
 
-**Publish:** Fri 25 Dec 2026 · **Visual:** a 3-column board: Sanctioned / Tolerated / Blocked, with example AI apps and the rule for each
+**Publish:** Mon 28 Dec 2026 · **Visual:** a 3-column board: Sanctioned / Tolerated / Blocked, with example AI apps and the rule for each
 
 ---
 
@@ -19,7 +19,7 @@ How you find Shadow AI:
 • browser extensions
 • expense reports (yes, really)
 
-This week's lab: I ran CISA's SCuBA baseline tools against a trial tenant and built a small drift detector (snapshot → git → diff → alert). [Add a finding, e.g. "X of Y baseline checks failed out of the box".] I also mocked Shadow AI discovery from proxy logs.
+Last week's lab: I ran CISA's SCuBA baseline tools against a trial tenant and built a small drift detector (snapshot → git → diff → alert). [Add a finding, e.g. "X of Y baseline checks failed out of the box".] I also mocked Shadow AI discovery from proxy logs.
 
 SSPM covers settings *inside* SaaS apps. CASB covers the *traffic* to them. For Shadow AI you need both.
 

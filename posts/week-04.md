@@ -1,10 +1,10 @@
 # Week 4 post (#3): why prompt-injection classifiers alone aren't enough
 
-**Publish:** Fri 20 Nov 2026 · **Visual:** a bar chart of attack success rate by technique (from your REPORT.md)
+**Publish:** Mon 23 Nov 2026 · **Visual:** a bar chart of attack success rate by technique (from your REPORT.md)
 
 ---
 
-I red-teamed my own AI agent this week, using promptfoo, NVIDIA garak and plenty of manual testing.
+I red-teamed my own AI agent last week, using promptfoo, NVIDIA garak and plenty of manual testing.
 
 Baseline attack success rate: **[X]%**. [Replace with your measured number.]
 
@@ -22,7 +22,7 @@ Why a classifier in front of the model isn't enough:
 
 Classifiers are one useful layer. They can't be the only control between an attacker and your send_email tool.
 
-Next week: supply chain. After that: I fix this app and rerun the same tests.
+This week: supply chain. After that: I fix this app and rerun the same tests.
 
 #AIRedTeaming #PromptInjection #AISecurity #LLMSecurity
 

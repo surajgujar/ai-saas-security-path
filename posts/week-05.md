@@ -1,6 +1,6 @@
 # Week 5 post (#4): how to prove the model in prod is the one you approved
 
-**Publish:** Fri 27 Nov 2026 · **Visual:** your pipeline diagram (scan → verify signature → eval → deploy) with a red ✗ where the tampered model is blocked
+**Publish:** Mon 30 Nov 2026 · **Visual:** your pipeline diagram (scan → verify signature → eval → deploy) with a red ✗ where the tampered model is blocked
 
 ---
 
@@ -10,7 +10,7 @@ Quick question for anyone running models in production:
 
 For most organisations the honest answer is no. A model is just a file, and files get swapped.
 
-This week I built a small pipeline to fix that:
+Last week I built a small pipeline to fix that:
 1️⃣ **Scan**: a harmless pickle proof-of-concept that runs code when loaded. modelscan and fickling both flagged it. [Confirm with your result.] Then convert to safetensors, which can't run code on load.
 2️⃣ **Sign**: OpenSSF model_signing (Sigstore) signs the model files. I changed a single byte and verification failed. [Confirm.]
 3️⃣ **Record**: a CycloneDX ML-BOM lists the model, its data and dependencies.

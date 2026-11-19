@@ -1,6 +1,6 @@
 # Week 10 post (#9): why access survives offboarding
 
-**Publish:** Fri 1 Jan 2027 · **Visual:** a checklist graphic: "Account disabled ✅ — sessions? refresh tokens? OAuth grants? API keys? personal access tokens? ❓"
+**Publish:** Mon 4 Jan 2027 · **Visual:** a checklist graphic: "Account disabled ✅ — sessions? refresh tokens? OAuth grants? API keys? personal access tokens? ❓"
 
 ---
 
@@ -16,7 +16,7 @@ Disabling the account in your identity provider stops *new* logins. It doesn't a
 
 Attackers know this. The 2025 **Salesloft Drift** incident showed how stolen OAuth tokens from one connected app were used to pull data from many companies' Salesforce instances. No password was needed.
 
-What I built this week:
+What I built last week:
 1️⃣ An **OAuth grant auditor** (Workspace Admin SDK / Microsoft Graph) that lists every third-party app with access, its scopes and its last use, with a dry-run revoke
 2️⃣ A **JML (joiner-mover-leaver) simulator**: the leaver flow revokes sessions, refresh tokens and grants, not just the account
 3️⃣ 5 findings against OWASP crAPI, mapped to the API Security Top 10. [List the most interesting one.]

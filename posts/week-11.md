@@ -1,6 +1,6 @@
 # Week 11 post: what a SOC needs to see in an AI agent incident
 
-**Publish:** Fri 8 Jan 2027 · **Visual:** a Jaeger trace screenshot of one agent run (prompt → tool calls → policy decisions), with the malicious step highlighted
+**Publish:** Mon 11 Jan 2027 · **Visual:** a Jaeger trace screenshot of one agent run (prompt → tool calls → policy decisions), with the malicious step highlighted
 
 ---
 
@@ -13,7 +13,7 @@ Most agent deployments today can't answer any of them.
 
 This matters now. In November 2025 Anthropic reported a state-sponsored campaign in which an AI agent carried out an estimated **80–90% of the intrusion work**. Humans only picked targets and approved key steps. Agent actions happen at machine speed, so the logs have to keep up.
 
-What I built this week:
+What I built last week:
 🔹 **OpenTelemetry traces** for every agent step: prompt, retrieval, tool call, policy decision
 🔹 a **hash-chained audit log**. Each entry includes the hash of the previous one, so any edit breaks the chain. [Confirm: your tamper-check script caught the edit.]
 🔹 6 Sigma/YARA-L detections, e.g. [an agent calling send_email right after reading an external doc]

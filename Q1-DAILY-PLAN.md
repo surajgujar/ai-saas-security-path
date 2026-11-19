@@ -1,6 +1,7 @@
 # Q1 Day-by-Day Plan (26 Oct 2026 – 17 Jan 2027)
 
 Rhythm: **1 h Mon–Fri · 3 h Sat · 3 h Sun = 11 h/week** (build 4.5 · learn 2.5 · lead 2.5 · career 1.5).
+From Week 4 on, each week's post is published on the **following Monday**, after the weekend lab, so its numbers are real. (The Week 12 recap goes out on the final Sunday.)
 Track it daily on the tracker page; 7 AM plan + 9:30 PM check-in reminders.
 
 ## Week 1 — LLM internals (from 2026-10-26)
@@ -106,8 +107,7 @@ Detail: [`weeks/week-04-prompt-injection-redteam.md`](weeks/week-04-prompt-injec
 **Thu 2026-11-19** (1h)
 - [ ] `lead` Start mentoring 1 colleague on AI security (first 30-min session); draft post #3 *(60 min)*
 
-**Fri 2026-11-20** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2026-11-20** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-04-prompt-injection-redteam.md) *(30 min)*
 
 **Sat 2026-11-21** (3h)
@@ -122,7 +122,8 @@ Detail: [`weeks/week-04-prompt-injection-redteam.md`](weeks/week-04-prompt-injec
 ## Week 5 — Poisoning, extraction, supply chain (from 2026-11-23)
 Detail: [`weeks/week-05-poisoning-extraction-supplychain.md`](weeks/week-05-poisoning-extraction-supplychain.md)
 
-**Mon 2026-11-23** (1h)
+**Mon 2026-11-23** (1.5h)
+- [ ] `lead` Publish last week's LinkedIn post (fill the [placeholders] from the weekend's lab results, add the diagram or screenshot) *(30 min)*
 - [ ] `learn` Video/Read: model supply-chain risks (pickle, safetensors) + OpenSSF model-signing overview *(60 min)*
 
 **Tue 2026-11-24** (1h)
@@ -135,8 +136,7 @@ Detail: [`weeks/week-05-poisoning-extraction-supplychain.md`](weeks/week-05-pois
 **Thu 2026-11-26** (1h)
 - [ ] `lead` Draft post #4: 'How to prove the model in prod is the one you approved' *(60 min)*
 
-**Fri 2026-11-27** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2026-11-27** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-05-poisoning-extraction-supplychain.md) *(30 min)*
 
 **Sat 2026-11-28** (3h)
@@ -151,7 +151,8 @@ Detail: [`weeks/week-05-poisoning-extraction-supplychain.md`](weeks/week-05-pois
 ## Week 6 — Guardrails & secure agent design (from 2026-11-30)
 Detail: [`weeks/week-06-guardrails-design-patterns.md`](weeks/week-06-guardrails-design-patterns.md)
 
-**Mon 2026-11-30** (1h)
+**Mon 2026-11-30** (1.5h)
+- [ ] `lead` Publish last week's LinkedIn post (fill the [placeholders] from the weekend's lab results, add the diagram or screenshot) *(30 min)*
 - [ ] `learn` Read: 'Design Patterns for Securing LLM Agents against Prompt Injections' *(60 min)*
 
 **Tue 2026-12-01** (1h)
@@ -164,8 +165,7 @@ Detail: [`weeks/week-06-guardrails-design-patterns.md`](weeks/week-06-guardrails
 **Thu 2026-12-03** (1h)
 - [ ] `lead` Draft post #5: 'Guardrails are not authorization' *(60 min)*
 
-**Fri 2026-12-04** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2026-12-04** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-06-guardrails-design-patterns.md) *(30 min)*
 
 **Sat 2026-12-05** (3h)
@@ -180,7 +180,8 @@ Detail: [`weeks/week-06-guardrails-design-patterns.md`](weeks/week-06-guardrails
 ## Week 7 — Agent identity & runtime authz (from 2026-12-07)
 Detail: [`weeks/week-07-agent-identity-authz.md`](weeks/week-07-agent-identity-authz.md)
 
-**Mon 2026-12-07** (1h)
+**Mon 2026-12-07** (1.5h)
+- [ ] `lead` Publish last week's LinkedIn post (fill the [placeholders] from the weekend's lab results, add the diagram or screenshot) *(30 min)*
 - [ ] `learn` Read: RFC 8693 token exchange (delegation vs impersonation) + OWASP NHI Top 10 *(60 min)*
 
 **Tue 2026-12-08** (1h)
@@ -193,8 +194,7 @@ Detail: [`weeks/week-07-agent-identity-authz.md`](weeks/week-07-agent-identity-a
 **Thu 2026-12-10** (1h)
 - [ ] `lead` Draft post #6: 'Your AI agent needs an identity (on GCP)' with a sequence diagram *(60 min)*
 
-**Fri 2026-12-11** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2026-12-11** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-07-agent-identity-authz.md) *(30 min)*
 
 **Sat 2026-12-12** (3h)
@@ -209,7 +209,8 @@ Detail: [`weeks/week-07-agent-identity-authz.md`](weeks/week-07-agent-identity-a
 ## Week 8 — Securing AI on GCP (from 2026-12-14)
 Detail: [`weeks/week-08-gcp-ai-workloads.md`](weeks/week-08-gcp-ai-workloads.md)
 
-**Mon 2026-12-14** (1h)
+**Mon 2026-12-14** (1.5h)
+- [ ] `lead` Publish last week's LinkedIn post (fill the [placeholders] from the weekend's lab results, add the diagram or screenshot) *(30 min)*
 - [ ] `learn` Docs: Vertex AI security (VPC-SC, PSC, CMEK) + SCC AI Protection *(60 min)*
 
 **Tue 2026-12-15** (1h)
@@ -222,8 +223,7 @@ Detail: [`weeks/week-08-gcp-ai-workloads.md`](weeks/week-08-gcp-ai-workloads.md)
 **Thu 2026-12-17** (1h)
 - [ ] `lead` Identify 3 people to ask for recommendation letters later; draft post #7 *(60 min)*
 
-**Fri 2026-12-18** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2026-12-18** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-08-gcp-ai-workloads.md) *(30 min)*
 
 **Sat 2026-12-19** (3h)
@@ -238,7 +238,8 @@ Detail: [`weeks/week-08-gcp-ai-workloads.md`](weeks/week-08-gcp-ai-workloads.md)
 ## Week 9 — SSPM, CASB, Shadow AI (from 2026-12-21)
 Detail: [`weeks/week-09-sspm-casb.md`](weeks/week-09-sspm-casb.md)
 
-**Mon 2026-12-21** (1h)
+**Mon 2026-12-21** (1.5h)
+- [ ] `lead` Publish last week's LinkedIn post (fill the [placeholders] from the weekend's lab results, add the diagram or screenshot) *(30 min)*
 - [ ] `learn` Read: SSPM vs CASB vs SSE vs CSPM; build a 1-page comparison *(60 min)*
 
 **Tue 2026-12-22** (1h)
@@ -251,8 +252,7 @@ Detail: [`weeks/week-09-sspm-casb.md`](weeks/week-09-sspm-casb.md)
 **Thu 2026-12-24** (1h)
 - [ ] `lead` Draft post #8: 'Shadow AI without blocking everything' *(60 min)*
 
-**Fri 2026-12-25** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2026-12-25** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-09-sspm-casb.md) *(30 min)*
 
 **Sat 2026-12-26** (3h)
@@ -267,7 +267,8 @@ Detail: [`weeks/week-09-sspm-casb.md`](weeks/week-09-sspm-casb.md)
 ## Week 10 — SaaS identity, OAuth, API security (from 2026-12-28)
 Detail: [`weeks/week-10-saas-identity-api.md`](weeks/week-10-saas-identity-api.md)
 
-**Mon 2026-12-28** (1h)
+**Mon 2026-12-28** (1.5h)
+- [ ] `lead` Publish last week's LinkedIn post (fill the [placeholders] from the weekend's lab results, add the diagram or screenshot) *(30 min)*
 - [ ] `learn` Read: OAuth 2.0/2.1 + RFC 9700 BCP; SCIM & JML failure modes *(60 min)*
 
 **Tue 2026-12-29** (1h)
@@ -280,8 +281,7 @@ Detail: [`weeks/week-10-saas-identity-api.md`](weeks/week-10-saas-identity-api.m
 **Thu 2026-12-31** (1h)
 - [ ] `lead` Draft post #9: 'Why access survives offboarding' *(60 min)*
 
-**Fri 2027-01-01** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2027-01-01** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-10-saas-identity-api.md) *(30 min)*
 
 **Sat 2027-01-02** (3h)
@@ -296,7 +296,8 @@ Detail: [`weeks/week-10-saas-identity-api.md`](weeks/week-10-saas-identity-api.m
 ## Week 11 — Telemetry, detection, audit trails (from 2027-01-04)
 Detail: [`weeks/week-11-telemetry-detection.md`](weeks/week-11-telemetry-detection.md)
 
-**Mon 2027-01-04** (1h)
+**Mon 2027-01-04** (1.5h)
+- [ ] `lead` Publish last week's LinkedIn post (fill the [placeholders] from the weekend's lab results, add the diagram or screenshot) *(30 min)*
 - [ ] `learn` Read: OpenTelemetry GenAI semantic conventions + OCSF basics *(60 min)*
 
 **Tue 2027-01-05** (1h)
@@ -309,8 +310,7 @@ Detail: [`weeks/week-11-telemetry-detection.md`](weeks/week-11-telemetry-detecti
 **Thu 2027-01-07** (1h)
 - [ ] `lead` Pitch a talk to OWASP Pune / null Pune / BSides for Q1 2027: 'Identity for AI agents' *(60 min)*
 
-**Fri 2027-01-08** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2027-01-08** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-11-telemetry-detection.md) *(30 min)*
 
 **Sat 2027-01-09** (3h)
@@ -325,7 +325,8 @@ Detail: [`weeks/week-11-telemetry-detection.md`](weeks/week-11-telemetry-detecti
 ## Week 12 — GRC & strategy capstone (from 2027-01-11)
 Detail: [`weeks/week-12-grc-strategy.md`](weeks/week-12-grc-strategy.md)
 
-**Mon 2027-01-11** (1h)
+**Mon 2027-01-11** (1.5h)
+- [ ] `lead` Publish last week's LinkedIn post (fill the [placeholders] from the weekend's lab results, add the diagram or screenshot) *(30 min)*
 - [ ] `learn` Read: NIST AI RMF + GenAI profile (AI 600-1) summary; ISO/IEC 42001 structure *(60 min)*
 
 **Tue 2027-01-12** (1h)
@@ -338,15 +339,15 @@ Detail: [`weeks/week-12-grc-strategy.md`](weeks/week-12-grc-strategy.md)
 **Thu 2027-01-14** (1h)
 - [ ] `lead` Draft post #12: Q1 recap with portfolio link *(60 min)*
 
-**Fri 2027-01-15** (1h)
-- [ ] `lead` Publish this week's LinkedIn post (edit Thursday's draft, add a diagram or screenshot) *(30 min)*
+**Fri 2027-01-15** (0.5h)
 - [ ] `career` Answer this week's interview questions out loud and record them (weeks/week-12-grc-strategy.md) *(30 min)*
 
 **Sat 2027-01-16** (3h)
 - [ ] `build` Write the AI & SaaS Security Standard (8–10 pages) *(90 min)*
 - [ ] `build` AI system intake & risk questionnaire *(90 min)*
 
-**Sun 2027-01-17** (3h)
+**Sun 2027-01-17** (3.5h)
 - [ ] `build` 12-month roadmap + KPI set; update README definition-of-done; commit labs/12 *(90 min)*
 - [ ] `lead` notes/week-12.md: how you'd build an AI security program in year one *(60 min)*
 - [ ] `career` Weekly review: log hours in the tracker, note what slipped, glance at next week *(30 min)*
+- [ ] `lead` Publish this week's LinkedIn post (the Q1 recap; fill the [placeholders] from your lab results, add the diagram or screenshot) *(30 min)*

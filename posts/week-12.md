@@ -1,6 +1,6 @@
 # Week 12 post (#12): Q1 recap with portfolio link
 
-**Publish:** Fri 15 Jan 2027 · **Visual:** a 12-tile grid, one per lab, each with its single most important result
+**Publish:** Sun 17 Jan 2027 (evening) · **Visual:** a 12-tile grid, one per lab, each with its single most important result
 
 ---
 

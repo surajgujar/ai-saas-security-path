@@ -1,6 +1,6 @@
 # LinkedIn post drafts (Q1)
 
-One first draft per week. Thursday: edit it into your own voice. Friday: add the diagram or screenshot and publish.
+One first draft per week. Thursday: edit it into your own voice. Weekend: do the lab the post describes. **Following Monday:** fill the placeholders from your results, add the diagram or screenshot and publish. (Weeks 1–3 published on Fridays; from Week 4 posts go out on Monday so they never claim work you haven't done yet.)
 
 - Text in `[square brackets]` is a placeholder. Fill it from your own lab results or experience, or delete it. **Don't publish a number you didn't measure.**
 - Keep the hook (first two lines) under ~200 characters. LinkedIn cuts the post off after that.

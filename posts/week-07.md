@@ -1,6 +1,6 @@
 # Week 7 post (#6): your AI agent needs an identity (on GCP)
 
-**Publish:** Fri 11 Dec 2026 · **Visual:** sequence diagram: user → agent → token exchange (IdP) → MCP server → OPA decision → allow/deny
+**Publish:** Mon 14 Dec 2026 · **Visual:** sequence diagram: user → agent → token exchange (IdP) → MCP server → OPA decision → allow/deny
 
 ---
 
@@ -10,7 +10,7 @@ That means that when something goes wrong, the logs say "the service account did
 
 Agents need their own identity, and they need to carry the user's authority *explicitly*.
 
-What I built this week:
+What I built last week:
 1️⃣ Keycloak in front of my MCP server
 2️⃣ **OAuth token exchange (RFC 8693)**: the agent swaps the user's token for a new one that is down-scoped, limited to one audience and valid ≤5 minutes. The `act` claim records "agent X acting for user Y".
 3️⃣ **OPA checks every tool call**: user entitlement ∩ agent capability ∩ data sensitivity.

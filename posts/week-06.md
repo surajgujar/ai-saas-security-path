@@ -1,12 +1,12 @@
 # Week 6 post (#5): guardrails are not authorization
 
-**Publish:** Fri 4 Dec 2026 · **Visual:** a before/after table of attack success rate from your Week 4 vs Week 6 runs
+**Publish:** Mon 7 Dec 2026 · **Visual:** a before/after table of attack success rate from your Week 4 vs Week 6 runs
 
 ---
 
 **Guardrails are not authorization.**
 
-I added guardrails to my deliberately vulnerable agent this week: input/output filtering, spotlighting (marking untrusted content so the model treats it as data) and human approval for external emails.
+I added guardrails to my deliberately vulnerable agent last week: input/output filtering, spotlighting (marking untrusted content so the model treats it as data) and human approval for external emails.
 
 Result: attack success went from **[X]% → [Y]%**. [Use your measured numbers.]
 
@@ -21,7 +21,7 @@ The research agrees. The "Design Patterns for Securing LLM Agents" paper and Dee
 Patterns I'm now using:
 • Plan-then-execute: the plan is fixed before any untrusted content is read
 • Human approval for anything that leaves the building
-• (next week) a policy decision on every tool call
+• (this week) a policy decision on every tool call
 
 Use guardrails to reduce noise. Use authorization to limit the damage.
 

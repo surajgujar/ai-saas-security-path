@@ -1,6 +1,6 @@
 # Week 8 post (#7): what VPC Service Controls protect that IAM doesn't
 
-**Publish:** Fri 18 Dec 2026 · **Visual:** a perimeter diagram: Vertex/Agent Platform + storage + KMS inside, a stolen-credential attempt from outside marked ✗
+**Publish:** Mon 21 Dec 2026 · **Visual:** a perimeter diagram: Vertex/Agent Platform + storage + KMS inside, a stolen-credential attempt from outside marked ✗
 
 ---
 
@@ -15,7 +15,7 @@ A **VPC-SC perimeter** still blocks it when:
 • the request comes from outside the perimeter
 • someone tries to copy training data or model artifacts to a project outside it
 
-What I built this week in Terraform:
+What I built last week in Terraform:
 🔹 project + VPC-SC perimeter around the AI APIs, storage and KMS
 🔹 CMEK on everything that supports it
 🔹 private endpoints, so no public inference endpoint
