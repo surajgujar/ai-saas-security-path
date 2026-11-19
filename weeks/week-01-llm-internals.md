@@ -1,4 +1,4 @@
-# Week 1 — LLM Internals (28 Sep – 4 Oct)
+# Week 1 — LLM Internals (26 Oct – 1 Nov)
 
 **Why (JD):** "Deep understanding of how LLMs and foundation models are designed, trained, fine-tuned, evaluated, deployed, and operated, including transformers, embeddings…"
 **Goal:** Explain the full model lifecycle on a whiteboard and know *where each attack lands*.

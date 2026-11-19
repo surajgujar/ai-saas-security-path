@@ -1,4 +1,4 @@
-# Week 4 — Prompt Injection, Jailbreaks & AI Red-Teaming (19 – 25 Oct)
+# Week 4 — Prompt Injection, Jailbreaks & AI Red-Teaming (16 – 22 Nov)
 
 **Why (JD):** "prompt injection, jailbreaks … red-teaming"
 **Goal:** Move from defender-only (Model Armor) to running a structured red-team campaign and reporting it.

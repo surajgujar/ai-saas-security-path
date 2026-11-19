@@ -1,4 +1,4 @@
-# Week 9 — SSPM, CASB, Shadow SaaS / Shadow AI, SaaS DLP (23 – 29 Nov)
+# Week 9 — SSPM, CASB, Shadow SaaS / Shadow AI, SaaS DLP (21 – 27 Dec)
 
 **Why (JD):** "SSPM, CASB, and modern SaaS security control planes for misconfiguration and drift detection, third-party OAuth/integration governance, Shadow SaaS / Shadow AI discovery, and DLP across the SaaS estate"
 **Goal:** Close your **biggest gap**. Bridge from CSPM (Wiz) → SSPM: same idea, different control plane (SaaS admin APIs instead of cloud APIs).

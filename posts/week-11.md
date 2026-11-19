@@ -1,6 +1,6 @@
 # Week 11 post: what a SOC needs to see in an AI agent incident
 
-**Publish:** Fri 11 Dec 2026 · **Visual:** a Jaeger trace screenshot of one agent run (prompt → tool calls → policy decisions), with the malicious step highlighted
+**Publish:** Fri 8 Jan 2027 · **Visual:** a Jaeger trace screenshot of one agent run (prompt → tool calls → policy decisions), with the malicious step highlighted
 
 ---
 

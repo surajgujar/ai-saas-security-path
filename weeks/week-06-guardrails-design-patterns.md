@@ -1,4 +1,4 @@
-# Week 6 — Guardrails & Secure Agent Design Patterns (2 – 8 Nov)
+# Week 6 — Guardrails & Secure Agent Design Patterns (30 Nov – 6 Dec)
 
 **Why (JD):** "Develop AI … guardrails, and reference controls"; "hands-on expertise for critical designs"
 **Goal:** Layered defence you can defend in an architecture review — and numbers to prove it works.

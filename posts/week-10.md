@@ -1,6 +1,6 @@
 # Week 10 post (#9): why access survives offboarding
 
-**Publish:** Fri 4 Dec 2026 · **Visual:** a checklist graphic: "Account disabled ✅ — sessions? refresh tokens? OAuth grants? API keys? personal access tokens? ❓"
+**Publish:** Fri 1 Jan 2027 · **Visual:** a checklist graphic: "Account disabled ✅ — sessions? refresh tokens? OAuth grants? API keys? personal access tokens? ❓"
 
 ---
 

@@ -37,7 +37,7 @@ Podcast queue (audio time is extra, not counted in the 11 h): *AI Security Podca
 
 | Quarter | Dates | Technical theme (40% hands-on) | Leadership & career theme | Cert | Gate to pass |
 |---|---|---|---|---|---|
-| **Q1** | Sep 28 – Dec 20 | 12-week foundation ([`weeks/`](weeks/)), updated to OWASP 2026, MCP 2026-07-28 and Google Agent Identity | **Resume and LinkedIn rebuilt** with people-management evidence; begin weekly posts; CISSP study starts in Dec | — | 12 labs; new resume live; 10 posts |
+| **Q1** | Oct 26 – Jan 17 (restarted 15 Nov, +4 wks) | 12-week foundation ([`weeks/`](weeks/)), updated to OWASP 2026, MCP 2026-07-28 and Google Agent Identity | **Resume and LinkedIn rebuilt** with people-management evidence; begin weekly posts; CISSP study starts in Dec | — | 12 labs; new resume live; 10 posts |
 | **Q2** | Jan – Mar 2027 | **Agent identity & runtime authorization** flagship ([Q2](quarters/q2-agent-identity-runtime-authz.md)) | **Job search opens**: UK/IE/DE/NL first; talk #1; standards contribution | **CISSP** | OSS v0.1 · talk #1 · 30+ applications · first interviews |
 | **Q3** | Apr – Jun 2027 | **Frontier-level depth**: agent runtime isolation, AI product security reviews, model-weight security, AI threat detection ([Q3](quarters/q3-frontier-lab-security.md)) | Final rounds; talk #2; widen to UAE/Singapore | **AAISM** | ≥3 final rounds · offer target by end of June |
 | **Q4** | Jul – Sep 2027 | **Running an AI security program**: strategy, metrics, budget, sector regulation ([Q4](quarters/q4-ai-security-program-leadership.md)) | Accept offer → visa → relocate; first-90-days plan | (GAIPS optional) | **Moved / moving** |

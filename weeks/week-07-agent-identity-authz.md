@@ -1,4 +1,4 @@
-# Week 7 — Agent Identity, Non-Human Identity & Runtime Authorization (9 – 15 Nov)
+# Week 7 — Agent Identity, Non-Human Identity & Runtime Authorization (7 – 13 Dec)
 
 **Why (JD):** "agent identity and runtime authorization"; "collaborate closely with IAM on non-human identity"; "workload identities, service accounts, AI agent identity, machine-to-machine authentication"
 **Goal:** Your anchor strength (workload identity) extended to agents acting on behalf of users. This is a likely deep-dive interview topic.

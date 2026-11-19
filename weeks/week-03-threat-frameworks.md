@@ -1,4 +1,4 @@
-# Week 3 — Threat Frameworks (12 – 18 Oct)
+# Week 3 — Threat Frameworks (9 – 15 Nov)
 
 **Why (JD):** "red-teaming against OWASP LLM Top 10 and MITRE ATLAS"; "Assess AI systems end to end"
 **Goal:** A repeatable AI threat-modelling method you can run as an AI security lead or consultant.

@@ -11,11 +11,11 @@ TOKEN = os.environ["GITHUB_TOKEN"]
 API = f"https://api.github.com/repos/{REPO}"
 
 PHASES = [  # title, due (end of phase), weeks
-    ("Phase 1 · Foundations", "2026-10-11T23:59:59Z", [1, 2]),
-    ("Phase 2 · Assess & Attack", "2026-11-01T23:59:59Z", [3, 4, 5]),
-    ("Phase 3 · Defend & Identity", "2026-11-22T23:59:59Z", [6, 7, 8]),
-    ("Phase 4 · SaaS Security", "2026-12-06T23:59:59Z", [9, 10]),
-    ("Phase 5 · Operate & Govern", "2026-12-20T23:59:59Z", [11, 12]),
+    ("Phase 1 · Foundations", "2026-11-08T23:59:59Z", [1, 2]),
+    ("Phase 2 · Assess & Attack", "2026-11-29T23:59:59Z", [3, 4, 5]),
+    ("Phase 3 · Defend & Identity", "2026-12-20T23:59:59Z", [6, 7, 8]),
+    ("Phase 4 · SaaS Security", "2027-01-03T23:59:59Z", [9, 10]),
+    ("Phase 5 · Operate & Govern", "2027-01-17T23:59:59Z", [11, 12]),
 ]
 TRACKS = [  # file, milestone title, due, labels
     ("quarters/q2-agent-identity-runtime-authz.md", "Q2 · Agent identity & runtime authz", "2027-03-31T23:59:59Z", ["identity", "ai-security"]),

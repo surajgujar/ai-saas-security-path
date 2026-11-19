@@ -1,4 +1,4 @@
-# Week 2 — RAG, Vector DBs, Agents, Multi-Agent (5 – 11 Oct)
+# Week 2 — RAG, Vector DBs, Agents, Multi-Agent (2 – 8 Nov)
 
 **Why (JD):** "vector databases, RAG, agents, multi-agent systems, and AI orchestration frameworks"
 **Goal:** Build a realistic (deliberately vulnerable) agent app that becomes your **target for Weeks 3–7 and 11**.

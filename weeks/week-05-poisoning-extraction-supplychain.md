@@ -1,4 +1,4 @@
-# Week 5 — Poisoning, Leakage, Model Extraction & ML Supply Chain (26 Oct – 1 Nov)
+# Week 5 — Poisoning, Leakage, Model Extraction & ML Supply Chain (23 – 29 Nov)
 
 **Why (JD):** "data poisoning/leakage, model extraction, and supply-chain attacks"; "model provenance"; "supply-chain integrity"
 **Goal:** Demo each attack class at small scale and build a provenance pipeline.

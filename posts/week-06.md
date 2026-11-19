@@ -1,6 +1,6 @@
 # Week 6 post (#5): guardrails are not authorization
 
-**Publish:** Fri 6 Nov 2026 · **Visual:** a before/after table of attack success rate from your Week 4 vs Week 6 runs
+**Publish:** Fri 4 Dec 2026 · **Visual:** a before/after table of attack success rate from your Week 4 vs Week 6 runs
 
 ---
 

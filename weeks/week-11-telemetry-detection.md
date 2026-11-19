@@ -1,4 +1,4 @@
-# Week 11 — Telemetry, Anomaly Detection, Immutable Agent Audit Trails, SIEM (7 – 13 Dec)
+# Week 11 — Telemetry, Anomaly Detection, Immutable Agent Audit Trails, SIEM (4 – 10 Jan)
 
 **Why (JD):** "AI and SaaS security telemetry, anomaly detection, immutable audit trails for agentic actions, DLP, and integration with SOC/SIEM/XDR workflows"
 

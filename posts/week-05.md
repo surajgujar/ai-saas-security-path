@@ -1,6 +1,6 @@
 # Week 5 post (#4): how to prove the model in prod is the one you approved
 
-**Publish:** Fri 30 Oct 2026 · **Visual:** your pipeline diagram (scan → verify signature → eval → deploy) with a red ✗ where the tampered model is blocked
+**Publish:** Fri 27 Nov 2026 · **Visual:** your pipeline diagram (scan → verify signature → eval → deploy) with a red ✗ where the tampered model is blocked
 
 ---
 

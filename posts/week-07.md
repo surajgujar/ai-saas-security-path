@@ -1,6 +1,6 @@
 # Week 7 post (#6): your AI agent needs an identity (on GCP)
 
-**Publish:** Fri 13 Nov 2026 · **Visual:** sequence diagram: user → agent → token exchange (IdP) → MCP server → OPA decision → allow/deny
+**Publish:** Fri 11 Dec 2026 · **Visual:** sequence diagram: user → agent → token exchange (IdP) → MCP server → OPA decision → allow/deny
 
 ---
 

@@ -9,7 +9,7 @@
 > **Evidence:** read [`career-strategy/`](career-strategy/README.md) — deep research on what OpenAI, Anthropic, Google, Microsoft, vendors and enterprises hire for, the next-12-month trends, and your **leadership-track** plan. The 12 weeks below are **Q1** of it.
 
 Target: **AI security leadership** — frontier AI labs, hyperscalers/security vendors, large enterprises (abroad)
-Owner: Suraj Gujar · Start: **Mon 28 Sep 2026** · End: **Sun 20 Dec 2026** · Pace: **10–12 hrs/week**
+Owner: Suraj Gujar · Start: **Mon 26 Oct 2026** · End: **Sun 17 Jan 2027** (restarted 15 Nov 2026, all dates +4 weeks) · Pace: **10–12 hrs/week**
 
 > Track progress **only on the tracker** (link above). This README is the map; `weeks/` holds the detail; `posts/` holds a LinkedIn draft for every week.
 
@@ -23,18 +23,18 @@ The plan spends **little time** on those and **most time** on the gaps the JD ca
 
 | Wk | Dates | Phase | Topic | Portfolio deliverable |
 |---|---|---|---|---|
-| 1 | 28 Sep – 4 Oct | 1 · Foundations | [LLM internals: transformers, embeddings, training, fine-tuning, inference](weeks/week-01-llm-internals.md) | Notebook: tokenizer, embeddings, LoRA fine-tune |
-| 2 | 5 – 11 Oct | 1 · Foundations | [RAG, vector DBs, agents, multi-agent, MCP/A2A](weeks/week-02-rag-agents.md) | `labs/vuln-agent-app` (your target app) |
-| 3 | 12 – 18 Oct | 2 · Assess | [Threat frameworks: OWASP LLM & Agentic Top 10, MITRE ATLAS, NIST AI 100-2](weeks/week-03-threat-frameworks.md) | Threat model of target app |
-| 4 | 19 – 25 Oct | 2 · Assess | [Prompt injection, jailbreaks & AI red-teaming (garak, PyRIT, promptfoo)](weeks/week-04-prompt-injection-redteam.md) | Red-team report |
-| 5 | 26 Oct – 1 Nov | 2 · Assess | [Poisoning, leakage, model extraction & ML supply chain / provenance](weeks/week-05-poisoning-extraction-supplychain.md) | Model signing + AI-BOM pipeline |
-| 6 | 2 – 8 Nov | 3 · Defend | [Guardrails & secure agent design patterns](weeks/week-06-guardrails-design-patterns.md) | Before/after red-team metrics |
-| 7 | 9 – 15 Nov | 3 · Defend | [Agent identity, NHI & runtime authorization](weeks/week-07-agent-identity-authz.md) | MCP server with OAuth + OPA per-tool authz |
-| 8 | 16 – 22 Nov | 3 · Defend | [Securing AI workloads on GCP (Vertex AI, VPC-SC, CMEK)](weeks/week-08-gcp-ai-workloads.md) | Terraform secure Vertex AI baseline |
-| 9 | 23 – 29 Nov | 4 · SaaS | [SSPM, CASB, Shadow SaaS / Shadow AI, SaaS DLP](weeks/week-09-sspm-casb.md) | SaaS posture scan + drift detector |
-| 10 | 30 Nov – 6 Dec | 4 · SaaS | [SaaS identity lifecycle (JML), OAuth/OIDC governance, OWASP API Top 10](weeks/week-10-saas-identity-api.md) | OAuth grant auditor + crAPI findings |
-| 11 | 7 – 13 Dec | 5 · Operate | [AI/SaaS telemetry, anomaly detection, immutable agent audit trails, SIEM](weeks/week-11-telemetry-detection.md) | OTel-instrumented agent + detections |
-| 12 | 14 – 20 Dec | 5 · Govern | [GRC & strategy: NIST AI RMF, ISO 42001, EU AI Act, CRA, SAIF](weeks/week-12-grc-strategy.md) | AI & SaaS security standard + roadmap |
+| 1 | 26 Oct – 1 Nov | 1 · Foundations | [LLM internals: transformers, embeddings, training, fine-tuning, inference](weeks/week-01-llm-internals.md) | Notebook: tokenizer, embeddings, LoRA fine-tune |
+| 2 | 2 – 8 Nov | 1 · Foundations | [RAG, vector DBs, agents, multi-agent, MCP/A2A](weeks/week-02-rag-agents.md) | `labs/vuln-agent-app` (your target app) |
+| 3 | 9 – 15 Nov | 2 · Assess | [Threat frameworks: OWASP LLM & Agentic Top 10, MITRE ATLAS, NIST AI 100-2](weeks/week-03-threat-frameworks.md) | Threat model of target app |
+| 4 | 16 – 22 Nov | 2 · Assess | [Prompt injection, jailbreaks & AI red-teaming (garak, PyRIT, promptfoo)](weeks/week-04-prompt-injection-redteam.md) | Red-team report |
+| 5 | 23 – 29 Nov | 2 · Assess | [Poisoning, leakage, model extraction & ML supply chain / provenance](weeks/week-05-poisoning-extraction-supplychain.md) | Model signing + AI-BOM pipeline |
+| 6 | 30 Nov – 6 Dec | 3 · Defend | [Guardrails & secure agent design patterns](weeks/week-06-guardrails-design-patterns.md) | Before/after red-team metrics |
+| 7 | 7 – 13 Dec | 3 · Defend | [Agent identity, NHI & runtime authorization](weeks/week-07-agent-identity-authz.md) | MCP server with OAuth + OPA per-tool authz |
+| 8 | 14 – 20 Dec | 3 · Defend | [Securing AI workloads on GCP (Vertex AI, VPC-SC, CMEK)](weeks/week-08-gcp-ai-workloads.md) | Terraform secure Vertex AI baseline |
+| 9 | 21 – 27 Dec | 4 · SaaS | [SSPM, CASB, Shadow SaaS / Shadow AI, SaaS DLP](weeks/week-09-sspm-casb.md) | SaaS posture scan + drift detector |
+| 10 | 28 Dec – 3 Jan | 4 · SaaS | [SaaS identity lifecycle (JML), OAuth/OIDC governance, OWASP API Top 10](weeks/week-10-saas-identity-api.md) | OAuth grant auditor + crAPI findings |
+| 11 | 4 – 10 Jan | 5 · Operate | [AI/SaaS telemetry, anomaly detection, immutable agent audit trails, SIEM](weeks/week-11-telemetry-detection.md) | OTel-instrumented agent + detections |
+| 12 | 11 – 17 Jan | 5 · Govern | [GRC & strategy: NIST AI RMF, ISO 42001, EU AI Act, CRA, SAIF](weeks/week-12-grc-strategy.md) | AI & SaaS security standard + roadmap |
 
 ### Q2–Q4 (Jan – Sep 2027): leadership-track quarters
 

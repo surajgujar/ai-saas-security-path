@@ -1,6 +1,6 @@
 # Week 3 post (#2): what changed in the OWASP LLM Top 10 2026
 
-**Publish:** Fri 16 Oct 2026 · **Visual:** 2025 vs 2026 ranking side by side, with arrows showing the moves
+**Publish:** Fri 13 Nov 2026 · **Visual:** 2025 vs 2026 ranking side by side, with arrows showing the moves
 
 ---
 

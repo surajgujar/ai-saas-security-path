@@ -1,84 +1,84 @@
 {
  "title": "Q1 · AI Security Foundation",
- "start": "2026-09-28",
- "end": "2026-12-20",
+ "start": "2026-10-26",
+ "end": "2027-01-17",
  "weeks": [
   {
    "n": 1,
    "title": "LLM internals",
    "file": "weeks/week-01-llm-internals.md",
-   "start": "2026-09-28"
+   "start": "2026-10-26"
   },
   {
    "n": 2,
    "title": "RAG, agents, MCP/A2A",
    "file": "weeks/week-02-rag-agents.md",
-   "start": "2026-10-05"
+   "start": "2026-11-02"
   },
   {
    "n": 3,
    "title": "Threat frameworks",
    "file": "weeks/week-03-threat-frameworks.md",
-   "start": "2026-10-12"
+   "start": "2026-11-09"
   },
   {
    "n": 4,
    "title": "Prompt injection & red-teaming",
    "file": "weeks/week-04-prompt-injection-redteam.md",
-   "start": "2026-10-19"
+   "start": "2026-11-16"
   },
   {
    "n": 5,
    "title": "Poisoning, extraction, supply chain",
    "file": "weeks/week-05-poisoning-extraction-supplychain.md",
-   "start": "2026-10-26"
+   "start": "2026-11-23"
   },
   {
    "n": 6,
    "title": "Guardrails & secure agent design",
    "file": "weeks/week-06-guardrails-design-patterns.md",
-   "start": "2026-11-02"
+   "start": "2026-11-30"
   },
   {
    "n": 7,
    "title": "Agent identity & runtime authz",
    "file": "weeks/week-07-agent-identity-authz.md",
-   "start": "2026-11-09"
+   "start": "2026-12-07"
   },
   {
    "n": 8,
    "title": "Securing AI on GCP",
    "file": "weeks/week-08-gcp-ai-workloads.md",
-   "start": "2026-11-16"
+   "start": "2026-12-14"
   },
   {
    "n": 9,
    "title": "SSPM, CASB, Shadow AI",
    "file": "weeks/week-09-sspm-casb.md",
-   "start": "2026-11-23"
+   "start": "2026-12-21"
   },
   {
    "n": 10,
    "title": "SaaS identity, OAuth, API security",
    "file": "weeks/week-10-saas-identity-api.md",
-   "start": "2026-11-30"
+   "start": "2026-12-28"
   },
   {
    "n": 11,
    "title": "Telemetry, detection, audit trails",
    "file": "weeks/week-11-telemetry-detection.md",
-   "start": "2026-12-07"
+   "start": "2027-01-04"
   },
   {
    "n": 12,
    "title": "GRC & strategy capstone",
    "file": "weeks/week-12-grc-strategy.md",
-   "start": "2026-12-14"
+   "start": "2027-01-11"
   }
  ],
  "days": [
   {
-   "date": "2026-09-28",
+   "date": "2026-10-26",
    "dow": "Mon",
    "week": 1,
    "weekTitle": "LLM internals",
@@ -111,7 +111,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-09-29",
+   "date": "2026-10-27",
    "dow": "Tue",
    "week": 1,
    "weekTitle": "LLM internals",
@@ -134,7 +134,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-09-30",
+   "date": "2026-10-28",
    "dow": "Wed",
    "week": 1,
    "weekTitle": "LLM internals",
@@ -185,7 +185,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-01",
+   "date": "2026-10-29",
    "dow": "Thu",
    "week": 1,
    "weekTitle": "LLM internals",
@@ -208,7 +208,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-02",
+   "date": "2026-10-30",
    "dow": "Fri",
    "week": 1,
    "weekTitle": "LLM internals",
@@ -249,7 +249,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-03",
+   "date": "2026-10-31",
    "dow": "Sat",
    "week": 1,
    "weekTitle": "LLM internals",
@@ -305,7 +305,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-10-04",
+   "date": "2026-11-01",
    "dow": "Sun",
    "week": 1,
    "weekTitle": "LLM internals",
@@ -374,7 +374,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-10-05",
+   "date": "2026-11-02",
    "dow": "Mon",
    "week": 2,
    "weekTitle": "RAG, agents, MCP/A2A",
@@ -407,7 +407,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-06",
+   "date": "2026-11-03",
    "dow": "Tue",
    "week": 2,
    "weekTitle": "RAG, agents, MCP/A2A",
@@ -440,7 +440,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-07",
+   "date": "2026-11-04",
    "dow": "Wed",
    "week": 2,
    "weekTitle": "RAG, agents, MCP/A2A",
@@ -491,7 +491,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-08",
+   "date": "2026-11-05",
    "dow": "Thu",
    "week": 2,
    "weekTitle": "RAG, agents, MCP/A2A",
@@ -519,7 +519,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-09",
+   "date": "2026-11-06",
    "dow": "Fri",
    "week": 2,
    "weekTitle": "RAG, agents, MCP/A2A",
@@ -560,7 +560,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-10",
+   "date": "2026-11-07",
    "dow": "Sat",
    "week": 2,
    "weekTitle": "RAG, agents, MCP/A2A",
@@ -596,7 +596,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-10-11",
+   "date": "2026-11-08",
    "dow": "Sun",
    "week": 2,
    "weekTitle": "RAG, agents, MCP/A2A",
@@ -660,7 +660,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-10-12",
+   "date": "2026-11-09",
    "dow": "Mon",
    "week": 3,
    "weekTitle": "Threat frameworks",
@@ -693,7 +693,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-13",
+   "date": "2026-11-10",
    "dow": "Tue",
    "week": 3,
    "weekTitle": "Threat frameworks",
@@ -726,7 +726,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-14",
+   "date": "2026-11-11",
    "dow": "Wed",
    "week": 3,
    "weekTitle": "Threat frameworks",
@@ -767,7 +767,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-15",
+   "date": "2026-11-12",
    "dow": "Thu",
    "week": 3,
    "weekTitle": "Threat frameworks",
@@ -790,7 +790,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-16",
+   "date": "2026-11-13",
    "dow": "Fri",
    "week": 3,
    "weekTitle": "Threat frameworks",
@@ -831,7 +831,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-17",
+   "date": "2026-11-14",
    "dow": "Sat",
    "week": 3,
    "weekTitle": "Threat frameworks",
@@ -877,7 +877,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-10-18",
+   "date": "2026-11-15",
    "dow": "Sun",
    "week": 3,
    "weekTitle": "Threat frameworks",
@@ -931,7 +931,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-10-19",
+   "date": "2026-11-16",
    "dow": "Mon",
    "week": 4,
    "weekTitle": "Prompt injection & red-teaming",
@@ -964,7 +964,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-20",
+   "date": "2026-11-17",
    "dow": "Tue",
    "week": 4,
    "weekTitle": "Prompt injection & red-teaming",
@@ -987,7 +987,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-21",
+   "date": "2026-11-18",
    "dow": "Wed",
    "week": 4,
    "weekTitle": "Prompt injection & red-teaming",
@@ -1023,7 +1023,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-22",
+   "date": "2026-11-19",
    "dow": "Thu",
    "week": 4,
    "weekTitle": "Prompt injection & red-teaming",
@@ -1046,7 +1046,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-23",
+   "date": "2026-11-20",
    "dow": "Fri",
    "week": 4,
    "weekTitle": "Prompt injection & red-teaming",
@@ -1087,7 +1087,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-24",
+   "date": "2026-11-21",
    "dow": "Sat",
    "week": 4,
    "weekTitle": "Prompt injection & red-teaming",
@@ -1133,7 +1133,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-10-25",
+   "date": "2026-11-22",
    "dow": "Sun",
    "week": 4,
    "weekTitle": "Prompt injection & red-teaming",
@@ -1197,7 +1197,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-10-26",
+   "date": "2026-11-23",
    "dow": "Mon",
    "week": 5,
    "weekTitle": "Poisoning, extraction, supply chain",
@@ -1230,7 +1230,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-27",
+   "date": "2026-11-24",
    "dow": "Tue",
    "week": 5,
    "weekTitle": "Poisoning, extraction, supply chain",
@@ -1258,7 +1258,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-28",
+   "date": "2026-11-25",
    "dow": "Wed",
    "week": 5,
    "weekTitle": "Poisoning, extraction, supply chain",
@@ -1304,7 +1304,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-29",
+   "date": "2026-11-26",
    "dow": "Thu",
    "week": 5,
    "weekTitle": "Poisoning, extraction, supply chain",
@@ -1327,7 +1327,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-30",
+   "date": "2026-11-27",
    "dow": "Fri",
    "week": 5,
    "weekTitle": "Poisoning, extraction, supply chain",
@@ -1368,7 +1368,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-10-31",
+   "date": "2026-11-28",
    "dow": "Sat",
    "week": 5,
    "weekTitle": "Poisoning, extraction, supply chain",
@@ -1409,7 +1409,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-01",
+   "date": "2026-11-29",
    "dow": "Sun",
    "week": 5,
    "weekTitle": "Poisoning, extraction, supply chain",
@@ -1468,7 +1468,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-02",
+   "date": "2026-11-30",
    "dow": "Mon",
    "week": 6,
    "weekTitle": "Guardrails & secure agent design",
@@ -1496,7 +1496,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-03",
+   "date": "2026-12-01",
    "dow": "Tue",
    "week": 6,
    "weekTitle": "Guardrails & secure agent design",
@@ -1524,7 +1524,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-04",
+   "date": "2026-12-02",
    "dow": "Wed",
    "week": 6,
    "weekTitle": "Guardrails & secure agent design",
@@ -1570,7 +1570,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-05",
+   "date": "2026-12-03",
    "dow": "Thu",
    "week": 6,
    "weekTitle": "Guardrails & secure agent design",
@@ -1593,7 +1593,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-06",
+   "date": "2026-12-04",
    "dow": "Fri",
    "week": 6,
    "weekTitle": "Guardrails & secure agent design",
@@ -1634,7 +1634,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-07",
+   "date": "2026-12-05",
    "dow": "Sat",
    "week": 6,
    "weekTitle": "Guardrails & secure agent design",
@@ -1675,7 +1675,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-08",
+   "date": "2026-12-06",
    "dow": "Sun",
    "week": 6,
    "weekTitle": "Guardrails & secure agent design",
@@ -1729,7 +1729,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-09",
+   "date": "2026-12-07",
    "dow": "Mon",
    "week": 7,
    "weekTitle": "Agent identity & runtime authz",
@@ -1757,7 +1757,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-10",
+   "date": "2026-12-08",
    "dow": "Tue",
    "week": 7,
    "weekTitle": "Agent identity & runtime authz",
@@ -1790,7 +1790,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-11",
+   "date": "2026-12-09",
    "dow": "Wed",
    "week": 7,
    "weekTitle": "Agent identity & runtime authz",
@@ -1836,7 +1836,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-12",
+   "date": "2026-12-10",
    "dow": "Thu",
    "week": 7,
    "weekTitle": "Agent identity & runtime authz",
@@ -1859,7 +1859,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-13",
+   "date": "2026-12-11",
    "dow": "Fri",
    "week": 7,
    "weekTitle": "Agent identity & runtime authz",
@@ -1900,7 +1900,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-14",
+   "date": "2026-12-12",
    "dow": "Sat",
    "week": 7,
    "weekTitle": "Agent identity & runtime authz",
@@ -1936,7 +1936,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-15",
+   "date": "2026-12-13",
    "dow": "Sun",
    "week": 7,
    "weekTitle": "Agent identity & runtime authz",
@@ -1995,7 +1995,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-16",
+   "date": "2026-12-14",
    "dow": "Mon",
    "week": 8,
    "weekTitle": "Securing AI on GCP",
@@ -2028,7 +2028,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-17",
+   "date": "2026-12-15",
    "dow": "Tue",
    "week": 8,
    "weekTitle": "Securing AI on GCP",
@@ -2061,7 +2061,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-18",
+   "date": "2026-12-16",
    "dow": "Wed",
    "week": 8,
    "weekTitle": "Securing AI on GCP",
@@ -2102,7 +2102,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-19",
+   "date": "2026-12-17",
    "dow": "Thu",
    "week": 8,
    "weekTitle": "Securing AI on GCP",
@@ -2125,7 +2125,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-20",
+   "date": "2026-12-18",
    "dow": "Fri",
    "week": 8,
    "weekTitle": "Securing AI on GCP",
@@ -2166,7 +2166,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-21",
+   "date": "2026-12-19",
    "dow": "Sat",
    "week": 8,
    "weekTitle": "Securing AI on GCP",
@@ -2207,7 +2207,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-22",
+   "date": "2026-12-20",
    "dow": "Sun",
    "week": 8,
    "weekTitle": "Securing AI on GCP",
@@ -2271,7 +2271,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-23",
+   "date": "2026-12-21",
    "dow": "Mon",
    "week": 9,
    "weekTitle": "SSPM, CASB, Shadow AI",
@@ -2299,7 +2299,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-24",
+   "date": "2026-12-22",
    "dow": "Tue",
    "week": 9,
    "weekTitle": "SSPM, CASB, Shadow AI",
@@ -2327,7 +2327,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-25",
+   "date": "2026-12-23",
    "dow": "Wed",
    "week": 9,
    "weekTitle": "SSPM, CASB, Shadow AI",
@@ -2378,7 +2378,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-26",
+   "date": "2026-12-24",
    "dow": "Thu",
    "week": 9,
    "weekTitle": "SSPM, CASB, Shadow AI",
@@ -2401,7 +2401,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-27",
+   "date": "2026-12-25",
    "dow": "Fri",
    "week": 9,
    "weekTitle": "SSPM, CASB, Shadow AI",
@@ -2442,7 +2442,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-11-28",
+   "date": "2026-12-26",
    "dow": "Sat",
    "week": 9,
    "weekTitle": "SSPM, CASB, Shadow AI",
@@ -2488,7 +2488,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-29",
+   "date": "2026-12-27",
    "dow": "Sun",
    "week": 9,
    "weekTitle": "SSPM, CASB, Shadow AI",
@@ -2542,7 +2542,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-11-30",
+   "date": "2026-12-28",
    "dow": "Mon",
    "week": 10,
    "weekTitle": "SaaS identity, OAuth, API security",
@@ -2575,7 +2575,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-01",
+   "date": "2026-12-29",
    "dow": "Tue",
    "week": 10,
    "weekTitle": "SaaS identity, OAuth, API security",
@@ -2598,7 +2598,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-02",
+   "date": "2026-12-30",
    "dow": "Wed",
    "week": 10,
    "weekTitle": "SaaS identity, OAuth, API security",
@@ -2634,7 +2634,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-03",
+   "date": "2026-12-31",
    "dow": "Thu",
    "week": 10,
    "weekTitle": "SaaS identity, OAuth, API security",
@@ -2657,7 +2657,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-04",
+   "date": "2027-01-01",
    "dow": "Fri",
    "week": 10,
    "weekTitle": "SaaS identity, OAuth, API security",
@@ -2698,7 +2698,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-05",
+   "date": "2027-01-02",
    "dow": "Sat",
    "week": 10,
    "weekTitle": "SaaS identity, OAuth, API security",
@@ -2739,7 +2739,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-12-06",
+   "date": "2027-01-03",
    "dow": "Sun",
    "week": 10,
    "weekTitle": "SaaS identity, OAuth, API security",
@@ -2793,7 +2793,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-12-07",
+   "date": "2027-01-04",
    "dow": "Mon",
    "week": 11,
    "weekTitle": "Telemetry, detection, audit trails",
@@ -2821,7 +2821,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-08",
+   "date": "2027-01-05",
    "dow": "Tue",
    "week": 11,
    "weekTitle": "Telemetry, detection, audit trails",
@@ -2849,7 +2849,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-09",
+   "date": "2027-01-06",
    "dow": "Wed",
    "week": 11,
    "weekTitle": "Telemetry, detection, audit trails",
@@ -2885,7 +2885,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-10",
+   "date": "2027-01-07",
    "dow": "Thu",
    "week": 11,
    "weekTitle": "Telemetry, detection, audit trails",
@@ -2918,7 +2918,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-11",
+   "date": "2027-01-08",
    "dow": "Fri",
    "week": 11,
    "weekTitle": "Telemetry, detection, audit trails",
@@ -2959,7 +2959,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-12",
+   "date": "2027-01-09",
    "dow": "Sat",
    "week": 11,
    "weekTitle": "Telemetry, detection, audit trails",
@@ -3000,7 +3000,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-12-13",
+   "date": "2027-01-10",
    "dow": "Sun",
    "week": 11,
    "weekTitle": "Telemetry, detection, audit trails",
@@ -3059,7 +3059,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-12-14",
+   "date": "2027-01-11",
    "dow": "Mon",
    "week": 12,
    "weekTitle": "GRC & strategy capstone",
@@ -3092,7 +3092,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-15",
+   "date": "2027-01-12",
    "dow": "Tue",
    "week": 12,
    "weekTitle": "GRC & strategy capstone",
@@ -3125,7 +3125,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-16",
+   "date": "2027-01-13",
    "dow": "Wed",
    "week": 12,
    "weekTitle": "GRC & strategy capstone",
@@ -3166,7 +3166,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-17",
+   "date": "2027-01-14",
    "dow": "Thu",
    "week": 12,
    "weekTitle": "GRC & strategy capstone",
@@ -3189,7 +3189,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-18",
+   "date": "2027-01-15",
    "dow": "Fri",
    "week": 12,
    "weekTitle": "GRC & strategy capstone",
@@ -3230,7 +3230,7 @@
    "minutes": 60
   },
   {
-   "date": "2026-12-19",
+   "date": "2027-01-16",
    "dow": "Sat",
    "week": 12,
    "weekTitle": "GRC & strategy capstone",
@@ -3271,7 +3271,7 @@
    "minutes": 180
   },
   {
-   "date": "2026-12-20",
+   "date": "2027-01-17",
    "dow": "Sun",
    "week": 12,
    "weekTitle": "GRC & strategy capstone",

@@ -1,6 +1,6 @@
 # Week 1 post: why I'm going deep on AI & agent security
 
-**Publish:** Fri 2 Oct 2026 · **Visual:** your lifecycle sketch (data → pre-train → fine-tune → eval → deploy → operate) with one attack marked at each stage
+**Publish:** Fri 30 Oct 2026 · **Visual:** your lifecycle sketch (data → pre-train → fine-tune → eval → deploy → operate) with one attack marked at each stage
 
 ---
 

@@ -1,4 +1,4 @@
-# Week 12 — GRC, Standards & Strategy (14 – 20 Dec)
+# Week 12 — GRC, Standards & Strategy (11 – 17 Jan)
 
 **Why (JD):** "Contribute to the company-wide AI and SaaS security strategy and roadmap"; "Develop AI and SaaS security standards … policies, audits, and regulatory alignment"
 **Goal:** Pull 11 weeks into the artefacts a SME actually produces — and a strong capstone to show in interviews.

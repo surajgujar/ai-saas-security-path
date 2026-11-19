@@ -1,4 +1,4 @@
-# Week 8 — Securing AI Workloads on GCP (16 – 22 Nov)
+# Week 8 — Securing AI Workloads on GCP (14 – 20 Dec)
 
 **Why (JD):** "securing AI workloads on Google Cloud Platform, AI model deployment pipelines, IAM, networking, and cloud-native security controls"
 **Goal:** Turn your PCSE knowledge into an opinionated **Vertex AI secure landing zone**. Lower effort week — you're strong here; use spare time to catch up.

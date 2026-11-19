@@ -1,4 +1,4 @@
-# Week 10 — SaaS Identity Lifecycle, OAuth/OIDC Governance, API Security (30 Nov – 6 Dec)
+# Week 10 — SaaS Identity Lifecycle, OAuth/OIDC Governance, API Security (28 Dec – 3 Jan)
 
 **Why (JD):** "SaaS identity lifecycle and joiner-mover-leaver flows across multi-SaaS estates, OAuth/OIDC token governance, least-privilege enforcement, and API security (OWASP API Top 10)"
 

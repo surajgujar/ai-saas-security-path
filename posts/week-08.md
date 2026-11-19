@@ -1,6 +1,6 @@
 # Week 8 post (#7): what VPC Service Controls protect that IAM doesn't
 
-**Publish:** Fri 20 Nov 2026 · **Visual:** a perimeter diagram: Vertex/Agent Platform + storage + KMS inside, a stolen-credential attempt from outside marked ✗
+**Publish:** Fri 18 Dec 2026 · **Visual:** a perimeter diagram: Vertex/Agent Platform + storage + KMS inside, a stolen-credential attempt from outside marked ✗
 
 ---
 

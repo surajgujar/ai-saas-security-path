@@ -1,6 +1,6 @@
 # Week 2 post: I built a deliberately vulnerable AI agent
 
-**Publish:** Fri 9 Oct 2026 · **Visual:** the Mermaid diagram of HelpDesk Copilot with trust boundaries drawn in red
+**Publish:** Fri 6 Nov 2026 · **Visual:** the Mermaid diagram of HelpDesk Copilot with trust boundaries drawn in red
 
 ---
 

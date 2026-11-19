@@ -1,6 +1,6 @@
 # Week 9 post (#8): Shadow AI without blocking everything
 
-**Publish:** Fri 27 Nov 2026 · **Visual:** a 3-column board: Sanctioned / Tolerated / Blocked, with example AI apps and the rule for each
+**Publish:** Fri 25 Dec 2026 · **Visual:** a 3-column board: Sanctioned / Tolerated / Blocked, with example AI apps and the rule for each
 
 ---
 

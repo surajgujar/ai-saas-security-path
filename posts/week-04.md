@@ -1,6 +1,6 @@
 # Week 4 post (#3): why prompt-injection classifiers alone aren't enough
 
-**Publish:** Fri 23 Oct 2026 · **Visual:** a bar chart of attack success rate by technique (from your REPORT.md)
+**Publish:** Fri 20 Nov 2026 · **Visual:** a bar chart of attack success rate by technique (from your REPORT.md)
 
 ---
 
