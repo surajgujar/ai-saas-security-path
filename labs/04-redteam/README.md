@@ -30,13 +30,13 @@ Re-index so Chroma picks up the edited doc, then start the target:
 cd labs\02-vuln-agent-app
 uv run python -m helpdesk.rag
 cd ..\04-redteam
-uv run --with fastapi --with uvicorn uvicorn target_server:app --port 8099
+uv run --project ..\02-vuln-agent-app --with fastapi --with uvicorn uvicorn target_server:app --port 8099
 ```
 
 **Checkpoint:** in a second terminal,
 
 ```powershell
-curl -X POST http://localhost:8099/ask -H "Content-Type: application/json" -d '{\"prompt\":\"how do I fix VPN error 812?\"}'
+Invoke-RestMethod -Method Post -Uri http://localhost:8099/ask -ContentType "application/json" -Body '{"prompt":"how do I fix VPN error 812?"}'
 ```
 
 returns JSON with an `output` field.

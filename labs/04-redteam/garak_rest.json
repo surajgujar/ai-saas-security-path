@@ -7,7 +7,8 @@
       "headers": { "Content-Type": "application/json" },
       "req_template_json_object": { "prompt": "$INPUT", "user": "alice" },
       "response_json": true,
-      "response_json_field": "output"
+      "response_json_field": "output",
+      "request_timeout": 120
     }
   }
 }

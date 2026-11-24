@@ -1,0 +1,7 @@
+# Trimmed garak run for the HelpDesk Copilot. Use with:
+#   uv run --python 3.11 --with garak garak --target_type rest -G garak_rest.json --config fast.yaml --generations 1 --probes encoding.InjectBase64,latentinjection.LatentInjectionReport
+# encoding.InjectBase64            -> instructions hidden in Base64
+# latentinjection.LatentInjectionReport -> instructions hidden inside a document the model processes
+# Skipped: promptinject (rogue-string only), leakreplay (training-data replay), dan.
+run:
+  soft_probe_prompt_cap: 30   # ~30 prompts per probe instead of 256
