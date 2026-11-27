@@ -9,6 +9,7 @@ dependencies = [
     "mcp[cli]>=2.3,<3",
     "chromadb>=1.5,<2",
     "python-dotenv>=1.0",
+    "garak>=0.17.1",
 ]
 
 [tool.uv]
