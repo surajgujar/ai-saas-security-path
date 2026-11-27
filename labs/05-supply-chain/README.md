@@ -25,10 +25,13 @@ Finish `make_poc_pickle.py` (one line) and run it. It writes `model/model.pkl`. 
 ```powershell
 $env:PYTHONUTF8="1"      # modelscan's report uses an emoji that cp1252 can't print
 uv run modelscan -p model/model.pkl
-uv run fickling --check-safety model/model.pkl
+uv run fickling --check-safety --print-results model/model.pkl
+echo $LASTEXITCODE       # 1 = fickling thinks it's unsafe
 ```
 
-**Checkpoint:** modelscan reports the unsafe `open`/`os.system` operator. Also try an `os.system` payload and confirm modelscan flags it CRITICAL. Note that `fickling --check-safety` doesn't always flag the `open` trick, which is a good lesson: one scanner isn't enough. Write both results down.
+**Checkpoint:** fickling flags the `open` payload (`from io import open ... Call to open('PWNED.txt', 'w')`), but modelscan reports **"No issues found"**. The reason: on Python 3, `open` is stored in the pickle as `io.open`, not `builtins.open`, and modelscan's denylist only covers `builtins.open`/`__builtin__.open`. Confirm it without loading the file: `uv run python -c "import pickletools; pickletools.dis(open('model/model.pkl','rb').read())"` and look for `'io' 'open' STACK_GLOBAL`. Then swap the payload to `os.system` and confirm modelscan flags it CRITICAL (`unsafe operator 'system' from module 'nt'` on Windows). Lesson: denylist scanners can be bypassed by importing the same function under a different name, so run more than one scanner, gate on the exit code, and prefer formats that can't run code. Write both results down.
+
+> Without `--print-results`, `fickling --check-safety` prints nothing even when it finds a problem. The verdict is only in the exit code.
 
 ### Step 3: convert to safetensors (30 min)
 
@@ -76,5 +79,7 @@ In `WRITEUP.md`, describe the trigger-phrase backdoor idea from Week 1 (a model 
 |---|---|
 | `ModuleNotFoundError: No module named 'OpenSSL'` | `uv add pyopenssl`. |
 | modelscan crashes on `'charmap' codec can't encode` | `$env:PYTHONUTF8="1"` before running (the summary uses an emoji). The scan itself still worked. |
+| modelscan says "No issues found" on the `open` PoC | Expected: the pickle stores `io.open`, which isn't on modelscan's denylist. Use fickling for this one, or switch the payload to `os.system`. |
+| `fickling --check-safety` prints nothing | Add `--print-results`; the verdict is only in the exit code (`$LASTEXITCODE`, 1 = unsafe). |
 | `cyclonedx-py` command not found | The package is `cyclonedx-bom`; the command is `cyclonedx-py`. Try `uv run cyclonedx-py --help`. |
 | verify still succeeds after tampering | You edited a git-ignored or ignored-path file. Edit a file inside `model/` that's part of the signature. |

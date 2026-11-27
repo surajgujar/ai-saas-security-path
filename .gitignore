@@ -8,6 +8,8 @@ __pycache__/
 .terraform/
 *.pkl
 *.safetensors
+# Lab 5: the signed toy model must be in the repo so the model gate can scan/verify/eval it
+!labs/05-supply-chain/model/weights.safetensors
 *.bin
 models/
 

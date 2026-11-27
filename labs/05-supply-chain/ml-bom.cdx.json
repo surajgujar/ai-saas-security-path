@@ -1,0 +1,192 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:6c25a065-6670-5d49-84e6-96c4f1016bfe",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "bom-ref": "app:lab05-toy-service",
+      "name": "lab05-toy-service",
+      "version": "0.1.0",
+      "description": "Service that serves the lab05 toy model. Python deps are in sbom.cdx.json."
+    },
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "make_mlbom.py"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model:lab05-toy@0.1.0",
+      "name": "lab05-toy",
+      "version": "0.1.0",
+      "description": "Tiny 4->3 linear + ReLU + 3->2 head. Built by make_safetensors.py.",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3e9c0e3fe19b3d5f828e26421af51771d50448cd788516a351c569483ecb2808"
+        }
+      ],
+      "properties": [
+        {
+          "name": "ml:file",
+          "value": "model/weights.safetensors"
+        },
+        {
+          "name": "ml:format",
+          "value": "safetensors"
+        },
+        {
+          "name": "ml:pickle-free",
+          "value": "true"
+        },
+        {
+          "name": "ml:tensors",
+          "value": "head.bias[2] float32, head.weight[2, 3] float32, linear.bias[3] float32, linear.weight[3, 4] float32"
+        },
+        {
+          "name": "ml:build-script",
+          "value": "make_safetensors.py"
+        },
+        {
+          "name": "ml:build-script-sha256",
+          "value": "8947b376a79ebee385a7cd050bbdf31f3a480c51c725ba42e1d0494976067dfb"
+        },
+        {
+          "name": "ml:signature-scheme",
+          "value": "model_signing (OpenSSF), key-based, ECDSA P-256"
+        },
+        {
+          "name": "ml:signature-file",
+          "value": "model.sig"
+        },
+        {
+          "name": "ml:signature-sha256",
+          "value": "8c0fc6ffc76e54fe59eb02ce5dc640b8fc4e0d24f5ea9342a6a252db8b1a5f6a"
+        },
+        {
+          "name": "ml:signer-public-key",
+          "value": "key.pub"
+        },
+        {
+          "name": "ml:signer-public-key-sha256",
+          "value": "a0eff80f47be0154a5fe0d44d293f62c3a9a83db4e622aebc18012126c7f6036"
+        },
+        {
+          "name": "ml:eval",
+          "value": "eval_smoke.py against expected_outputs.json (atol 1e-5)"
+        },
+        {
+          "name": "ml:eval-expected-sha256",
+          "value": "c8e3490ad89b81f244ba951f1c29739bae22ec53db634089a8193a214e92a375"
+        }
+      ],
+      "pedigree": {
+        "notes": "Replaces model/model.pkl (Step 1 PoC pickle, unsafe: io.open payload via __reduce__). The pickle is NOT an approved artifact and must never be deployed."
+      },
+      "modelCard": {
+        "modelParameters": {
+          "approach": {
+            "type": "supervised"
+          },
+          "task": "classification",
+          "architectureFamily": "mlp",
+          "modelArchitecture": "Linear(4,3) -> ReLU -> Linear(3,2)",
+          "datasets": [
+            {
+              "ref": "data:lab05-synthetic-init@0.1.0"
+            }
+          ],
+          "inputs": [
+            {
+              "format": "float32[batch,4]"
+            }
+          ],
+          "outputs": [
+            {
+              "format": "float32[batch,2] logits"
+            }
+          ]
+        },
+        "considerations": {
+          "users": [
+            "Lab 5 exercises only"
+          ],
+          "useCases": [
+            "Demonstrating scan -> sign -> verify -> eval gating"
+          ],
+          "technicalLimitations": [
+            "Random weights, not trained; outputs are meaningless beyond regression testing."
+          ],
+          "ethicalConsiderations": [
+            {
+              "name": "Backdoor / poisoning",
+              "mitigationStrategy": "Only signed weights deploy; smoke eval pins behaviour; see WRITEUP.md for trigger fuzzing."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "data",
+      "bom-ref": "data:lab05-synthetic-init@0.1.0",
+      "name": "lab05-synthetic-init",
+      "version": "0.1.0",
+      "description": "No real training data. Weights come from numpy default_rng(seed=0) standard normal draws.",
+      "data": [
+        {
+          "type": "dataset",
+          "name": "numpy-rng-seed-0",
+          "classification": "public",
+          "contents": {
+            "properties": [
+              {
+                "name": "generator",
+                "value": "numpy.random.default_rng(seed=0).standard_normal"
+              },
+              {
+                "name": "reproducible",
+                "value": "true"
+              }
+            ]
+          },
+          "sensitiveData": [
+            "none"
+          ],
+          "governance": {
+            "owners": [
+              {
+                "organization": {
+                  "name": "lab05"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "app:lab05-toy-service",
+      "dependsOn": [
+        "model:lab05-toy@0.1.0"
+      ]
+    },
+    {
+      "ref": "model:lab05-toy@0.1.0",
+      "dependsOn": [
+        "data:lab05-synthetic-init@0.1.0"
+      ]
+    },
+    {
+      "ref": "data:lab05-synthetic-init@0.1.0"
+    }
+  ]
+}

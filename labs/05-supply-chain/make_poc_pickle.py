@@ -18,6 +18,6 @@ class Payload:
 
 
 # TODO(step 1): dump a dict that mixes fake "weights" with the Payload, to model/model.pkl.
-#   pickle.dump({"weights": [0.1, 0.2], "x": Payload()}, open(MODEL_DIR / "model.pkl", "wb"))
+pickle.dump({"weights": [0.1, 0.2], "x": Payload()}, open(MODEL_DIR / "model.pkl", "wb"))
 #   Then DON'T load it. Prove the danger by scanning, not by running it.
-raise SystemExit("Finish TODO(step 1) in make_poc_pickle.py, then remove this line.")
+# raise SystemExit("Finish TODO(step 1) in make_poc_pickle.py, then remove this line.")

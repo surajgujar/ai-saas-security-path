@@ -1,0 +1,93 @@
+# GitHub Actions "model gate": scan -> verify signature -> eval -> only then deploy.
+# Filled-in version of gate.yml.example (Lab 5, Step 5). To use it for real, copy it to
+# .github/workflows/model-gate.yml at the REPO ROOT and commit model/weights.safetensors
+# (the repo .gitignore excludes *.safetensors). Each step is fail-closed: any non-zero exit
+# stops the job, so "Deploy" only runs when every gate passed.
+
+name: model-gate
+on:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+    working-directory: labs/05-supply-chain
+
+env:
+  PYTHONUTF8: "1"          # modelscan prints an emoji
+  MODEL_DIR: model
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Install pinned tools (from uv.lock)
+        run: uv sync --frozen
+
+      - name: Scan for unsafe serialization
+        run: |
+          set -uo pipefail
+          fail=0
+
+          # 1) Format allowlist: the strongest control. Pickle-family files can run code on
+          #    load, so they are rejected outright, whatever the scanners say.
+          bad=$(find "$MODEL_DIR" -type f \( -name '*.pkl' -o -name '*.pickle' -o -name '*.pt' \
+                 -o -name '*.pth' -o -name '*.bin' -o -name '*.ckpt' -o -name '*.joblib' \) )
+          if [ -n "$bad" ]; then
+            echo "::error::pickle-family files in $MODEL_DIR (only .safetensors allowed):"; echo "$bad"
+            fail=1
+          fi
+
+          # 2) modelscan. Exit codes: 0 clean, 1 issues found, 2 scan error, 3 no supported
+          #    files (expected for a safetensors-only dir), 4 usage error. Accept 0 and 3 only.
+          uv run modelscan -p "$MODEL_DIR"; rc=$?
+          if [ "$rc" -ne 0 ] && [ "$rc" -ne 3 ]; then
+            echo "::error::modelscan exit $rc"; fail=1
+          fi
+
+          # 3) fickling as a second opinion on any pickle. modelscan's denylist misses io.open
+          #    (Step 2), fickling catches it. Exit 1 = unsafe.
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            if ! uv run fickling --check-safety --print-results "$f"; then
+              echo "::error::fickling flagged $f"; fail=1
+            fi
+          done <<< "$bad"
+
+          exit $fail
+
+      - name: Verify signature
+        run: |
+          set -euo pipefail
+          # Integrity + provenance: the bytes are exactly what the holder of key.priv signed.
+          # In real CI, take the public key from a trusted place (repo secret / KMS / Sigstore
+          # identity), not from the same commit as the model, or an attacker swaps both.
+          uv run model_signing verify key "$MODEL_DIR" \
+            --public_key key.pub --signature model.sig
+
+      - name: ML-BOM check
+        run: |
+          set -euo pipefail
+          # Regenerate the ML-BOM from the files in the repo, validate it against the
+          # CycloneDX 1.6 schema, and fail if it differs from the committed ml-bom.cdx.json.
+          # That ties the deployed weights (plus sig, key and eval goldens) to the BOM that
+          # was reviewed.
+          uv run python make_mlbom.py --check
+
+      - name: Evaluate
+        run: |
+          set -euo pipefail
+          # Schema + golden-output smoke test. Exit 1 on any drift.
+          uv run python eval_smoke.py
+
+      - name: Generate SBOM (attach to the release)
+        run: |
+          set -euo pipefail
+          uv run cyclonedx-py environment --pyproject pyproject.toml \
+            --output-reproducible -o sbom.cdx.json .venv
+
+      - name: Deploy (only if all above passed)
+        run: echo "all gates passed -> would upload/deploy model + sbom.cdx.json + ml-bom.cdx.json here"

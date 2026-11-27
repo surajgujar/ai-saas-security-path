@@ -1,0 +1,15 @@
+[project]
+name = "05-supply-chain"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "certifi>=2026.11.20",
+    "cryptography>=50.0.2",
+    "cyclonedx-bom>=9.0.0",
+    "fickling>=0.1.13",
+    "model-signing>=1.1.1",
+    "modelscan>=0.8.8",
+    "numpy>=2.4.6",
+    "pyopenssl>=26.4.0",
+    "safetensors>=0.8.0",
+]
